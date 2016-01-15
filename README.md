@@ -2,7 +2,7 @@
 
 An Astronomy and Astrophysics Review, for publication in 2016.
 
-[Draft PDF](https://github.com/tommasotreu/AARV/blob/master/draft/TM16.pdf)
+**[Draft PDF](https://github.com/tommasotreu/AARV/blob/master/draft/TM16.pdf)**
 
 ### Authors:
 
