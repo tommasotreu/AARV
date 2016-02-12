@@ -33,14 +33,14 @@ grestore
 %
 \smartqed  % flush right qed marks, e.g. at end of proof
 %
-%\usepackage{graphicx,natbib}
-\usepackage{graphicx}
-%
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
 % insert here the call for the packages your document requires
 %\usepackage{latexsym}
 % etc.
+%
+\usepackage{graphicx}
+\usepackage[round]{natbib}
 %
 % please place your own definitions here and don't use \def but
 \newcommand{\mnras}{MNRAS}
@@ -150,25 +150,7 @@ larger lens samples in the near future.
 \section{Theoretical background [PJM]}
 \label{sec:theory}
 
-%Gravitational lensing. Time delay surface. Distance.
-
-%Notes on lens mass distribution.
-
-%Notes on weak lensing effects.
-
-Lensing, Fermat's principle and potential.
-
-FIGURE: SCHEMATIC WAVEFRONT DIAGRAM FROM T\&E15.
-
-Time delay distance.
-
-Importance of mass distribution in lens.
-
-Model (mass-sheet) degeneracy and its generalizations
-
-Importance of mass along the line sight - the universe is not Friedmann Lemaitre Robertson Walker.
-
-POSSIBLE FIGURE: ILLUSTRATION OF LINE OF SIGHT EFFECTS? CARTOON COMPARING IDEALIZED UNIVERSE TO OVER/UNDER DENSE LINE OF SIGHT [PJM]
+\input{theory}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -378,9 +360,9 @@ Thank people who give comments/input. Thank funding agencies.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % BibTeX users please use one of
-%\bibliographystyle{spbasic}      % basic style, author-year citations
-%\bibliographystyle{spmpsci}      % mathematics and physical sciences
-\bibliographystyle{spphys}       % APS-like style for physics
+\bibliographystyle{spbasic}      % basic style, author-year citations
+% \bibliographystyle{spmpsci}      % mathematics and physical sciences
+% \bibliographystyle{spphys}       % APS-like style for physics
 \bibliography{references}   % name your BibTeX data base
 
 % Non-BibTeX users please use

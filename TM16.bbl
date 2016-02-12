@@ -1,0 +1,351 @@
+\begin{thebibliography}{45}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{{Agnello} et~al(2015){Agnello}, {Treu}, {Ostrovski}, {Schechter},
+  {Buckley-Geer}, {Lin}, {Auger}, {Courbin}, {Fassnacht}, {Frieman},
+  {Kuropatkin}, {Marshall}, {McMahon}, {Meylan}, {More}, {Suyu}, {Rusu},
+  {Finley}, {Abbott}, {Abdalla}, {Allam}, {Annis}, {Banerji},
+  {Benoit-L{\'e}vy}, {Bertin}, {Brooks}, {Burke}, {Rosell}, {Kind},
+  {Carretero}, {Cunha}, {D'Andrea}, {da Costa}, {Desai}, {Diehl}, {Dietrich},
+  {Doel}, {Eifler}, {Estrada}, {Neto}, {Flaugher}, {Fosalba}, {Gerdes},
+  {Gruen}, {Gutierrez}, {Honscheid}, {James}, {Kuehn}, {Lahav}, {Lima}, {Maia},
+  {March}, {Marshall}, {Martini}, {Melchior}, {Miller}, {Miquel}, {Nichol},
+  {Ogando}, {Plazas}, {Reil}, {Romer}, {Roodman}, {Sako}, {Sanchez},
+  {Santiago}, {Scarpine}, {Schubnell}, {Sevilla-Noarbe}, {Smith},
+  {Soares-Santos}, {Sobreira}, {Suchyta}, {Swanson}, {Tarle}, {Thaler},
+  {Tucker}, {Walker}, {Wechsler}, and {Zhang}}]{Agn++15}
+{Agnello} A, {Treu} T, {Ostrovski} F, {Schechter} PL, {Buckley-Geer} EJ, {Lin}
+  H, {Auger} MW, {Courbin} F, {Fassnacht} CD, {Frieman} J, {Kuropatkin} N,
+  {Marshall} PJ, {McMahon} RG, {Meylan} G, {More} A, {Suyu} SH, {Rusu} CE,
+  {Finley} D, {Abbott} T, {Abdalla} FB, {Allam} S, {Annis} J, {Banerji} M,
+  {Benoit-L{\'e}vy} A, {Bertin} E, {Brooks} D, {Burke} DL, {Rosell} AC, {Kind}
+  MC, {Carretero} J, {Cunha} CE, {D'Andrea} CB, {da Costa} LN, {Desai} S,
+  {Diehl} HT, {Dietrich} JP, {Doel} P, {Eifler} TF, {Estrada} J, {Neto} AF,
+  {Flaugher} B, {Fosalba} P, {Gerdes} DW, {Gruen} D, {Gutierrez} G, {Honscheid}
+  K, {James} DJ, {Kuehn} K, {Lahav} O, {Lima} M, {Maia} MAG, {March} M,
+  {Marshall} JL, {Martini} P, {Melchior} P, {Miller} CJ, {Miquel} R, {Nichol}
+  RC, {Ogando} R, {Plazas} AA, {Reil} K, {Romer} AK, {Roodman} A, {Sako} M,
+  {Sanchez} E, {Santiago} B, {Scarpine} V, {Schubnell} M, {Sevilla-Noarbe} I,
+  {Smith} RC, {Soares-Santos} M, {Sobreira} F, {Suchyta} E, {Swanson} MEC,
+  {Tarle} G, {Thaler} J, {Tucker} D, {Walker} AR, {Wechsler} RH, {Zhang} Y
+  (2015) {Discovery of two gravitationally lensed quasars in the Dark Energy
+  Survey}. \mnras 454:1260--1265, \doi{10.1093/mnras/stv2171},
+  \eprint{1508.01203}
+
+\bibitem[{{Bartelmann}(2010)}]{Bar10}
+{Bartelmann} M (2010) {TOPICAL REVIEW Gravitational lensing}. Classical and
+  Quantum Gravity 27(23):233001, \doi{10.1088/0264-9381/27/23/233001},
+  \eprint{1010.3829}
+
+\bibitem[{{Blandford} and {Narayan}(1992)}]{B+N92}
+{Blandford} RD, {Narayan} R (1992) {Cosmological applications of gravitational
+  lensing}. \araa 30:311--358, \doi{10.1146/annurev.aa.30.090192.001523}
+
+\bibitem[{{Browne} et~al(2003)}]{Bro++03}
+{Browne} IWA, et~al (2003) {The Cosmic Lens All-Sky Survey - II. Gravitational
+  lens candidate selection and follow-up}. \mnras 341:13--32,
+  \doi{10.1046/j.1365-8711.2003.06257.x}, \eprint{arXiv:astro-ph/0211069}
+
+\bibitem[{{Burud} et~al(2002){Burud}, {Courbin}, {Magain}, {Lidman},
+  {Hutsem{\'e}kers}, {Kneib}, {Hjorth}, {Brewer}, {Pompei}, {Germany},
+  {Pritchard}, {Jaunsen}, {Letawe}, and {Meylan}}]{Bur++02}
+{Burud} I, {Courbin} F, {Magain} P, {Lidman} C, {Hutsem{\'e}kers} D, {Kneib}
+  JP, {Hjorth} J, {Brewer} J, {Pompei} E, {Germany} L, {Pritchard} J, {Jaunsen}
+  AO, {Letawe} G, {Meylan} G (2002) {An optical time-delay for the lensed BAL
+  quasar HE 2149-2745}. \aap 383:71--81, \doi{10.1051/0004-6361:20011731},
+  \eprint{astro-ph/0112225}
+
+\bibitem[{{Courbin} et~al(2002){Courbin}, {Saha}, and {Schechter}}]{CSS02}
+{Courbin} F, {Saha} P, {Schechter} PL (2002) {Quasar Lensing}. In: {Courbin} F,
+  {Minniti} D (eds) Gravitational Lensing: An Astrophysical Tool, Lecture Notes
+  in Physics, Berlin Springer Verlag, vol 608, p~1, \eprint{astro-ph/0208043}
+
+\bibitem[{{Eigenbrod} et~al(2005){Eigenbrod}, {Courbin}, {Vuissoz}, {Meylan},
+  {Saha}, and {Dye}}]{Eig++05}
+{Eigenbrod} A, {Courbin} F, {Vuissoz} C, {Meylan} G, {Saha} P, {Dye} S (2005)
+  {COSMOGRAIL: The COSmological MOnitoring of GRAvItational Lenses. I. How to
+  sample the light curves of gravitationally lensed quasars to measure accurate
+  time delays}. \aap 436:25--35, \doi{10.1051/0004-6361:20042422},
+  \eprint{astro-ph/0503019}
+
+\bibitem[{{Ellis}(2010)}]{Ell10}
+{Ellis} RS (2010) {Gravitational lensing: a unique probe of dark matter and
+  dark energy}. Philosophical Transactions of the Royal Society of London
+  Series A 368:967--987, \doi{10.1098/rsta.2009.0209}
+
+\bibitem[{{Falco}(2005)}]{Fal05}
+{Falco} EE (2005) {A most useful manifestation of relativity: gravitational
+  lenses}. New Journal of Physics 7:200--+, \doi{10.1088/1367-2630/7/1/200}
+
+\bibitem[{{Fassnacht} et~al(1999){Fassnacht}, {Pearson}, {Readhead}, {Browne},
+  {Koopmans}, {Myers}, and {Wilkinson}}]{Fas++99}
+{Fassnacht} CD, {Pearson} TJ, {Readhead} ACS, {Browne} IWA, {Koopmans} LVE,
+  {Myers} ST, {Wilkinson} PN (1999) {A Determination of $H_0$ with the CLASS
+  Gravitational Lens B1608+656. I. Time Delay Measurements with the VLA}. \apj
+  527:498--512, \doi{10.1086/308118}, \eprint{arXiv:astro-ph/9907257}
+
+\bibitem[{{Fassnacht} et~al(2002){Fassnacht}, {Xanthopoulos}, {Koopmans}, and
+  {Rusin}}]{Fas++02}
+{Fassnacht} CD, {Xanthopoulos} E, {Koopmans} LVE, {Rusin} D (2002) {A
+  Determination of $H_0$ with the CLASS Gravitational Lens B1608+656. III. A
+  Significant Improvement in the Precision of the Time Delay Measurements}.
+  \apj 581:823--835, \doi{10.1086/344368}, \eprint{arXiv:astro-ph/0208420}
+
+\bibitem[{{Freedman} et~al(2012){Freedman}, {Madore}, {Scowcroft}, {Burns},
+  {Monson}, {Persson}, {Seibert}, and {Rigby}}]{Fre++12}
+{Freedman} WL, {Madore} BF, {Scowcroft} V, {Burns} C, {Monson} A, {Persson} SE,
+  {Seibert} M, {Rigby} J (2012) {Carnegie Hubble Program: A Mid-infrared
+  Calibration of the Hubble Constant}. \apj 758:24,
+  \doi{10.1088/0004-637X/758/1/24}, \eprint{1208.3281}
+
+\bibitem[{Jackson(2013)}]{Jackson:2013p30763}
+Jackson N (2013) Quasar lensing. eprint arXiv:13044172
+  \urlprefix\url{http://adsabs.harvard.edu/abs/2013arXiv1304.4172J}
+
+\bibitem[{{Jackson}(2015)}]{Jac15}
+{Jackson} N (2015) {The Hubble Constant}. Living Reviews in Relativity 18,
+  \doi{10.1007/lrr-2015-2}
+
+\bibitem[{{Keeton} and {Zabludoff}(2004)}]{K+Z04}
+{Keeton} CR, {Zabludoff} AI (2004) {The Importance of Lens Galaxy
+  Environments}. \apj 612:660--678, \doi{10.1086/422745},
+  \eprint{arXiv:astro-ph/0406060}
+
+\bibitem[{Keeton et~al(2000)Keeton, Falco, Impey, Kochanek, Leh{\'a}r, McLeod,
+  Rix, Mu{\~n}oz, and Peng}]{Keeton:2000p241}
+Keeton CR, Falco EE, Impey CD, Kochanek CS, Leh{\'a}r J, McLeod BA, Rix HW,
+  Mu{\~n}oz JA, Peng CY (2000) The host galaxy of the lensed quasar q0957+561.
+  The Astrophysical Journal 542:74, \doi{10.1086/309517}
+
+\bibitem[{{Kelly} et~al(2015{\natexlab{a}}){Kelly}, {Rodney}, {Treu}, {Foley},
+  {Brammer}, {Schmidt}, {Zitrin}, {Sonnenfeld}, {Strolger}, {Graur},
+  {Filippenko}, {Jha}, {Riess}, {Bradac}, {Weiner}, {Scolnic}, {Malkan}, {von
+  der Linden}, {Trenti}, {Hjorth}, {Gavazzi}, {Fontana}, {Merten}, {McCully},
+  {Jones}, {Postman}, {Dressler}, {Patel}, {Cenko}, {Graham}, and
+  {Tucker}}]{Kel++15}
+{Kelly} PL, {Rodney} SA, {Treu} T, {Foley} RJ, {Brammer} G, {Schmidt} KB,
+  {Zitrin} A, {Sonnenfeld} A, {Strolger} LG, {Graur} O, {Filippenko} AV, {Jha}
+  SW, {Riess} AG, {Bradac} M, {Weiner} BJ, {Scolnic} D, {Malkan} MA, {von der
+  Linden} A, {Trenti} M, {Hjorth} J, {Gavazzi} R, {Fontana} A, {Merten} JC,
+  {McCully} C, {Jones} T, {Postman} M, {Dressler} A, {Patel} B, {Cenko} SB,
+  {Graham} ML, {Tucker} BE (2015{\natexlab{a}}) {Multiple images of a highly
+  magnified supernova formed by an early-type cluster galaxy lens}. Science
+  347:1123--1126, \doi{10.1126/science.aaa3350}, \eprint{1411.6009}
+
+\bibitem[{{Kelly} et~al(2015{\natexlab{b}}){Kelly}, {Rodney}, {Treu},
+  {Strolger}, {Foley}, {Jha}, {Selsing}, {Brammer}, {Bradac}, {Cenko},
+  {Graham}, {Graur}, {Filippenko}, {Hjorth}, {Matheson}, {McCully}, {Molino},
+  {Nonino}, {Riess}, {Schmidt}, {Tucker}, {von der Linden}, {Weiner}, and
+  {Zitrin}}]{Kel++16}
+{Kelly} PL, {Rodney} SA, {Treu} T, {Strolger} LG, {Foley} RJ, {Jha} SW,
+  {Selsing} J, {Brammer} G, {Bradac} M, {Cenko} SB, {Graham} ML, {Graur} O,
+  {Filippenko} AV, {Hjorth} J, {Matheson} T, {McCully} C, {Molino} A, {Nonino}
+  M, {Riess} AG, {Schmidt} KB, {Tucker} B, {von der Linden} A, {Weiner} BJ,
+  {Zitrin} A (2015{\natexlab{b}}) {Deja Vu All Over Again: The Reappearance of
+  Supernova Refsdal}. ArXiv e-prints \eprint{1512.04654}
+
+\bibitem[{{Kochanek} and {Schechter}(2004)}]{K+S04}
+{Kochanek} CS, {Schechter} PL (2004) {The Hubble Constant from Gravitational
+  Lens Time Delays}. Measuring and Modeling the Universe p 117,
+  \eprint{astro-ph/0306040}
+
+\bibitem[{{Kundic} et~al(1997){Kundic}, {Turner}, {Colley}, {Gott}, {Rhoads},
+  {Wang}, {Bergeron}, {Gloria}, {Long}, {Malhotra}, and {Wambsganss}}]{Kun++97}
+{Kundic} T, {Turner} EL, {Colley} WN, {Gott} JRI, {Rhoads} JE, {Wang} Y,
+  {Bergeron} LE, {Gloria} KA, {Long} DC, {Malhotra} S, {Wambsganss} J (1997) {A
+  Robust Determination of the Time Delay in 0957+561A, B and a Mea surement of
+  the Global Value of Hubble's Constant}. \apj 482:75--+, \doi{10.1086/304147},
+  \eprint{arXiv:astro-ph/9610162}
+
+\bibitem[{{Linder}(2011)}]{Lin11}
+{Linder} EV (2011) {Lensing time delays and cosmological complementarity}. \prd
+  84(12):123529, \doi{10.1103/PhysRevD.84.123529}, \eprint{1109.2592}
+
+\bibitem[{{Oguri}(2007)}]{Ogu07b}
+{Oguri} M (2007) {Gravitational Lens Time Delays: A Statistical Assessment of
+  Lens Model Dependences and Implications for the Global Hubble Constant}. \apj
+  660:1--15, \doi{10.1086/513093}, \eprint{arXiv:astro-ph/0609694}
+
+\bibitem[{Oguri et~al(2006)Oguri, Inada, Pindor, Strauss, Richards, Hennawi,
+  Turner, Lupton, Schneider, Fukugita, and Brinkmann}]{Oguri:2006p5865}
+Oguri M, Inada N, Pindor B, Strauss MA, Richards GT, Hennawi JF, Turner EL,
+  Lupton RH, Schneider DP, Fukugita M, Brinkmann J (2006) The sloan digital sky
+  survey quasar lens search. i. candidate selection algorithm. The Astronomical
+  Journal 132:999, \doi{10.1086/506019}
+
+\bibitem[{{Perlmutter} et~al(1999){Perlmutter}, {Aldering}, {Goldhaber},
+  {Knop}, {Nugent}, {Castro}, {Deustua}, {Fabbro}, {Goobar}, {Groom}, {Hook},
+  {Kim}, {Kim}, {Lee}, {Nunes}, {Pain}, {Pennypacker}, {Quimby}, {Lidman},
+  {Ellis}, {Irwin}, {McMahon}, {Ruiz-Lapuente}, {Walton}, {Schaefer}, {Boyle},
+  {Filippenko}, {Matheson}, {Fruchter}, {Panagia}, {Newberg}, {Couch}, and {The
+  Supernova Cosmology Project}}]{Per++99}
+{Perlmutter} S, {Aldering} G, {Goldhaber} G, {Knop} RA, {Nugent} P, {Castro}
+  PG, {Deustua} S, {Fabbro} S, {Goobar} A, {Groom} DE, {Hook} IM, {Kim} AG,
+  {Kim} MY, {Lee} JC, {Nunes} NJ, {Pain} R, {Pennypacker} CR, {Quimby} R,
+  {Lidman} C, {Ellis} RS, {Irwin} M, {McMahon} RG, {Ruiz-Lapuente} P, {Walton}
+  N, {Schaefer} B, {Boyle} BJ, {Filippenko} AV, {Matheson} T, {Fruchter} AS,
+  {Panagia} N, {Newberg} HJM, {Couch} WJ, {The Supernova Cosmology Project}
+  (1999) {Measurements of Omega and Lambda from 42 High-Redshift Supernovae}.
+  \apj 517:565--586, \doi{10.1086/307221}, \eprint{arXiv:astro-ph/9812133}
+
+\bibitem[{{Press} et~al(1992){Press}, {Rybicki}, and {Hewitt}}]{PRH92}
+{Press} WH, {Rybicki} GB, {Hewitt} JN (1992) {The Time Delay of Gravitational
+  Lens 0957+561. II. Analysis of Radio Data and Combined Optical-Radio
+  Analysis}. \apj 385:416, \doi{10.1086/170952}
+
+\bibitem[{Riess et~al(1998)Riess, Filippenko, Challis, Clocchiatti, Diercks,
+  Garnavich, Gilliland, Hogan, Jha, Kirshner, Leibundgut, Phillips, Reiss,
+  Schmidt, Schommer, Smith, Spyromilio, Stubbs, Suntzeff, and
+  Tonry}]{Riess:1998p21184}
+Riess AG, Filippenko AV, Challis P, Clocchiatti A, Diercks A, Garnavich PM,
+  Gilliland RL, Hogan CJ, Jha S, Kirshner RP, Leibundgut B, Phillips MM, Reiss
+  D, Schmidt BP, Schommer RA, Smith RC, Spyromilio J, Stubbs C, Suntzeff NB,
+  Tonry J (1998) Observational evidence from supernovae for an accelerating
+  universe and a cosmological constant. The Astronomical Journal 116:1009,
+  \doi{10.1086/300499}
+
+\bibitem[{{Riess} et~al(2011){Riess}, {Macri}, {Casertano}, {Lampeitl},
+  {Ferguson}, {Filippenko}, {Jha}, {Li}, and {Chornock}}]{Rie++11}
+{Riess} AG, {Macri} L, {Casertano} S, {Lampeitl} H, {Ferguson} HC, {Filippenko}
+  AV, {Jha} SW, {Li} W, {Chornock} R (2011) {A 3\% Solution: Determination of
+  the Hubble Constant with the Hubble Space Telescope and Wide Field Camera 3}.
+  \apj 730:119, \doi{10.1088/0004-637X/730/2/119}, \eprint{1103.2976}
+
+\bibitem[{{Rodney} et~al(2015){Rodney}, {Strolger}, {Kelly}, {Bradac},
+  {Brammer}, {Filippenko}, {Foley}, {Graur}, {Hjorth}, {Jha}, {McCully},
+  {Molino}, {Riess}, {Schmidt}, {Selsing}, {Sharon}, {Treu}, {Weiner}, and
+  {Zitrin}}]{Rod++16}
+{Rodney} SA, {Strolger} LG, {Kelly} PL, {Bradac} M, {Brammer} G, {Filippenko}
+  AV, {Foley} RJ, {Graur} O, {Hjorth} J, {Jha} SW, {McCully} C, {Molino} A,
+  {Riess} AG, {Schmidt} KB, {Selsing} J, {Sharon} K, {Treu} T, {Weiner} BJ,
+  {Zitrin} A (2015) {SN Refsdal : Photometry and Time Delay Measurements of the
+  First Einstein Cross Supernova}. ArXiv e-prints \eprint{1512.05734}
+
+\bibitem[{{Schechter} et~al(1997){Schechter}, {Bailyn}, {Barr}, {Barvainis},
+  {Becker}, {Bernstein}, {Blakeslee}, {Bus}, {Dressler}, {Falco}, {Fesen},
+  {Fischer}, {Gebhardt}, {Harmer}, {Hewitt}, {Hjorth}, {Hurt}, {Jaunsen},
+  {Mateo}, {Mehlert}, {Richstone}, {Sparke}, {Thorstensen}, {Tonry}, {Wegner},
+  {Willmarth}, and {Worthey}}]{Sch++97}
+{Schechter} PL, {Bailyn} CD, {Barr} R, {Barvainis} R, {Becker} CM, {Bernstein}
+  GM, {Blakeslee} JP, {Bus} SJ, {Dressler} A, {Falco} EE, {Fesen} RA, {Fischer}
+  P, {Gebhardt} K, {Harmer} D, {Hewitt} JN, {Hjorth} J, {Hurt} T, {Jaunsen} AO,
+  {Mateo} M, {Mehlert} D, {Richstone} DO, {Sparke} LS, {Thorstensen} JR,
+  {Tonry} JL, {Wegner} G, {Willmarth} DW, {Worthey} G (1997) {The Quadruple
+  Gravitational Lens PG 1115+080: Time Delays and Models}. \apjl 475:L85--L88,
+  \doi{10.1086/310478}, \eprint{astro-ph/9611051}
+
+\bibitem[{{Schneider} et~al(1992){Schneider}, {Ehlers}, and {Falco}}]{SEF92}
+{Schneider} P, {Ehlers} J, {Falco} EE (1992) {Gravitational Lenses}.
+  Springer-Verlag Berlin Heidelberg New York
+
+\bibitem[{{Schneider} et~al(2006){Schneider}, {Kochanek}, and
+  {Wambsganss}}]{SKW06}
+{Schneider} P, {Kochanek} CS, {Wambsganss} J (2006) {Gravitational Lensing:
+  Strong, Weak and Micro}. \doi{10.1007/978-3-540-30310-7}
+
+\bibitem[{{Suyu} et~al(2006){Suyu}, {Marshall}, {Hobson}, and
+  {Blandford}}]{Suy++06}
+{Suyu} SH, {Marshall} PJ, {Hobson} MP, {Blandford} RD (2006) {A Bayesian
+  analysis of regularized source inversions in gravitational lensing}. \mnras
+  371:983--998, \doi{10.1111/j.1365-2966.2006.10733.x},
+  \eprint{astro-ph/0601493}
+
+\bibitem[{{Suyu} et~al(2010){Suyu}, {Marshall}, {Auger}, {Hilbert},
+  {Blandford}, {Koopmans}, {Fassnacht}, and {Treu}}]{Suy++10}
+{Suyu} SH, {Marshall} PJ, {Auger} MW, {Hilbert} S, {Blandford} RD, {Koopmans}
+  LVE, {Fassnacht} CD, {Treu} T (2010) {Dissecting the Gravitational lens
+  B1608+656. II. Precision Measurements of the Hubble Constant, Spatial
+  Curvature, and the Dark Energy Equation of State}. \apj 711:201--221,
+  \doi{10.1088/0004-637X/711/1/201}, \eprint{0910.2773}
+
+\bibitem[{{Suyu} et~al(2014){Suyu}, {Treu}, {Hilbert}, {Sonnenfeld}, {Auger},
+  {Blandford}, {Collett}, {Courbin}, {Fassnacht}, {Koopmans}, {Marshall},
+  {Meylan}, {Spiniello}, and {Tewes}}]{Suy++14}
+{Suyu} SH, {Treu} T, {Hilbert} S, {Sonnenfeld} A, {Auger} MW, {Blandford} RD,
+  {Collett} T, {Courbin} F, {Fassnacht} CD, {Koopmans} LVE, {Marshall} PJ,
+  {Meylan} G, {Spiniello} C, {Tewes} M (2014) {Cosmology from Gravitational
+  Lens Time Delays and Planck Data}. \apjl 788:L35,
+  \doi{10.1088/2041-8205/788/2/L35}, \eprint{1306.4732}
+
+\bibitem[{{Tewes} et~al(2013){Tewes}, {Courbin}, {Meylan}, {Kochanek},
+  {Eulaers}, {Cantale}, {Mosquera}, {Magain}, {Van Winckel}, {Sluse},
+  {Cataldi}, {V{\"o}r{\"o}s}, and {Dye}}]{Tew++13}
+{Tewes} M, {Courbin} F, {Meylan} G, {Kochanek} CS, {Eulaers} E, {Cantale} N,
+  {Mosquera} AM, {Magain} P, {Van Winckel} H, {Sluse} D, {Cataldi} G,
+  {V{\"o}r{\"o}s} D, {Dye} S (2013) {COSMOGRAIL: the COSmological MOnitoring of
+  GRAvItational Lenses. XIII. Time delays and 9-yr optical monitoring of the
+  lensed quasar RX J1131-1231}. \aap 556:A22,
+  \doi{10.1051/0004-6361/201220352}, \eprint{1208.6009}
+
+\bibitem[{{Treu}(2010)}]{Tre10}
+{Treu} T (2010) {Strong Lensing by Galaxies}. \araa 48:87--125,
+  \doi{10.1146/annurev-astro-081309-130924}, \eprint{1003.5567}
+
+\bibitem[{Treu and Ellis(2015)}]{T+E15}
+Treu T, Ellis RS (2015) Gravitational lensing: Einstein’s unfinished
+  symphony. Contemporary Physics 56(1):17--34,
+  \doi{10.1080/00107514.2015.1006001},
+  \urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/00107514.2015.1006001},
+  \eprint{http://www.tandfonline.com/doi/pdf/10.1080/00107514.2015.1006001}
+
+\bibitem[{{Treu} and {Koopmans}(2002)}]{T+K02b}
+{Treu} T, {Koopmans} LVE (2002) {The internal structure of the lens PG1115+080:
+  breaking degeneracies in the value of the Hubble constant}. \mnras
+  337:L6--L10, \doi{10.1046/j.1365-8711.2002.06107.x},
+  \eprint{astro-ph/0210002}
+
+\bibitem[{{Treu} et~al(2012){Treu}, {Marshall}, and {Clowe}}]{TMC12}
+{Treu} T, {Marshall} PJ, {Clowe} D (2012) {Resource Letter GL-1: Gravitational
+  Lensing}. American Journal of Physics 80:753--763, \doi{10.1119/1.4726204},
+  \eprint{1206.0791}
+
+\bibitem[{{Treu} et~al(2016){Treu}, {Brammer}, {Diego}, {Grillo}, {Kelly},
+  {Oguri}, {Rodney}, {Rosati}, {Sharon}, {Zitrin}, {Balestra}, {Brada{\v c}},
+  {Broadhurst}, {Caminha}, {Halkola}, {Hoag}, {Ishigaki}, {Johnson}, {Karman},
+  {Kawamata}, {Mercurio}, {Schmidt}, {Strolger}, {Suyu}, {Filippenko}, {Foley},
+  {Jha}, and {Patel}}]{Tre++16}
+{Treu} T, {Brammer} G, {Diego} JM, {Grillo} C, {Kelly} PL, {Oguri} M, {Rodney}
+  SA, {Rosati} P, {Sharon} K, {Zitrin} A, {Balestra} I, {Brada{\v c}} M,
+  {Broadhurst} T, {Caminha} GB, {Halkola} A, {Hoag} A, {Ishigaki} M, {Johnson}
+  TL, {Karman} W, {Kawamata} R, {Mercurio} A, {Schmidt} KB, {Strolger} LG,
+  {Suyu} SH, {Filippenko} AV, {Foley} RJ, {Jha} SW, {Patel} B (2016)
+  {''Refsdal'' Meets Popper: Comparing Predictions of the Re-appearance of the
+  Multiply Imaged Supernova Behind MACSJ1149.5+2223}. \apj 817:60,
+  \doi{10.3847/0004-637X/817/1/60}, \eprint{1510.05750}
+
+\bibitem[{{Vanderriest} et~al(1982){Vanderriest}, {Felenbok}, {Schneider},
+  {Wlerick}, {Bijaoui}, and {Lelievre}}]{Van82}
+{Vanderriest} C, {Felenbok} P, {Schneider} J, {Wlerick} G, {Bijaoui} A,
+  {Lelievre} G (1982) {The photometry of 0957 plus 561 - Detection of
+  short-period variations}. \aap 110:L11--L14
+
+\bibitem[{{Vanderriest} et~al(1989){Vanderriest}, {Schneider}, {Herpe},
+  {Chevreton}, {Moles}, and {Wlerick}}]{Van89}
+{Vanderriest} C, {Schneider} J, {Herpe} G, {Chevreton} M, {Moles} M, {Wlerick}
+  G (1989) {The value of the time delay Delta t(A, B) for the 'double' quasar
+  0957+561 from optical photometric monitoring}. \aap 215:1--13
+
+\bibitem[{{Walsh} et~al(1979){Walsh}, {Carswell}, and {Weymann}}]{WCW79}
+{Walsh} D, {Carswell} RF, {Weymann} RJ (1979) {0957 + 561 A, B - Twin
+  quasistellar objects or gravitational lens}. \nat 279:381--384,
+  \doi{10.1038/279381a0}
+
+\bibitem[{{Weinberg} et~al(2013){Weinberg}, {Mortonson}, {Eisenstein},
+  {Hirata}, {Riess}, and {Rozo}}]{Wei++13}
+{Weinberg} DH, {Mortonson} MJ, {Eisenstein} DJ, {Hirata} C, {Riess} AG, {Rozo}
+  E (2013) {Observational probes of cosmic acceleration}. \physrep 530:87--255,
+  \doi{10.1016/j.physrep.2013.05.001}, \eprint{1201.2434}
+
+\bibitem[{{Wucknitz} et~al(2004){Wucknitz}, {Biggs}, and {Browne}}]{WBB04}
+{Wucknitz} O, {Biggs} AD, {Browne} IWA (2004) {Models for the lens and source
+  of B0218+357: a LENSCLEAN approach to determine $H_0$}. \mnras 349:14--30,
+  \doi{10.1111/j.1365-2966.2004.07514.x}, \eprint{arXiv:astro-ph/0312263}
+
+\end{thebibliography}
