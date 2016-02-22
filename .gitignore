@@ -3,3 +3,8 @@
 *.dvi
 *.blg
 *.*~
+
+TM16.pdf
+
+litter/*.pdf
+
