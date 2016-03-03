@@ -2,6 +2,7 @@
 *.log
 *.dvi
 *.blg
+*.bbl
 *.*~
 
 TM16.pdf
