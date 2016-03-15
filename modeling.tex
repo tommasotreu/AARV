@@ -1,25 +1,135 @@
-%Preamble.
+Once the time delays have been measured, the other main ingredient
+entering the determination of time delay distances is the difference
+in Fermat potential at the location of the multiple images. In the
+early days of time delay cosmography one could only rely on the
+relative positions of the multiple images as constraints - since in
+general the flux ratios are affected by micro and millilensing,
+variability, and differential dust extinction, and are therefore
+highly uncertain. Even for a quadruply imaged quasars, the six
+positional constraints are insufficient to determine Fermat potential
+differences to the desired level precision and accuracy.
+
+There are two classes of solution to the problem of underconstrained
+lens models. One is to analyze large samples of lenses with physically
+motivated priors and exploit the fact that cosmological parameters are
+the same for all lenses to remove model degeneracies. A number of
+attempts along these lines have been made in the past \cite{Ogu07},
+and it is easy to imagine that this solution will be popular in the
+future, when large samples of lenses with measured time delays will be
+available.
+
+The alternative solution is to increase dramatically the number of
+emprical constraints per lens system by means of dedicated high
+resolution imaging and spectroscopic observations
+\cite{Suy++10,Suy++13,Suy++14}. We describe this approach in detail
+below.
+
+For simplicity, in this section we describe only the case of a single
+deflector in a single plane, leaving line of sight and environmental
+effects for a later section.
 
 %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
 
 \subsubsection{High Resolution Imaging Observations}
 
-%State of the art: HST, Keck AO.
-
-%Limitations: resolution, bright quasar images.
+Lensed quasars reside in a host galaxy. For typical redshifts of lens
+and source, the host galaxy apparent size is of order
+arcseconds. Images with sufficient depth and resolution to isolate the
+bright point source and detect the lower surface brightness host
+galaxy, often reveal extended lensed features connecting the
+point-like images themselves (e.g. Figure~2). In the best conditions
+these images cover hundreds if not thousand resolution elements. The
+distortion of the detailed features of the lensed images are a direct
+measurement of the variation of the deflection angle between the
+images.  In principle, for data with infinite signal-to-noise ratio
+and resolution one could imagine integrating the gradient of the
+deflection angle along a path betwen a pair of images to obtain the
+difference in Fermat potential. In practice, in the presence of noisy
+data and limited resolution, forward modeling approaches have been the
+most successful so far, as discussed below. From an observational
+point of view, it has been demonstrated that images with $0.1''-0.2''$
+FWHM resolution provide good results, provided that the point spread
+function can be appropriately modeled or reconstructed as part of the
+lens model itself. The Hubble Space Telescope in the optical/near
+infrared \cite{Suy++10,Suy++13,Suy++14,Birrer} and the Very Large
+Baseline Interferometer in the radio \cite{WBB04} have been the main
+sources of images for this application. Recent progress in adaptive
+optics imaging at Keck \cite{Che++16}, the beautiful data being
+obtained for lensed source by ALMA \cite{Hezaveh++13}, and the many
+facilities currently being constructed or planned \cite{Men++15},
+indicate that the prospects to scale up the number of systems with
+available high resolution images are bright.
 
 %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
 
 \subsubsection{Lens Modeling Techniques}
 
-%State of the art: pixelated source reconstruction,
-%simply-parameterised lens mass distributions, MCMC.
+Conceptually a detailed model of a lensed quasar and its host galaxy
+needs to describe three different physical components: i) the surface
+brightness of the source; ii) the surface brightness of the deflector;
+iii) the gravitational potential of the deflector. It is useful to
+conceptualize the problem in this way, in order to understand where
+the information needed to break the degeneracy in the intrepretation
+of the data comes from. Lensing is achromatic and preserves surface
+brightness so any feature that belongs to the source \cite[including
+in line of sight velocity][]{} should appear in all the multiple
+images (appropriately distorted). Likewise, the deflector is typically
+a massive early-type galaxy with smooth surface brightness
+distribution and approximately uniform colors \cite[except for dust,
+see, e.g.][]{Suy++10}.
 
-%Limitations: skilled labor.
+Each of the three components is typically described in terms of one or
+two choices: i) simply parametrized functions such as a Sersic profile
+for the surface brightness of the lens or the source, and a singular
+isothermal ellipsoid for the gravitational potential of the deflector
+(Keeton); ii) as combination of basis sets like surface brightness
+pixels, potential pixels, or gauss-hermite functions (Coles, Birrer,
+Nightingale, Collett). These so-called ``pixellated'' models require
+regularization to avoid overfitting noise in the data. Hybrid
+approaches have been proposed where some of the components are simply
+parametrized and others are pixellated (Dye \& Warren; Treu \&
+Koopmans), or where pixels are used as corrections to simply
+parametrized models (Suyu). The variety of approaches in the
+literature reflect the inevitable tensions between the need to impose
+as many physically motivated assumptions as possible while retaining
+sufficient flexibility to obtain a realistic estimate of the
+uncertainties. If the model is too constrained by the assumption it
+will lead to underestimated errors, if it is more flexible than
+necessary it will lead to a loss of information.
 
-%Systematic errors: source pixelation/regularisation, lens model
-%assumptions.
+Once the choice of modeling parametrization is set, exploring the
+likelihood is numerically non-trivial, often requiring weeks to months
+of CPU time. Fortunately, there are techniques to speed up the
+calculations by limiting the number of non-linear parameters. For
+example, for a given lens model, the transformation between source and
+image plane can be described as a linear operation, or the pixellated
+corrections to the potential can be found by linearizing the lens
+equation. [Dye, Nightingale, Birrer, Suyu, etc]
+
+Ideally, modeling choices should be explored systematically as well,
+since they can potentially introduce systematic errors. This is
+currently being done in the most advanced studies, at great expense in
+term of computing time and investigator time. As we discuss in
+Section~\ref{sec:outlook}, speeding up the modeling phase and reducing
+the investigator time per system will be key to analyzing the large
+statistical samples expected in the future.
 
 %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
 
 \subsubsection{The Role of Stellar kinematics}
+
+Stellar kinematics provide a qualitatively different input and
+therefore very valuable in breaking degeneracies in the intepretation
+of lensing data, and in estimating systematic uncertainties. Of
+course, translating kinematic data into estimates of gravitational
+potential has its own uncertainties and degeneracies (e.g. the mass
+anisotropy degeneracy for pressure supported systems), but the
+combination of the two has been proven to be very effective
+\cite{T+K04}. Even a single measurement of stellar velocity dispersion
+with simple spherical Jeans modeling has been shown to substantially
+reduce modeling uncertainties \cite{TK02,Koo++03,Suy++14}. It is clear
+that getting spatially resolved kinematic data will allow for better
+constraints on the lens model and thus of the resulting cosmological
+inference [TO BE REFINED AFTER THEORY SECTION HAS BEEN EXPANDED TO
+INCLUDE VELOCITY DISPERSION].
+
