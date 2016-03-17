@@ -97,10 +97,9 @@ the ``mass sheet transformation'' \citep{MSD} \citep[and its generalization, the
 predicted by the model can change significantly. The mass sheet transformation
 and its effect on the time delay is as follows:
 \begin{align}
-    \kappa(\x) \rightarrow \kappa(\x)' &= (1-\lambda) + \lambda \kappa(\x)  \label{eq:mst} \\
-    \Delta \tau \rightarrow \Delta \tau' &=  \lambda \Delta \tau.
+    \kappa(\x) \rightarrow \kappa(\x)' &= \lambda + (1 - \lambda) \kappa(\x)  \label{eq:mst} \\
+    \Delta \tau \rightarrow \Delta \tau' &=  (1 - \lambda) \Delta \tau.
 \end{align}
-[CHECK THIS.]
 This means that if we allow our model the freedom to generate both the
 $\kappa(\x)$ and $\kappa(\x)'$ mass distributions, our image position
 data will not favor one over the other: they will be equally likely
@@ -121,11 +120,11 @@ in the time delay that assumption introduces.
 The form of the mass sheet transformation given by Equation~\ref{eq:mst}
 is a rescaling plus an offset. One way to achieve such a transformation
 is therefore to change the overall mass of the lens,  and at the same
-time add a ``mass sheet,'' a constant convergence.  Both these are
+time add a ``mass sheet,'' a constant convergence~$\lambda$.  Both these are
 possible in nature: lens galaxies come in a range of masses, and  the
 combined gravitational lensing effect of all the other galaxies, groups
 and filaments along  the line of sight to the source can, in the weak
-lensing limit, be approximated   by a constant ``external convergence''
+lensing limit, be approximated by a constant ``external convergence''
 (associate with an ``external shear'', capable of further distorting the
 lensed images). This means that this additional external physical mass
 component must also be taken into account when modeling the lens. It
@@ -137,7 +136,8 @@ now be able to self-consistently predict the lensing effect
 galaxy, and take into account the weak lensing effects of structures
 along the line of sight.
 In Section~\ref{sec:measurement:lensmodel} we review the
-recent choices and approximations that have been made.
+recent choices and approximations that have been made when constructing
+such models.
 
 
 % \begin{figure*}
