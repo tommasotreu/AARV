@@ -18,7 +18,7 @@ distributed, and how the rest of the mass budget in the field adds up.
 
 \citet{Suy++10} attempted to solve these problems by comparing the
 B1608$+$656 field with a large number of fields with similar  galaxy
-number overdensity drawn from the Millenium Simulation, modeling the
+number overdensity drawn from the Millennium Simulation, modeling the
 line of sight effects with a single external convergence parameter and
 accepting a somewhat broad prior distribution for it, in return for not
 having to make  strong assumptions about the structure of the galaxy
@@ -29,3 +29,33 @@ number counts in archival HST images by \citet{FKW11}, who found that
 the B1608$+$656 field was overdense by a factor of two. The resulting
 prior PDF for the $\kappa_{\rm ext}$ parameter had median $0.10$ with
 the 68\% credible interval spanning 0.05 to 0.18.
+
+Since this initial analysis, a number of improvements have been
+suggested and investigated. All have in common the desire to bring more
+information  to bear on the problem, in order to increase the precision
+(while  continuing to avoid introducing bias). \citet{Gre++13} showed
+that weighting the galaxy counts by distance, photometric redshift and
+stellar mass  can significantly reduce the uncertainty in $\kappa_{\rm
+ext}$, by up to 50\%. \citet{Col++13} claim an additional 30\%
+improvement  by including knowledge of the stellar mass to halo mass
+relation in galaxies,  and modeling each galaxy halo's contribution to
+$\kappa_{\rm ext}$ individually in a  3-D reconstruction of the mass in
+the field which is then calibrated to simulations in something like the
+high resolution limit of the number counts approach. 
+
+
+
+
+
+
+
+While research into these methods continues, one problem in particular
+remains outstanding. The methods that involve calibration to numerical
+simulations are dependent on the cosmological parameters assumed in that
+simulation,  while all methods involve modeling line of sight structures
+at various  distances as part of an evolving universe, whose dynamics
+depend on cosmological parameters. We face two options: either treat
+these cosmological parameters self-consistently  as hyperparameters in a
+joint analysis of the time delays and the lens environments, or
+demonstrate that they can be decoupled via various simplifying
+assumptions that  introduce sub-dominant systematic error.
