@@ -138,17 +138,80 @@ Figure reproduced from \citet{C+M09b}.}
 % models (w, wa+w0, curvature etc etc). CosmoSIS forecasts (ackn. Dave \&
 % Elise, ask them).
 
-What will it take to reach 5\% distance precision in each of 100 lenses?
-If \citet{LiaoEtal2015} are right, this sized sample of lenses with
+While Figure~\ref{fig:fisher} allows different cosmological probes to
+be compared (and assessed for competitiveness), it does not show the
+value of combining those probes. Indeed, \citet{Lin11} found that the
+particular combination of a type Ia supernova dataset with a time  delay
+lens dataset holds promise, with a sample of 150 time delay distances,
+each measured to 5\% precision, improving the dark energy figure of
+merit by a factor of about 5 over what could be  plausibly obtained with
+a sample of about 1000 Stage 3 supernovae and a Planck CMB prior alone.
+
+More recently, \citet{JeeKomatsuSuyu2015} have pointed out that
+cosmological parameter forecasts for time delay lens samples are
+conservative, if each lens is assumed only to measure the time delay
+distance. Including the angular diameter distance dependence as well can
+have a marked effect on the projection, especially if the spectroscopic
+constraints on the lens mass distribution are assumed to be very strong.
+In Figure~\ref{fig:DdDdt} we illustrate this, reproducing Figure 5 from
+\citet{JeeEtal2016}. These  authors find that a future sample of lenses
+with 5\% measurements of both time delay distance and angular diameter
+distance would increase the figure of merit by a factor of two over that
+provided by a Stage~3 supernova and BAO joint analysis. The left  hand
+panel of Figure~\ref{fig:DdDdt} puts such improvements in the  current
+observational context. In the B1608$+$656 analysis, the  angular
+diameter distance dependence {\it was} accounted for during the
+calculation of the predicted time delay and velocity dispersion data,
+but the constraints on the angular diameter distance were not strong:
+assigning a uniform prior PDF for the cosmological parameters rather
+than the distances introduced degeneracy between $\Dd$ and $\Ddt$,
+which then seems to have been broken primarily by the time delay
+information to yield a $5.7\%$ precision prediction for $\Ddt$, and
+a corresponding $8.1\%$ precision prediction for $\Dd$.
+With spatially resolved spectroscopy we should anticipate the angular
+diameter distance becoming more important in future analyses, with
+some work on simulated data needed to quantify this.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[!t]
+\begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figures/B1608_DdtDa.pdf}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figures/Jee16_fig5b.pdf}
+\end{minipage}
+\caption{Cosmological information from angular diameter distances
+as well as time delay distances. Left: marginalized
+prior (gray) and posterior (blue) PDFs for the two
+distances in the B1608$+$656 system, assuming uninformative priors for the
+cosmological parameters of a flat $\Lambda$CDM model and offset and
+rescaled to reveal the implied percentage precisions of 5.7\% and 8.1\%
+in $\Ddt$ and $\Dd$ respectively. Fisher matrix
+forecasts for a future time delay lens sample where 5\% precision on
+each distance is assumed: the combination of distances gives a
+significantly more powerful constraint than the time delay distances
+would alone (reproduced from \citet{JeeEtal2016}) ``$D_{\rm A}(EL)$'' is
+the angular diameter distance to the lens from Earth.}
+\label{fig:DdDdt}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+What will it take to reach the required level of
+distance precision in each of 100 lenses?
+If \citet{LiaoEtal2015} are right, samples of over 100 lenses with
 precise time delays should be able to be constructed from analysis of
 the LSST light curves. The lens models for these systems should be able
 to be constrained to sufficient precision using high resolution imaging
 from next generation AO facilities, giant segmented mirror telescopes,
-JWST and even WFIRST \citep{Men++15}. High overall mass model precision
-will require good spectroscopic data as well: integral field units on
+JWST and even WFIRST \citep{Men++15}. High overall mass model precision,
+and the exploitation of the angular diameter distance dependence,
+will require high signal to noise, spatially-resolved spectroscopy as
+well: integral field units on
 these same telescopes should be able to provide this. The contribution
 to the distance uncertainty from the line of sight was particularly high
-in the  cases of B1608 and RXJ1131: in most other systems in a large
+in the  cases of B1608$+$656 and RXJ1131: in most other systems in a large
 sample the effects of the environment should be lesser, and they should
 (effectively) average down \citep{Col++13}. The main challenge in
 reaching the required Stage IV is likely to be the analysis cost: lens
@@ -157,10 +220,6 @@ pose problems. Distributing the work among a large team of modelers will
 be needed, an approach that is proving effective in the Frontier Fields
 cluster lensing project \citep{FF}.
 
-Note on approximation of forecasting using just Ddt,
-and not DA as well: above plot is conservative.
-Cite Jee et al paper 1 for pointing this out,
-show figure from Jee et al paper 2?
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %

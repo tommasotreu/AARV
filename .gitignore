@@ -9,3 +9,4 @@ TM16.pdf
 
 litter/*.pdf
 
+*ipynb_checkpoints*
