@@ -1,11 +1,17 @@
 #Summary of distance measurements
 compdist	expand 1.5
 		lweight 5
-		limits -3 3.05 0 9
+		limits -3 3.2 0 7
 		ticksize -1 10 0 0
 		#first distance ladder
 		relocate -3 2.4 
 		draw -0.7 2.4
+		#then CMB
+		relocate -3 0.5 
+		draw 3.04 0.5
+		#then TD
+		relocate -3 5 
+		draw $(lg(1.3)) 5
 		box
 		xlabel redshift
 		ylabel precision
