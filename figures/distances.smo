@@ -1,0 +1,11 @@
+#Summary of distance measurements
+compdist	expand 1.5
+		lweight 5
+		limits -3 3.05 0 9
+		ticksize -1 10 0 0
+		#first distance ladder
+		relocate -3 2.4 
+		draw -0.7 2.4
+		box
+		xlabel redshift
+		ylabel precision
