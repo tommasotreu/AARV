@@ -15,3 +15,35 @@ compdist	expand 1.5
 		box
 		xlabel redshift
 		ylabel precision
+roadmap		expand 1.5
+		define TeX_strings 1
+		lweight 5
+		limits 2012 2032 -0.5 0.8
+		ticksize 0 0 -1 5	
+		set xx=<2013 2018 2022 2027>
+		set NN=<2 9 40 100>
+		set yy1=lg(6/sqrt(NN))
+		set yy2=lg(4/sqrt(NN))
+		set yy2[0]=yy1[0]
+		set xxt = xx concat (reverse(xx))
+		set yyt = yy1 concat (reverse(yy2))
+		ptype 4 3
+		expand 3
+		points xxt yyt	
+		connect xxt yyt
+		shade 500 xxt yyt
+		ctype default
+		expand 1.5
+		relocate 2013 $(lg(5)) 
+		label 2 lenses (S13)
+		relocate 2017 $(lg(2.5))
+		label 9 (HST+COSMOGRAIL)		
+		relocate 2021 $(lg(1.2))
+		label 40 (DES/HSC + FLP)		
+		relocate 2024 $(lg(0.8))
+		label 100 (LSST + FLP)		
+		box
+		xlabel year
+		ylabel D_{\Delta t} precision (per cent)
+
+			
