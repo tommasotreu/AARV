@@ -39,10 +39,10 @@ roadmap		expand 1.5
 		relocate 2017 $(lg(2.5))
 		label 9 (HST+COSMOGRAIL)		
 		relocate 2021 $(lg(1.2))
-		label 40 (DES/HSC + FLP)		
+		label 40 (DES/HSC/VST + FLP)		
 		relocate 2024 $(lg(0.8))
 		label 100 (LSST + FLP)		
-		box
+		box 1 2 0 0
 		xlabel year
 		ylabel D_{\Delta t} precision (per cent)
 
