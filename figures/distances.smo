@@ -22,11 +22,14 @@ roadmap		expand 1.5
 		ticksize 0 0 -1 5	
 		set xx=<2013 2018 2022 2027>
 		set NN=<2 9 40 100>
-		set yy1=lg(7/sqrt(NN))
+		set yy1=lg(6.6/sqrt(NN))
 		set yy2=lg(4/sqrt(NN))
 		set yy2[0]=yy1[0]
 		set xxt = xx concat (reverse(xx))
 		set yyt = yy1 concat (reverse(yy2))
+		set pippo1=10**yy1
+		set pippo2=10**yy2
+		print {pippo1 pippo2}
 		ptype 4 3
 		expand 3
 		points xxt yyt	
@@ -45,6 +48,7 @@ roadmap		expand 1.5
 		box 1 2 0 0
 		xlabel year
 		ylabel D_{\Delta t} precision (per cent)
+
 
 
 			

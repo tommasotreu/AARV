@@ -22,7 +22,7 @@ roadmap		expand 1.5
 		ticksize 0 0 -1 5	
 		set xx=<2013 2018 2022 2027>
 		set NN=<2 9 40 100>
-		set yy1=lg(6/sqrt(NN))
+		set yy1=lg(7/sqrt(NN))
 		set yy2=lg(4/sqrt(NN))
 		set yy2[0]=yy1[0]
 		set xxt = xx concat (reverse(xx))
@@ -34,16 +34,17 @@ roadmap		expand 1.5
 		shade 500 xxt yyt
 		ctype default
 		expand 1.5
-		relocate 2013 $(lg(5)) 
-		label 2 lenses (S13)
-		relocate 2017 $(lg(2.5))
+		relocate 2013 $(lg(5.3)) 
+		label 2 lenses (RXJ1131+B1608)
+		relocate 2017 $(lg(2.8))
 		label 9 (HST+COSMOGRAIL)		
-		relocate 2021 $(lg(1.2))
-		label 40 (DES/HSC/VST + FLP)		
-		relocate 2024 $(lg(0.8))
+		relocate 2021 $(lg(1.5))
+		label 40 (Stage III + FLP)		
+		relocate 2024 $(lg(1.1))
 		label 100 (LSST + FLP)		
 		box 1 2 0 0
 		xlabel year
 		ylabel D_{\Delta t} precision (per cent)
+
 
 			
