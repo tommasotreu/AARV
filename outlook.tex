@@ -241,18 +241,21 @@ lens}. In this section we revisit the primary sources of systematic
 error and  assess the prospects for this stringent requirement to be
 met.
 
+\noindent{\bf Time delay measurement:}
 \citet{TDC1} showed that a mean accuracy of 0.1\% per lens would already
 be achievable in plausible samples of several hundred LSST lenses, were
 all images to be taken in the same band.
 While these results are encouraging, questions
 about our ability to measure time delays from sparse, multi-filter light
 curves extracted at scale from realistic images remain
-\citep{TewesEtal2013}. 
+\citep{TCM13}.
 Time delay measurement accuracy from  LSST multi-filter
 light curve could be tested by a second challenge; the success of the
 analyses is likely to hinge on the treatment of AGN color variability
-\citep[e.g.][]{SchmidtEtal} and chromatic  microelensing
-\citep[e.g.][]{Hicksen}. Joint inference from whole samples is likely to
+\citep[see e.g.\ ][and references therein]{SunEtal2014}
+and chromatic  microelensing
+\citep[see e.g.][and references therein]{HainlineEtal2013}.
+Joint inference from whole samples is likely to
 be important, in mitigating against both outliers and also imprecision
 arising from inappropriate uniform priors on  population parameters.
 Insights into AGN physics and the stellar composition  of lens galaxies
@@ -260,22 +263,83 @@ would be welcome by-products of such an analysis. An alternative approach
 could be to continue to puruse single-filter monitoring, but at
 increased efficiency. Experiments with higher cadence campaigns,
 exploiting the short (sub-day) timescale variability of AGN are in
-progress \citep{Courbin,McCully}.
+progress \citep[][F.~Courbin, priv.\ comm.]{BorosonEtal2016}.
 
 
-2) Lens mass modeling. Percent-level systematics due to model
-assumptions (ie MSD) pointed out by S\&S, investigated in sims by Xu et
-al.  IFU observations, resolved stellar kinematics: accuracy challenge.
-Flexibilty of mass models. Unconstrained pixels replaced by basis sets?
-Potential for  informative priors on coefficients, informed by large
-numbers of non-lens galaxies.  Assumptions break degeneracies, priors
-make this process fuzzy, and somewhat safer. Main piece of information
-is self-similarity of massive galaxies:  SL2S work of Sonnenfeld builds
-on long FP history to infer scaling  relations in lens galaxies.
-Consider ensembles of time delay lenses,  but also all other lenses, to
-bring in more information about massive galaxy density structure. Selection
-needs modeling simultaneously.
+\noindent{\bf Lens mass modeling:}
+\citet{S+S13} have pointed out the possibility of systematic errors at
+the twenty percent level due to modeling assumptions (and their
+interaction with the mass sheet degeneracy) when  fitting lensing data
+alone.   \citet{Suy++14} fitted the same two models used by
+\citet{S+S13}  to the current state of the art Einstein ring imaging and
+lens galaxy velocity dispersion data,  and found that present
+measurememts of stellar kinematics reduces the error by a factor of 10.
+It is not clear  how much of the residual 2\% uncertainty is random: we
+don't yet know  how our mass modeling methods respond to the variety of
+lens mass  distributions we expect. An important first step has been
+taken by  \citet{XuEtal2016}, who looked at the density profiles of a
+sample of mock galaxies from the Illustris simulation, finding
+significant departures from simple power law profiles. However, they
+note that at the mass scales  typical of galaxy scale lenses, and
+perhaps with judicious selection of systems whose power law model slope
+is close to the isothermal value,  the residual bias in the Hubble
+constant could be restricted to a few percent.
 
+As a result of these investigations, we know that 1) the dynamical
+information is as important as the lensing data, 2) simple power law
+density profiles are very unlikely to enable sub-percent accuracy to be
+reached, and 3) we now have simulated galaxies that are {\it
+sufficiently realistic and suitably complex} that we can carry out
+meaningful tests where the ground truth is  very different from our
+assumed analysis models. The acid test will be whether we can recover
+the input cosmological parameters  from realistic simulated high
+resolution imaging and stellar spectroscopic data made using galaxies
+like those in Illustris.
+
+As we look ahead to samples of dozens to hundreds of lenses in the next
+decade,  we can also consider the observational capabilities we will
+have in that time period. Giant segmented mirror telescopes (including
+the James Webb Space Telescope as well as planned ground-based
+facilities like TMT, GMT and E-ELT) will bring up to a factor of 10
+increase in angular resolution beyond what HST and today's 10-m class
+adaptive optics-enabled telescopes can deliver, improving  further the
+available Einstein ring constraints. These facilities will  be
+instrumented with Integral Field Unit spectrographs, that will  provide
+spatially-resolved spectrocopy of the lens galaxy stellar populations.
+It is yet to be seen how accurately time delay lenses can be modeled with
+such data: extending the realistic lens galaxy data simulation work to include
+them would seem to be very important.
+
+The upcoming increase in available precision per lens will support
+sigificantly more flexible mass models. While early efforts in this direction
+employed regularized grids of pixels \citep{Koo05,SuyuEtal2009,V+K09a},
+the most recent attempts model perturbations to simple density profiles with
+orthogonal basis sets \citep{BirrerEtal2015}. The opportunity here is to find a
+flexible mass model whose parameters can be taken to have been drawn from
+a relatively simple prior PDF, which could be derived from either large samples
+of observed non-lens galaxies, plausible hydrodynamic simulated galaxies, or both.
+
+
+The mass sheet degeneracy, and indeed all model parameter degeneracies
+are broken by incorporating more information, but this needs to be done
+in such a way as to not introduce bias. Using flexible mass models with
+reasonably broad but not uninformative  priors is the first step, but
+unless these priors are themselves movable, the introduced bias will
+remain. The answer is to learn the hyper-parameters that govern the
+intrinsic distribution of mass model parameters from the data as well. It is
+really the prior on these ``hyper-parameters'' that  needs to come from
+simulations. An initial attempts at this kind of ``hierarchical
+inference'' can be found in  the analysis of \citet{SonnenfeldEtal2015},
+where the authors  infer the values of some 28 hyper-parameters assumed
+to govern the  scaling relations between massive galaxies, as well as
+the selection function of the lens sample. As surveys yield larger and
+larger samples of lenses, we can think of  carrying out joint inferences
+with ensembles of both time delay lenses, and also all other lenses, to
+bring in more information about the density structure of somewhat
+self-similar massive galaxies.
+
+
+\noindent{\bf Environment and line of sight characterization:}
 3) Environment and line of sight. Far off clusters and nearby galaxies
 both important (McCully, Collett). Unaccounted for, additional WL
 would cause lens mass density profile to be mis-inferred, and
