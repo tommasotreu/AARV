@@ -25,10 +25,11 @@ below.
 
 For simplicity, in this section we describe only the case of a single
 deflector in a single plane, leaving line of sight and environmental
-effects for a later section.
-
-[NEEDS TO BE DONE HOLISTICALLY EVEN THOUGH SO FAR IT HAS BEEN DONE
-SEPARATELY IN PRACTICE]
+effects for a later section. For clarity, we describe each step
+corrisponding to a different dataset individually. Ideally all the
+data, including the time delays, should be modeled holistically at the
+same time, although in practice so far the problem has been broken up
+in parts to make it more tractable.
 
 %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
 
@@ -39,25 +40,27 @@ and source, the host galaxy apparent size is of order
 arcseconds. Images with sufficient depth and resolution to isolate the
 bright point source and detect the lower surface brightness host
 galaxy, often reveal extended lensed features connecting the
-point-like images themselves (e.g. Figure~\ref{fig:???}). In the best conditions
-these images cover hundreds if not thousand resolution elements. The
-distortion of the detailed features of the lensed images are a direct
-measurement of the variation of the deflection angle between the
-images.  In principle, for data with infinite signal-to-noise ratio
-and resolution one could imagine integrating the gradient of the
-deflection angle along a path betwen a pair of images to obtain the
-difference in Fermat potential. In practice, in the presence of noisy
-data and limited resolution, forward modeling approaches have been the
-most successful so far, as discussed below. From an observational
-point of view, it has been demonstrated that images with $0.1''-0.2''$
-FWHM resolution provide good results, provided that the point spread
-function can be appropriately modeled or reconstructed as part of the
-lens model itself. The Hubble Space Telescope in the optical/near
-infrared \citep{Suy++10,Suy++13,Suy++14,Birrer} and the Very Large
-Baseline Interferometer in the radio \citep{WBB04} have been the main
-sources of images for this application. Recent progress in adaptive
-optics imaging at Keck \citep{Che++16}, the beautiful data being
-obtained for lensed source by ALMA \citep{Hezaveh++13}, and the many
+point-like images themselves (e.g. Figure~\ref{fig:oldvsmodernimage}).
+
+In the best conditions these images cover hundreds if not thousand
+resolution elements. The distortion of the detailed features of the
+lensed images are a direct measurement of the variation of the
+deflection angle between the images.  In principle, for data with
+infinite signal-to-noise ratio and resolution one could imagine
+integrating the gradient of the deflection angle along a path betwen a
+pair of images to obtain the difference in Fermat potential. In
+practice, in the presence of noisy data and limited resolution,
+forward modeling approaches have been the most successful so far, as
+discussed below. From an observational point of view, it has been
+demonstrated that images with $0.1''-0.2''$ FWHM resolution provide
+good results, provided that the point spread function can be
+appropriately modeled or reconstructed as part of the lens model
+itself. The Hubble Space Telescope in the optical/near infrared
+\citep{Suy++10,Suy++13,Suy++14,BirrerEtal2015} and the Very Large Baseline
+Interferometer in the radio \citep{WBB04} have been the main sources
+of images for this application. Recent progress in adaptive optics
+imaging at the 10m W.M.~Keck \citep{Che++16}, the beautiful data being
+obtained for lensed source by ALMA \citep{Hez++13a}, and the many
 facilities currently being constructed or planned \citep{Men++15},
 indicate that the prospects to scale up the number of systems with
 available high resolution images are bright.
@@ -66,7 +69,7 @@ available high resolution images are bright.
 
 \subsubsection{Lens Modeling Techniques}
 
-Conceptually a detailed model of a lensed quasar and its host galaxy
+Conceptually, a detailed model of a lensed quasar and its host galaxy
 needs to describe three different physical components: i) the surface
 brightness of the source; ii) the surface brightness of the deflector;
 iii) the gravitational potential of the deflector. It is useful to
@@ -74,9 +77,9 @@ conceptualize the problem in this way, in order to understand where
 the information needed to break the degeneracy in the intrepretation
 of the data comes from. Lensing is achromatic and preserves surface
 brightness so any feature that belongs to the source \cite[including
-in line of sight velocity][]{} should appear in all the multiple
-images (appropriately distorted). Likewise, the deflector is typically
-a massive early-type galaxy with smooth surface brightness
+in line of sight velocity][]{Hez++13} should appear in all the
+multiple images (appropriately distorted). Likewise, the deflector is
+typically a massive early-type galaxy with smooth surface brightness
 distribution and approximately uniform colors \cite[except for dust,
 see, e.g.][]{Suy++10}.
 
@@ -84,29 +87,29 @@ Each of the three components is typically described in terms of one or
 two choices: i) simply parametrized functions such as a Sersic profile
 for the surface brightness of the lens or the source, and a singular
 isothermal ellipsoid for the gravitational potential of the deflector
-(Keeton); ii) as combination of basis sets like surface brightness
-pixels, potential pixels, or gauss-hermite functions (Coles, Birrer,
-Nightingale, Collett). These so-called ``pixellated'' models require
-regularization to avoid overfitting noise in the data. Hybrid
-approaches have been proposed where some of the components are simply
-parametrized and others are pixellated (Dye \& Warren; Treu \&
-Koopmans), or where pixels are used as corrections to simply
-parametrized models (Suyu). The variety of approaches in the
-literature reflect the inevitable tensions between the need to impose
-as many physically motivated assumptions as possible while retaining
-sufficient flexibility to obtain a realistic estimate of the
-uncertainties. If the model is too constrained by the assumption it
-will lead to underestimated errors, if it is more flexible than
-necessary it will lead to a loss of information.
+\citep{Kee11}; ii) as combination of basis sets like surface brightness
+pixels, potential pixels, or gauss-hermite functions
+\citep[e.g.][]{Col10, BirrerEtal2015, Nig++15}. These so-called
+``pixellated'' models require regularization to avoid overfitting
+noise in the data. Hybrid approaches have been proposed where some of
+the components are simply parametrized and others are pixellated
+\citep{W+D03,T+K04,Suy++06}, or where pixels are used as corrections to simply
+parametrized models \citep{Koo05,V+K09,S+H10,Suy++10}. The variety of
+approaches in the literature reflect the inevitable tensions between
+the need to impose as many physically motivated assumptions as
+possible while retaining sufficient flexibility to obtain a realistic
+estimate of the uncertainties. If the model is too constrained by the
+assumption it will lead to underestimated errors, if it is more
+flexible than necessary it will lead to a loss of information.
 
 Once the choice of modeling parametrization is set, exploring the
 likelihood is numerically non-trivial, often requiring weeks to months
-of CPU time. Fortunately, there are techniques to speed up the
+of computing time. Fortunately, there are techniques to speed up the
 calculations by limiting the number of non-linear parameters. For
 example, for a given lens model, the transformation between source and
 image plane can be described as a linear operation, or the pixellated
 corrections to the potential can be found by linearizing the lens
-equation. [Dye, Nightingale, Birrer, Suyu, etc]
+equation (see references above). 
 
 Ideally, modeling choices should be explored systematically as well,
 since they can potentially introduce systematic errors. This is
