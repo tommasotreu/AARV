@@ -26,13 +26,13 @@ operated in part by the monitoring collaboration.
 Monitoring of the CLASS lens B1608$+$656 in the radio with the Very
 Large Array enabled the breakthrough  time delay measurements of
 \citep{Fas++02}. In its first season, this program  yielded measurements
-of all three time delays in this quadruple image system with  precision
+of all three time delays in this quadruple image system with precision
 of 6--10\% \citep{Fas++99}; with the variability of the source
-increasing over the subsequent two seasons, \citep{Fas++02} were able to
-reduce this uncertainty to 2--5\%. Such high precision was the result of
-a dedicated campaign during Fassnacht's residence at NRAO, and which
-consisted of 8-month seasons, with a mean observation spacing of around
-3 days. The light curves were calibrated to 0.6\% accuracy.
+increasing over the subsequent two seasons, \citep{Fas++02} were able
+to reduce this uncertainty to 2--5\%. Such high precision was the
+result of a dedicated campaign which consisted of 8-month seasons,
+with a mean observation spacing of around 3 days. The light curves
+were calibrated to 0.6\% accuracy.
 
 While time delays had previously been measured in ten other lens
 systems, this was the first time that all the delays in a quad had
@@ -71,25 +71,26 @@ years of monitoring is needed to obtain an accurate  time delay, as the
 variability fluctuates and the reliability of the  measurement converges
 \citep[see the discussion in e.g.\ ][]{Tew++13}.
 
-A consistent picture seems to emerge from  both the VLA and COSMOGRAIL
-len monitoring projects, that high precision  gravitational time delay
-measurement requires campaigns consisting of  multiple, long seasons,
-with around 3-day cadence. The baseline observing strategy for the Large
-Synoptic Survey telescope is somewhat different to this, with seasons
-expected to be  around 4--5 months in length, and gaps between
-observation nights only reaching 4--5 days when images in all filters
-are taken into account. The ``Time Delay Challenge'' project was
-designed to test the measurability of lens time delays with such light
-curves \citep{DoblerEtal2013}, in a blind test offered to the
-astronomical community. From the ten algorithms entered by seven teams,
-it was concluded that time delay estimates of the precision and accuracy
-needed for time delay cosmography would indeed be possible, in around
-400 LSST lensed quasar systems \citep{LiaoEtal2015}. This result came
-with two caveats:  1) the single filter light curve data presented in
-the challenge is representative of the  multi-filter data we actually
-expect, and 2) that ``outliers'' (catastrophic time delay mis-estimates)
-will be able to be caught during the measurement process.  A second
-challenge to test these assumptions is in preparation.
+A consistent picture seems to emerge from both the VLA and COSMOGRAIL
+monitoring projects: high precision gravitational time delay
+measurement requires campaigns consisting of multiple, long seasons,
+with around 3-day cadence. The baseline observing strategy for the
+Large Synoptic Survey Telescope (LSST) is somewhat different to this,
+with seasons expected to be around 4--5 months in length, and gaps
+between observation nights only reaching 4--5 days when images in all
+filters are taken into account. The ``Time Delay Challenge'' project
+was designed to test the measurability of lens time delays with such
+light curves \citep{DoblerEtal2013}, in a blind test offered to the
+astronomical community. From the ten algorithms entered by seven
+teams, it was concluded that time delay estimates of the precision and
+accuracy needed for time delay cosmography would indeed be possible,
+in $\sim$400 LSST lensed quasar systems \citep{LiaoEtal2015}. This
+result came with two caveats: 1) the single filter light curve data
+presented in the challenge is representative of the multi-filter data
+we actually expect, and 2) that ``outliers'' (catastrophic time delay
+mis-estimates) will be able to be caught during the measurement
+process.  A second challenge to test these assumptions is in
+preparation.
 
 
 
@@ -98,23 +99,25 @@ challenge to test these assumptions is in preparation.
 \subsubsection{Lightcurve Analysis Methods}
 
 How were the time delays surveyed in the previous section derived from
-the light curve data? Interest in this particular inference problem has
-been  high since the controversies of the late 1990's. \citet{Fas++99}
-used  the ``dispersion method'' of \citet{Pelt++96}, a technique that
-involves  shifting one observed light curve relative to another (both in
-time and in  amplitude) and minimizing the dispersion between adjacent
-points in the  resulting composite curve. Uncertainties were estimated
-by Monte Carlo resampling  of the data, assuming the minimum dispersion
-time delay and magnification ratio to be true. In order to take into
-account the slowly varying incoherent microlensing signals present in
-their optical light curve data, the COSMOGRAIL team have  investigated
-three analysis techniques that all involve interpolation of the light
-curves in some way \citep{TCM13}: free-knot splines, Gaussian processes
-and simple linear interpolation have all been tested, within a common
-``python curve-shifting'' (PyCS) framework.\footnote{The COSMOGRAIL curve
-shifting analysis code is available from \texttt{http://cosmograil.org}}
-These agree with each other given light curves of sufficient length,
-providing an argument for multiple-season monitoring campaigns.
+the light curve data? Interest in this particular inference problem
+has been high since the controversies of the late
+1990's. \citet{Fas++99} used the ``dispersion method'' of
+\citet{Pelt++96}, a technique that involves shifting one observed
+light curve relative to another (both in time and in amplitude) and
+minimizing the dispersion between adjacent points in the resulting
+composite curve. Uncertainties were estimated by Monte Carlo
+resampling of the data, assuming the minimum dispersion time delay and
+magnification ratio to be true. In order to take into account the
+slowly varying incoherent microlensing signals present in their
+optical light curve data, the COSMOGRAIL team have investigated three
+analysis techniques that all involve interpolation of the light curves
+in some way \citep{TCM13}: free-knot splines, Gaussian processes and
+simple linear interpolation have all been tested, within a common
+``python curve-shifting'' (PyCS) framework.\footnote{The COSMOGRAIL
+curve shifting analysis code is available from
+\texttt{http://cosmograil.org}} These agree with each other given
+light curves of sufficient length, providing an argument for
+multiple-season monitoring campaigns.
 
 The time delay challenge prompted seven analysis teams to develop and
 test algorithms for time delay estimation. These are outlined in the
