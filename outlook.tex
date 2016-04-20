@@ -45,8 +45,8 @@ independent of the uncertainties affecting the other established
 probes of dark energy, and provide valuable complementary information,
 chiefly on the Hubble constant, which is commonly regarding as one of
 the essential ingredients for interpreting other datasets such a the
-cosmic microwave background \citep{Hu05,Suy++12,Wei++13}.  We will
-expand on this topic in the remainder of this section by showing
+cosmic microwave background \citep{Hu05,Suy++12,Wei++13,Rie++16}.  We
+will expand on this topic in the remainder of this section by showing
 cosmological forecasts for gravitational time delays by themselves and
 in combination with other probes.
 
@@ -219,7 +219,7 @@ same telescopes should be able to provide this. The contribution to
 the distance uncertainty from the line of sight was particularly high
 in the cases of B1608$+$656 and RXJ1131: in most other systems in a
 large sample the effects of the environment should be lesser, and they
-should (effectively) average down \citep{ColletEtal13}. 
+should (effectively) average down \citep{ColletEtal2013}. 
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -228,17 +228,17 @@ should (effectively) average down \citep{ColletEtal13}.
 \label{ssec:accuracy}
 
 While the precision available from Stage 3 and Stage 4 samples makes
-time delay lenses an interesting prospect for cosmology, they will, like
-the other probes, be limited by systematic errors. As the forecasts
-show, competitive contributions to joint dark energy parameter
-inferences correspond to sub-percent precision in characteristic
-distance, which implies that the residual systematic (that is,
-post-combination) error in  distance needs to be well below 1\% {\it per
-lens}. In this section we revisit the primary sources of systematic
-error and  assess the prospects for this stringent requirement to be
-met.
+time delay lenses an interesting prospect for cosmology, they will,
+like the other probes, be limited by systematic errors. As the
+forecasts show, competitive contributions to joint dark energy
+parameter inferences correspond to sub-percent precision in
+characteristic distance, which implies that the residual systematic
+(that is, post-combination error on the mean, sometimes referred to as
+bias) error in distance needs to be well below 1\% {\it per lens}. In
+this section we revisit the primary sources of systematic error and
+assess the prospects for this stringent requirement to be met.
 
-\noindent{\bf Time delay measurement:}
+\subsubsection{Time delay measurement}
 
 \citet{LiaoEtal2015} showed that a 
 mean accuracy of 0.1\% per lens would already be achievable in
@@ -248,9 +248,9 @@ questions about our ability to measure time delays from sparse,
 multi-filter light curves extracted at scale from realistic images
 remain \citep{TCM13}.  Time delay measurement accuracy from LSST
 multi-filter light curve could be tested by a second challenge; the
-success of the analyses is likely to hinge on the treatment of AGN
-color variability \citep[see e.g.\ ][and references therein]{SunEtal2014}
-and chromatic  microelensing
+success of the analyses is likely to hinge on the treatment of quasar
+color variability \citep[see e.g.\ ][and references
+therein]{Sch++12,SunEtal2014} and chromatic microelensing
 \citep[see e.g.][and references therein]{HainlineEtal2013}.
 Joint inference from whole samples is likely to
 be important, in mitigating against both outliers and also imprecision
@@ -269,25 +269,29 @@ primarily cause additional  scatter on hour-long timescales
 \citep{K+M09}.
 
 
-\noindent{\bf Lens mass modeling:}
+\subsubsection{Lens mass modeling}
+
 \citet{S+S13} have pointed out the possibility of systematic errors at
 the twenty percent level due to modeling assumptions (and their
-interaction with the mass sheet degeneracy) when  fitting lensing data
-alone.   \citet{Suy++14} fitted the same two models used by
+interaction with the mass sheet degeneracy) when fitting lensing data
+alone.
+\citet{Suy++14} fitted the same two models used by
 \citet{S+S13}  to the current state of the art Einstein ring imaging and
 lens galaxy velocity dispersion data, and found that present
-measurememts of stellar kinematics reduces the error by a factor of
+measurements of stellar kinematics reduces the error by a factor of
 10.  It is not clear how much of the residual 2\% uncertainty is
-random: we don't yet know how our mass modeling methods respond to the
-variety of lens mass distributions we expect. An important first step
-has been taken by \citet{XuEtal2016}, who looked at the density
-profiles of a sample of mock galaxies from the Illustris simulation,
-finding significant departures from simple power law
-profiles. However, they note that at the mass scales typical of galaxy
-scale lenses, where the total mass density profiles happen to be well
-approximated by isothermal spheres \citep{Koo++09,Aug++10}, the
-residual bias in the Hubble constant could be restricted to a few
-percent.
+random or whether it might correspond to an overall bias: we do not
+yet know how our mass modeling methods respond to the variety of lens
+mass distributions we expect. An important first step has been taken
+by \citet{XuEtal2016}, who looked at the density profiles of a sample
+of mock galaxies from the Illustris simulation, finding significant
+departures from simple power law profiles. However, they note that at
+the mass scales typical of galaxy scale lenses, where the total mass
+density profiles happen to be well approximated by isothermal spheres
+\citep{Koo++09,Aug++10}, the residual systematic uncertainty 
+in the Hubble constant could be restricted to a few percent per
+system. It remains to be verified whether it averages out given large
+enough samples of systems.
 
 As a result of these investigations, we know that 1) the dynamical
 information is as important as the lensing data, 2) more complex
@@ -304,55 +308,60 @@ galaxies \citep[e.g.,][]{Fia++16}.
 As we look ahead to samples of dozens to hundreds of lenses in the
 next decade, we can also consider the observational capabilities we
 will have in that time period. Giant segmented mirror telescopes
-(including the James Webb Space Telescope as well as planned
-ground-based facilities like TMT, GMT and E-ELT) will bring up to a
-factor of 10 increase in angular resolution beyond what HST and
-today's 10-m class adaptive optics-enabled telescopes can deliver,
-improving further the available Einstein ring constraints. These
-facilities will be instrumented with Integral Field Unit
-spectrographs, that will provide spatially-resolved spectrocopy of the
-lens galaxy stellar populations.  It is yet to be seen how accurately
-lens mass distributions can be modeled with such data: extending the
-realistic lens galaxy data simulation work to include them would seem
-to be very important.
+(including the James Webb Space Telescope as well as planned 30m class
+ground-based telescopes) will bring up to a factor of 10 increase in
+angular resolution beyond what HST and today's 10-m class adaptive
+optics-enabled telescopes can deliver, improving further the available
+Einstein ring constraints. These facilities will be instrumented with
+Integral Field Unit spectrographs, that will provide
+spatially-resolved spectrocopy of the lens galaxy stellar populations.
+It is yet to be seen how accurately lens mass distributions can be
+modeled with such data: extending the realistic lens galaxy data
+simulation work to include them would seem to be very important.
 
 The upcoming increase in available precision per lens will support
-sigificantly more flexible mass models. While early efforts in this direction
-employed regularized grids of pixels \citep{Koo05,SuyuEtal2009,V+K09a},
-the most recent attempts model perturbations to simple density profiles with
-orthogonal basis sets \citep{BirrerEtal2015}. The opportunity here is to find a
-flexible mass model whose parameters can be taken to have been drawn from
-a relatively simple prior PDF, which could be derived from either large samples
-of observed non-lens galaxies, plausible hydrodynamic simulated galaxies, or both.
+significantly more flexible mass models, as reviewed in
+Section~\ref{ssec:lensmodel}.
+%While early efforts in this
+%direction employed regularized grids of pixels
+%\citep{Koo05,SuyuEtal2009,V+K09a}, the most recent attempts model
+%perturbations to simple density profiles with orthogonal basis sets
+%\citep{BirrerEtal2015}. 
+The opportunity here is to find a flexible mass model whose parameters
+can be taken to have been drawn from a relatively simple prior PDF,
+which could be derived from either large samples of observed non-lens
+galaxies, plausible hydrodynamic simulated galaxies, or both.
 
 
 The mass sheet degeneracy, and indeed all model parameter degeneracies
-are broken by incorporating more information, but this needs to be done
-in such a way as to not introduce bias. Using flexible mass models with
-reasonably broad but not uninformative  priors is the first step, but
-unless these priors are themselves movable, the introduced bias might
-remain. The solution is to learn the hyper-parameters that govern the
-intrinsic distribution of mass model parameters from the data as well. It is
-really the prior on these ``hyper-parameters'' that  needs to come from
-simulations. An initial attempts at this kind of ``hierarchical
-inference'' can be found in  the analysis of \citet{SonnenfeldEtal2015},
-where the authors  infer the values of some 28 hyper-parameters assumed
-to govern the  scaling relations between massive galaxies, as well as
-the selection function of the lens sample. As surveys yield larger and
-larger samples of lenses, we can think of  carrying out joint inferences
-with ensembles of both time delay lenses, and also all other lenses, to
-bring in more information about the density structure of somewhat
-self-similar massive galaxies.
+are broken by incorporating more information, but this needs to be
+done in such a way as to not introduce bias. Using flexible mass
+models with reasonably broad but not uninformative priors is the first
+step, but unless these priors are themselves movable, the introduced
+bias might remain. The clear-cut solution is to learn the
+hyper-parameters that govern the intrinsic distribution of mass model
+parameters from the data as well. It is really the prior on these
+``hyper-parameters'' that needs to come from simulations. An initial
+attempts at this kind of ``hierarchical inference'' can be found in
+the analysis of \citet{SonnenfeldEtal2015}, where the authors infer
+the values of some 28 hyper-parameters assumed to govern the scaling
+relations between massive galaxies, as well as the selection function
+of the lens sample. As surveys yield larger and larger samples of
+lenses, we can think of carrying out joint inferences with ensembles
+of both time delay lenses, and also all other lenses, to bring in more
+information about the density structure of somewhat self-similar
+massive galaxies.
 
 
-\noindent{\bf Environment and line of sight characterization:} The
-current methodology (Section~\ref{sec:measurement:los}) includes
-dependencies on both cosmological simulations and reference imaging
-surveys. The Stage~3 and~4  wide field surveys will help with the
-latter, providing much larger, more homogenous sets of control fields.
-Systematic errors associated with calibrating against simulations is the
-bigger problem, and both the number counts and 3D reconstruction
-approaches that have been implemeted to date are affected.
+\subsubsection{Environment and line of sight characterization} 
+
+The current methodology (Section~\ref{ssec:los}) includes dependencies
+on both cosmological simulations and reference imaging surveys. The
+Stage~3 and~4 wide field surveys will help with the latter, providing
+much larger, more homogenous sets of control fields.  Systematic
+errors associated with calibrating against simulations is the bigger
+problem, and both the number counts and 3D reconstruction approaches
+that have been implemeted to date are affected.
 \citet{CollettEtal2013} give some indication of the magnitude of the
 issue, finding a bias of 3\% in the average inferred time delay distance
 when assuming a stellar mass to halo mass relation that is incorrect
@@ -379,7 +388,6 @@ mitigation of the environment and line of sight systematics could be
 achieved by selecting low density lines of sight
 \citep{CollettEtal2013}, but this selection would need to be done with
 some care, propagating all the uncertainties.
-
 
 
 Even when all the above systematics have been investigated and tested
@@ -449,17 +457,18 @@ either from space or from the ground assisted by adaptive optics
 information that in principle can be obtained from the angular
 diameter distance \citep{JeeKomatsuSuyu2015,JeeEtal2016}.  As
 discussed in Section~\ref{ssec:precision}, this additional piece of
-information could improve the constraints on cosmological parameters
-from time delay lenses, so this envelope should be regarded as overall
-conservative. The first step in the roadmap is the analysis of two
-systems carried published in 2013 based on COSMOGRAIL time delays, HST
-imaging, Keck spectroscopy, and other ancillary data from a variety of
-sources. The second step consists of the full analysis of nine lens
-systems for which time delays have been measured by the COSMOGRAIL
-team, and HST imaging is being completed this year. Completing the
-second step by the launch of the James Webb Space Telescope at the end
-of 2018 would be ideal, so as to provide a useful comparison for
-expected improvements in local distance ladder measurements.
+information would in principle improve the constraints on cosmological
+parameters from time delay lenses, so this envelope should be regarded
+as overall conservative. The first step in the roadmap is the analysis
+of two systems carried published in 2013 based on COSMOGRAIL time
+delays, HST imaging, Keck spectroscopy, and other ancillary data from
+a variety of sources. The second step consists of the full analysis of
+nine lens systems for which time delays have been measured by the
+COSMOGRAIL team, and HST imaging is being completed this
+year. Completing the second step by the launch of the James Webb Space
+Telescope at the end of 2018 would be ideal, so as to provide a useful
+comparison for expected improvements in local distance ladder
+measurements.
 
 The third step will require the discovery of new lenses, in addition
 to the usual follow-up effort. Systematic searches are currently under
@@ -522,4 +531,8 @@ of modelers will be another way to speed things up.
 Naturally, this proposed roadmap is not the only possible way
 forward. As discussed earlier in this section, several authors have
 proposed the analysis of larger samples of lenses, each with fewer
-ancillary data and thus lower precision.
+ancillary data and thus lower precision per system. Alternatively, one
+could imagine a hybrid strategy in which a subset of the lenses are
+analyzed in great detail with lots of ancillary data, and the lessons
+learned from that subset are propagated to a large sample through
+judicious use of priors.
