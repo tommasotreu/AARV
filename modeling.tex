@@ -12,7 +12,7 @@ There are two classes of solution to the problem of underconstrained
 lens models. One is to analyze large samples of lenses with physically
 motivated priors and exploit the fact that cosmological parameters are
 the same for all lenses to remove model degeneracies. A number of
-attempts along these lines have been made in the past \citep{Ogu07},
+attempts along these lines have been made in the past \citep{Ogu07b},
 and it is easy to imagine that this solution will be popular in the
 future, when large samples of lenses with measured time delays will be
 available.
@@ -84,23 +84,27 @@ distribution and approximately uniform colors \cite[except for dust,
 see, e.g.][]{Suy++10}.
 
 Each of the three components is typically described in terms of one or
-two choices: i) simply parametrized functions such as a Sersic profile
+both of the following choices:
+i) simply parametrized functions such as a Sersic profile
 for the surface brightness of the lens or the source, and a singular
 isothermal ellipsoid for the gravitational potential of the deflector
-\citep{Kee11}; ii) as combination of basis sets like surface brightness
-pixels, potential pixels, or gauss-hermite functions
-\citep[e.g.][]{Col10, BirrerEtal2015, Nig++15}. These so-called
-``pixellated'' models require regularization to avoid overfitting
+\citep[e.g.][]{Mar++07,Kee11}; ii) as combination of basis sets such as surface brightness
+or lens potential pixel values, or gauss-hermite functions
+\citep[e.g.][]{Col10, BirrerEtal2015, Nig++15}. The latter class of
+very flexible models require regularization to avoid overfitting the
 noise in the data. Hybrid approaches have been proposed where some of
 the components are simply parametrized and others are pixellated
-\citep{W+D03,T+K04,Suy++06}, or where pixels are used as corrections to simply
-parametrized models \citep{Koo05,V+K09,S+H10,Suy++10}. The variety of
+\citep{W+D03,T+K04,Suy++06}, or where flexibly-parametrized
+``corrections'' are added to simply
+parametrized models \citep{Koo05,V+K09,S+H10,Suy++10,BirrerEtal2015}.
+The variety of
 approaches in the literature reflect the inevitable tensions between
 the need to impose as many physically motivated assumptions as
-possible while retaining sufficient flexibility to obtain a realistic
-estimate of the uncertainties. If the model is too constrained by the
+possible, while retaining sufficient flexibility to obtain a realistic
+estimate of the uncertainties and avoid introducing biases by
+asserting incorrect simplistic models. If the model is too constrained by the
 assumption it will lead to underestimated errors, if it is more
-flexible than necessary it will lead to a loss of information.
+flexible than necessary it will lead to a loss of precision.
 
 Once the choice of modeling parametrization is set, exploring the
 likelihood is numerically non-trivial, often requiring weeks to months
@@ -109,7 +113,7 @@ calculations by limiting the number of non-linear parameters. For
 example, for a given lens model, the transformation between source and
 image plane can be described as a linear operation, or the pixellated
 corrections to the potential can be found by linearizing the lens
-equation (see references above). 
+equation (see references above).
 
 Ideally, modeling choices should be explored systematically as well,
 since they can potentially introduce systematic errors. This is
@@ -121,7 +125,7 @@ statistical samples expected in the future.
 
 %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
 
-\subsubsection{The Role of Stellar kinematics}
+\subsubsection{The Role of Stellar Kinematics}
 
 As introduced in Section~\ref{sec:theory}, stellar kinematics provide
 a qualitatively different input and therefore very valuable in
