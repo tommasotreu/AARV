@@ -1,11 +1,3 @@
-% Approach: combining CMB and time delay distances. Blinding.
-
-% Results. Internal consistency. Consistency with other probes.
-
-% Combination with stellar kinematics, introduces additional
-% distance dependency. Not correlated, and weaker dependence than Ddt
-% (See discussion with SHS about Jee et al papers)
-
 Early approaches to inferring cosmological parameters from time delay
 lens observations focused on measuring the Hubble constant in a
 Friedman-Robertson-Walker model with asserted (fixed) density
@@ -14,10 +6,9 @@ involved the ``assumption that the linear distance--red-shift relation
 is valid.''} With better data came the recognition that time delay
 lenses were really probes of cosmological distance
 \citep{Koo++03,Suy++10}, and the emphasis shifted to
-inferring the set of cosmological parameters that are needed  to predict
+inferring the set of cosmological parameters that are needed to predict
 the kinematics of the expansion of the Universe out to the redshift of
 the source.
-
 The parameter most strongly constrained is still the Hubble constant,
 but as sample sizes increase we expect ensembles of lenses to support
 the inference of several cosmological parameters (or combinations
@@ -28,7 +19,7 @@ constraints on cosmological parameters, from the two best-measured
 systems, B1608$+$656 and RXJ1131 \citep{Suy++14}. When this figure was
 made, the available precision from just these two lenses was about the
 same as that from SDSS DR7 Baryonic Acoustic Oscillations
-\citep{PercivalEtal2010} and the ``Constitution'' set of Type Ia
+\citep{PercivalEtal2010} or the ``Constitution'' set of Type Ia
 supernovae \citep{HickenEtal2009}.  When all three of the curvature
 density $\Ok$, Dark Energy density $\ODE$ and equation of state $\wDE$
 parameters are allowed to vary, along with $H_0$, we see that the time
@@ -40,10 +31,10 @@ relative luminosity distances.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[!ht]
 \centering\includegraphics[width=0.9\linewidth]{figures/Suyu13_fig11.pdf}
-\caption{Current cosmological parameter constraints from time delay
-lenses. The marginalized posterior PDFs given the combined B1608$+$656
+\caption{Cosmological parameter constraints from time delay
+lenses. The marginalized posterior PDFs, given the combined B1608$+$656
 and RXJ1131 datasets and the assumption of an open CDM cosmology with
-unknown dark energy equation of state is shown in
+unknown dark energy equation of state, are shown in
 two sets of two parameter dimensions,
 and compared to those given contemporary BAO and Type Ia supernova data.
 Figure reproduced from \citet{Suy++14}.}
@@ -57,8 +48,8 @@ Following the simple methodology suggested in the blind Type Ia
 supernova analysis of \citet{Con++06}, all cosmological parameter PDFs
 were plotted with centroids offset to the origin until the team agreed
 (after notably lengthy discussions about systematic errors) to ``open
-the box,'' just before publication\footnote{Importantly, the authors
-agreed to publish the unblinded results, no matter what.}. Such
+the box,'' just before publication.\footnote{Importantly, the authors
+agreed to publish the unblinded results, no matter what.} Such
 attempts to avoid ``unconscious experimenter bias'' introduced by
 stopping systematics analysis when the ``right answer'' is obtained
 have long been advocated in particle physics
@@ -94,7 +85,7 @@ specific free-form (pixelated) mass models used, the amount of
 information used per systems is minimal because only the quasar
 positions and time delays are used. Given the flexibility of the free
 form models, the likelihood is identically 1 or 0, and thus the
-results is dominated by constraints sets on the pixels and
+results are dominated by prior constraints set on the pixels and their
 regularization \cite[see][for a description of pixel-lens in Bayesian
 terms]{Col08}. Specifically, the known physical degeneracy between
 density profile slope and predicted time delay
@@ -105,13 +96,16 @@ galaxy to generate mock image position and time delay data, and
 confirm the accuracy of the previous study's Hubble constant
 uncertainties. With improved time delay estimates in larger samples of
 lenses, \cite{P+J10} and then \citet{RK++2015} reduced the random
-uncertainty further. 
+uncertainty further.
 
 While focused only on the Hubble constant and carried out unblind, and
 with the lens environment and line of sight mass structures remain
 unaccounted for and further tests on realistic simulated galaxies
 warranted, these ensemble studies point the way towards a future of
-considerably larger sample sizes. However, it is clear that such large
+considerably larger sample sizes. Our aspirations towards high accuracy
+demand that we adopt more flexible mass models and then
+cope with the degeneracies;
+it is clear that such large
 scale analysis will need careful consideration of the choice of the
 priors, and ideally the ability to use more information than just the
 image positions and time delays. We discuss these issues in detail in
