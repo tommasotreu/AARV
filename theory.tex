@@ -93,7 +93,8 @@ delay distances (and larger inferred values of $H_0$).
 
 Moreover, there is significant risk of systematic error when modeling
 lens mass distributions. While image positions remain invariant under
-the ``mass sheet transformation'' \citep{MSD} \citep[and its generalization, the source size transformation]{SST}, the time delays
+the ``mass sheet transformation'' \citep{MSD}
+\citep[and its generalization, the source size transformation]{SST}, the time delays
 predicted by the model can change significantly. The mass sheet transformation
 and its effect on the time delay is as follows:
 \begin{align}
@@ -106,7 +107,33 @@ data will not favor one over the other: they will be equally likely
 given the data. This model degeneracy can only be broken by additional
 information. One source of information would be independent measurements
 of the mass distribution: stellar kinematics is the obvious choice.
-Another way to break the degeneracy is to include prior knowledge of the
+
+\citet{JeeKomatsuSuyu2015} provide a derivation of the resulting
+cosmological dependence of kinematics-constrained power-law lens galaxy
+mass models with isotropic orbits, showing that were its density profile
+and velocity isotropy  to be known exactly, a time delay  lens would
+provide a measurement of the angular diameter distance to the lens,
+$\Dd$, rather than the time delay distance of Equation~\ref{eq:ddt}. The
+reason given is that the velocity dispersion and the time delay  are both
+proportional to the enclosed mass of the lens, but  depend differently
+on  galactocentric radius: combining the measured velocity dispersion
+and time delay gives a characteristic physical scale of the lens galaxy.
+The image separation provides a corresponding  angular scale, allowing
+the angular diameter distance to be probed.  In practice, the same mass
+model must be used to predict all of the measured velocity dispersion,
+Einstein ring appearance, and time delay, self-consistently. In the
+limit of low precision in the velocity dispersion, the profile slope is weakly
+constrained by the ring image alone, and the combination of time delay and
+lens mass model provides information on $\Ddt$ but none on $\Dd$. As the
+velocity dispersion precision increases, we expect the profile slope to
+be pinned down, and the angular diameter distance to be constrained {\it
+as well}. In the context of a cosmological model, the two distances are
+not independent: the angular diameter distance information provided
+by the velocity dispersion measurement should translate into higher
+precision inference of the cosmological parameters \citep{JeeEtal2016}.
+We return to this in Section~\ref{ssec:precision} below.
+
+Another way to break degeneracy in the lens model is to include prior knowledge of the
 lens mass distribution, from measurements of other, similar galaxies to
 the lens. This type of information is typically encoded as a
 simply-parametrized model, such as an elliptically-symmetric mass
