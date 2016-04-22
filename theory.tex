@@ -1,18 +1,20 @@
 
 In this section we provide a brief summary of the theory of
-gravitational lens time delays. We have distilled much of this from the
-excellent exposition of Schneider and Kochanek \citep{SKW06}, as well as
-the various key papers we cite.
+gravitational lens time delays. We have distilled much of the content
+of this section from the excellent exposition of Schneider and
+Kochanek \citep{SKW06}, as well as the various key papers we cite.
 
 % Lensing, Fermat's principle and potential. Time delay surface.
 
 Fermat's Principle of Least Time holds for the propagation of light rays
 through curved spacetime. The light travel time through an isolated, thin
 gravitational lens is given by
+%
 \begin{align}
     \tau(\x) &= \frac{\Ddt}{c} \cdot \Phi(\x,\y), \\
     \text{where\;\;} \Phi(\x) &= \frac{1}{2}\left(\x - \y\right)^2 - \psi(\x).
 \end{align}
+%
 Here, $\x$ denotes the light source's apparent position on the sky, and
 $\y$ is the position of the unlensed source. The difference between the
 observable position~$\x$ and the unobservable position~$\y$ is the
@@ -30,12 +32,14 @@ arrival time itself is not observable, but differences in arrival time
 between multiple images are. In the above approximation, the  ``time delay'' $\Delta \tau_{\rm AB}$
 between image A and
 image B can be predicted via
+%
 \begin{equation}
     \Delta \tau_{\rm AB} = \frac{\Ddt}{c} \Delta \Phi_{\rm AB} \label{eq:timedelay}
 \end{equation}
+%
 where $\Delta \Phi_{\rm AB}$ is the Fermat potential difference between the
 two image positions.
-Figure~\ref{fig:lineofsightcartoon} illustrates the origin of the
+Figures~\ref{fig:timedelaycartoon} and~\ref{fig:delays} illustrate the origin of the
 time delay between the images in a gravitational lens system. The small
 magnitude of the fractional time delay (typically $\Delta\tau \sim 10$~days out of
 $\Ddt/c \sim 10^{12}$ days light travel time)
@@ -45,8 +49,8 @@ radians).
 
 \begin{figure*}[!t]
 \centering\includegraphics[width=0.96\textwidth]{figures/wavefront-schematic.png}
-\caption{Schematic diagram, adapted from \citep{T+E15},
-illustrating the origin of the gravitational time delay.}
+\caption{Schematic diagram
+illustrating the origin of the gometric component of the time delay.}
 \label{fig:timedelaycartoon}
 \end{figure*}
 
@@ -69,9 +73,11 @@ This distance is actually a combination of angular diameter
 distances:\footnote{As \citet{SKW06} point out, $\Ddt$ can be written more simply in terms
 of comoving angular diameter distances, but most of the literature uses the
 formula in Equation~\ref{eq:ddt}.}
+%
 \begin{equation}
     \Ddt = (1+\zd) \frac{\Dd \Ds}{\Dds}  \label{eq:ddt}
 \end{equation}
+%
 These angular diameter distances can be predicted given the redshifts
 of the lens and source, $\zd$ and $\zs$, and an assumed world model with
 cosmological parameters~$\cospars$. The time delay distance is primarily
@@ -85,7 +91,7 @@ shows  that the time delay  distance is as sensitive to uncertainty in
 the predicted Fermat potential as it is the measured time delay itself.
 More concentrated mass distributions with steeper density
 profiles produce longer time delays leading to shorter inferred time
-delay distances (and larger inferred values of $H_0$).
+delay distances, and thus larger inferred values of $H_0$ \citep{Wuc02,Koc02,Suy12}.
 % Sensitivity analysis in \citep{SKW06}? Could extend to more general
 % consideration of Fermat potential difference.
 
@@ -94,73 +100,87 @@ delay distances (and larger inferred values of $H_0$).
 Moreover, there is significant risk of systematic error when modeling
 lens mass distributions. While image positions remain invariant under
 the ``mass sheet transformation'' \citep{FGS85,S+S13}
-\citep[and its generalization, the source-position transformation]{SPT}, the time delays
+\citep[and its generalization, the source-position transformation][]{SPT}, the time delays
 predicted by the model can change significantly. The mass sheet transformation
 and its effect on the time delay is as follows:
+%
 \begin{align}
     \kappa(\x) \rightarrow \kappa(\x)' &= (1 - \lambda) + \lambda \kappa(\x)  \label{eq:mst} \\
     \Delta \tau \rightarrow \Delta \tau' &= \lambda \Delta \tau.
 \end{align}
+%
 This means that if we allow our model the freedom to generate both the
 $\kappa(\x)$ and $\kappa(\x)'$ mass distributions, our image position
 data will not favor one over the other: they will be equally likely
 given the data. This model degeneracy can only be broken by additional
-information. One source of information would be independent measurements
-of the mass distribution: stellar kinematics is the obvious choice.
+information. One source of information would be independent
+measurements of the mass distribution: stellar kinematics is the
+obvious choice \citep{Koo++03}; sources at multiple redshifts help,
+but they are rare \citep{Gav++08,Son++12} and thus not applicable in
+general.
 
 \citet{JeeKomatsuSuyu2015} provide a derivation of the resulting
-cosmological dependence of kinematics-constrained power-law lens galaxy
-mass models with isotropic orbits, showing that were its density profile
-and velocity isotropy  to be known exactly, a time delay  lens would
-provide a measurement of the angular diameter distance to the lens,
-$\Dd$, rather than the time delay distance of Equation~\ref{eq:ddt}. The
-reason given is that the velocity dispersion and the time delay  are both
-proportional to the enclosed mass of the lens, but  depend differently
-on  galactocentric radius: combining the measured velocity dispersion
-and time delay gives a characteristic physical scale of the lens galaxy.
-The image separation provides a corresponding  angular scale, allowing
-the angular diameter distance to be probed.  In practice, the same mass
-model must be used to predict all of the measured velocity dispersion,
-Einstein ring appearance, and time delay, self-consistently. In the
-limit of low precision in the velocity dispersion, the profile slope is weakly
-constrained by the ring image alone, and the combination of time delay and
-lens mass model provides information on $\Ddt$ but none on $\Dd$. As the
-velocity dispersion precision increases, we expect the profile slope to
-be pinned down, and the angular diameter distance to be constrained {\it
-as well}. In the context of a cosmological model, the two distances are
-not independent: the angular diameter distance information provided
-by the velocity dispersion measurement should translate into higher
-precision inference of the cosmological parameters \citep{JeeEtal2016}.
-We return to this in Section~\ref{ssec:precision} below.
+cosmological dependence of kinematics-constrained power-law lens
+galaxy mass models with isotropic orbits, showing that were its
+density profile and velocity isotropy to be known exactly, a time
+delay lens would provide a measurement of the angular diameter
+distance to the lens, $\Dd$, rather than the time delay distance of
+Equation~\ref{eq:ddt}. The reason given is that the velocity
+dispersion and the time delay are both proportional to the enclosed
+mass of the lens, but depend differently on galactocentric radius:
+combining the measured velocity dispersion and time delay gives a
+characteristic physical scale of the lens galaxy.  The image
+separation provides a corresponding angular scale, allowing the
+angular diameter distance to be probed \citep[see earlier work
+by][]{GLB08}.  
 
-Another way to break degeneracy in the lens model is to include prior knowledge of the
-lens mass distribution, from measurements of other, similar galaxies to
-the lens. This type of information is typically encoded as a
+In practice, the same mass model must be used to predict all of the
+measured velocity dispersion, Einstein ring appearance, and time
+delay, self-consistently. In the limit of low precision in the
+velocity dispersion, the profile slope is weakly constrained by the
+ring image alone, and the combination of time delay and lens mass
+model provides information on $\Ddt$ but none on $\Dd$. As the
+velocity dispersion precision increases, we expect the profile slope
+to be pinned down, and the angular diameter distance to be constrained
+{\it as well}. In the context of a cosmological model, the two
+distances are not independent: the angular diameter distance
+information provided by the velocity dispersion measurement should
+translate into higher precision inference of the cosmological
+parameters \citep{JeeEtal2016}.  We return to this in
+Section~\ref{ssec:precision} below.
+
+Another way to break degeneracy in the lens model is to include prior
+knowledge of the lens mass distribution, from measurements of other,
+similar galaxies to the lens, or perhaps from numerical
+simmulations. This type of information is typically encoded as a
 simply-parametrized model, such as an elliptically-symmetric mass
 distribution with power law density profile (as opposed to a free form
-density map). Assuming a particular density profile partially breaks the
-mass sheet degeneracy: it remains to be seen how much systematic error
-in the time delay that assumption introduces.
+density map; see discussion in Section~\ref{ssec:lensmodel}). Assuming
+a specific density profile partially breaks the mass sheet degeneracy:
+it remains to be seen hohow much systematic error in the time delay
+that assumption introduces.
 
 % Importance of mass along the line sight - the universe is not Friedmann Lemaitre Robertson Walker.
 
-The form of the mass sheet transformation given by Equation~\ref{eq:mst}
-is a rescaling plus an offset. One way to achieve such a transformation
-is therefore to change the overall mass of the lens (by a factor of
-$\lambda$),   and at the same time add a ``mass sheet,'' a constant
-convergence~$(1-\lambda)$.  Both these variations are possible in
-nature: lens galaxies come in a range of masses, and  the combined
-gravitational lensing effect of all the other galaxies, groups and
-filaments along  the line of sight to the source can, in the weak
-lensing limit, be approximated by a constant ``external convergence''
-(associate with an ``external shear'', capable of further distorting the
-lensed images). However, as \citet{S+S13} point out, these physical
-effects only complicate the modeling problem, and should not be confused
-with the mathematical degeneracy between lens model parameters that is
-associated with the mass sheet transformation, and which would be
-present regardless of any external weak lensing effects. Having said
-that, any additional external physical mass component must also be taken
-into account when modeling the lens.
+The form of the mass sheet transformation given by
+Equation~\ref{eq:mst} is a rescaling plus an offset. One way to
+achieve such a transformation is therefore to change the overall mass
+of the lens (by a factor of $\lambda$), and at the same time add a
+``mass sheet,'' a constant convergence~$(1-\lambda)$.  Both these
+variations are possible in nature: lens galaxies come in a range of
+masses, and the combined gravitational lensing effect of all the other
+galaxies, groups and filaments along the line of sight to the source
+can, in the weak lensing limit, be approximated by a constant
+``external convergence'' (associate with an ``external shear'',
+capable of further distorting the lensed images). However, these
+physical effects only complicate the modeling problem, as one is not
+allowed to assume that the mass density profile of the deflector
+should vanish exactly at large radii.  The physical effect should not
+be confused with the mathematical degeneracy between lens model
+parameters that is associated with the mass sheet transformation, and
+which would be present regardless of any external weak lensing
+effects. Having said that, any additional external physical mass
+component must also be taken into account when modeling the lens.
 
 Any independent information about  the physical mass of the deflector
 galaxy, such as the kinematics of its stars, can play an important role
@@ -169,10 +189,11 @@ self-consistently predict the lensing effect (image distortions and time
 delays) and the internal dynamics of the lens galaxy, and take into
 account the weak lensing effects of structures along the line of sight.
 \citet{S+S13} provide demonstrations of the scale of this problem: very
-good data (both imaging and spectroscopic), as well as careful treatment
-of the models used, will be needed to obtain accurate results.  In
-Section~\ref{sec:measurement:lensmodel} we review the recent choices and
-approximations that have been made when constructing such models.
+good data (both imaging and spectroscopic), as well as physically
+meaningful assumptions and careful treatment of the models used, will
+be needed to obtain accurate results.  In Section~\ref{ssec:lensmodel}
+we review the recent choices and approximations that have been made
+when constructing such models.
 
 
 % \begin{figure*}
