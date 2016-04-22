@@ -1,17 +1,17 @@
-% State of the art: ray-traced cosmological simulations, matched via
-% number counts.
-
-% Limitations/systematics: incomplete model: local vs line of sight
-% mass,  ignoring multi-plane lensing, external convergence only.
-
 The analysis of B1608$+$656 by \citet{Suy++10} explicitly took into
 account the weak lensing effects of external structures.  Such a
 correction had been suggested by \citet{Fas++06b}, who identified 4
 galaxy groups along the line of sight in a spectroscopic survey of the
-B1608$+$656 field, and estimated that they could, if left unaccounted
-for, bias any inferred Hubble constant high by around 5\%. Exactly how
-to  model this effect has been the topic of a number of papers since
-2010: the problem is  how to incorporate our knowledge of where the
+B1608$+$656 field; the authors estimated that these groups could,
+if left unaccounted
+for, bias any inferred Hubble constant high by around 5\%, an amount
+consistent with more general theoretical predictions \citep{Bar96,K+Z04}.
+Further surveys have quantified the environments and line of sight
+density structures of many more systems \citep{Mom++06,Aug++07,Won++11,Mom++15}.
+Exactly how
+to model the weak lensing contamination of strong lens signals
+has been the topic of a number of papers since
+2010: the problem is how to incorporate our knowledge of where the
 galaxies are along the line of sight without introducing additional
 bias due to the necessary assumptions about how their (dark) mass is
 distributed, and how the rest of the mass budget in the field adds up.
@@ -42,12 +42,11 @@ relation in galaxies,  and modeling each galaxy halo's contribution to
 $\kappa_{\rm ext}$ individually in a  3-D reconstruction of the mass in
 the field which is then calibrated to simulations in something like the
 high resolution limit of the number counts approach.
-
-
-
-
-
-
+\citet{McCullyEtal2014} showed how to compute the weak lensing
+contamination accurately, using a full multi-plane lensing formalism
+\cite[see also][]{Schneider2014}
+but fast approximations for less important
+structures \citep{McCullyEtal2016}.
 
 While research into these methods continues, one problem in particular
 remains outstanding. The methods that involve calibration to numerical
