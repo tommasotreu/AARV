@@ -1,0 +1,28 @@
+Dear X,
+
+in the past several months we have been writing a review entitled
+"Time delay cosmography", invited by Eiichiro Komatsu, to appear in
+Astronomy and Astrophysics Review. We plan to post the draft review on
+arxiv on May 6, in order to gather feedback from the broad community,
+and then submit to the journal by the deadline May 15.
+
+We thought you might be interested in reading the current draft and we
+would be most grateful if you could give us any comments or feedback
+you might have before May 5, so that we can correct any errors or
+omissions before posting on arxiv. We have included a lot of
+references, but we would not be suprised if we have missed some
+important contribution. We apologize in advance for any oversight, and
+we would be grateful if you could point it out.
+
+The current draft is available on a public github repository
+
+https://github.com/tommasotreu/AARV/blob/master/README.md
+
+Please feel free to download it, read it and give us your feedback, by
+writing us an issue in github, or via e-mail to both of us. The first
+method is preferred as it allows us to keep track of things and it
+allows reader to see what has already been flagged.
+
+Thank you in advance for your help. Best wishes,
+
+Tommaso & Phil
