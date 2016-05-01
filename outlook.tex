@@ -273,23 +273,21 @@ primarily cause additional scatter on hour-long timescales
 \citet{S+S13} have pointed out the possibility of systematic errors at
 the twenty percent level due to modeling assumptions (and their
 interaction with the mass sheet degeneracy) when fitting lensing data
-alone.
-\citet{Suy++14} fitted the same two models used by
+alone. \citet{Suy++14} fitted the same two models used by
 \citet{S+S13}  to the current state of the art Einstein ring imaging and
 lens galaxy velocity dispersion data, and found that present
 measurements of stellar kinematics reduces the error by a factor of
-10.  It is not clear how much of the
-residual 2\% uncertainty is
-random, and how much residual bias there is: we do not
-yet know how our mass modeling methods respond to the variety of lens
-mass distributions we expect.
+10.  It is not clear how much of the residual 2\% uncertainty is
+random, and how much residual bias there is: we do not yet know how
+our mass modeling methods respond to the variety of lens mass
+distributions we expect.
 
-An important first step has been taken
-by \citet{XuEtal2016}, who looked at the density profiles of a sample
-of mock galaxies from the Illustris simulation, finding significant
-departures from simple power law profiles. However, they note that at
-the mass scales typical of galaxy scale lenses, where the total mass
-density profiles happen to be well approximated by isothermal spheres
+An important first step has been taken by \citet{XuEtal2016}, who
+looked at the density profiles of a sample of mock galaxies from the
+Illustris simulation, finding significant departures from simple power
+law profiles. However, they note that at the mass scales typical of
+galaxy scale lenses, where the total mass density profiles happen to
+be well approximated by isothermal spheres
 \citep{Koo++09,Aug++10}, the residual systematic uncertainty
 in the Hubble constant could be restricted to a few percent.
 Again, it remains to be verified how much of this averages out
@@ -358,16 +356,39 @@ of both time delay lenses, and also all other lenses, to bring in more
 information about the density structure of somewhat self-similar
 massive galaxies.
 
+In addition to carrying out tests on simulated data, it is important
+to continue empirical investigations of systematic errors. In addition
+to the generally applicable strategy of comparing the cosmological
+parameter estimates between individual systems or subsets of systems
+to measure whether statistical uncertainties are under-estimated, we
+must continue to look for other independent tests. An interesting
+example is that of multiply imaged supernova Refsdal. Several teams
+carried out lens models to predict in a truly blind fashion the
+magnification, timing, and position of the next appearance of the
+supernova \citep{Ogu15,S+J16,Jau++16,Tre++16,Kaw++16,Gri++16}. Even
+though the deflector is a merging cluster, and thus dramatically more
+challenging to model than the typical relaxed elliptical galaxies used
+in time-delay cosmography, several teams managed to predict the event
+\citep{Tre++16,Kel++16}  within the estimated uncertainties.  
+It is particularly re-assuring that the code GLEE designed and used
+extensively to model time delay cosmography
+\citep{Suy++10,Suy++13,Suy++14} performed the best
+\citep{Gri++16}. As the precision of time delay cosmography increases
+with sample size it will be important to seize any new opportunity to
+carry out additional blind tests, e.g. by predicting time delays of
+lens quasars before measuring and by actively searching for multiply
+imaged supernovae in galaxy-scale lenses \citep{O+M10}.
+
 
 \subsubsection{Environment and line of sight characterization}
 
 The current methodology (Section~\ref{ssec:los}) includes dependencies
 on both cosmological simulations and reference imaging surveys. The
-Stage~III and~IV wide field surveys will help with the latter, providing
-much larger, more homogenous sets of control fields.  Systematic
-errors associated with calibrating against simulations is the bigger
-problem, and both the number counts and 3D reconstruction approaches
-that have been implemeted to date are affected.
+Stage~III and~IV wide field surveys will help with the latter,
+providing much larger, more homogenous sets of control fields.
+Systematic errors associated with calibrating against simulations is
+the bigger problem, and both the number counts and 3D reconstruction
+approaches that have been implemeted to date are affected.
 \citet{CollettEtal2013} give some indication of the magnitude of the
 issue, finding a bias of 3\% in the average inferred time delay distance
 when assuming a stellar mass to halo mass relation that is incorrect
