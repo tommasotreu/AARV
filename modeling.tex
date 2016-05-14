@@ -92,16 +92,18 @@ isothermal ellipsoid for the gravitational potential of the deflector
 \citep[e.g.][]{Mar++07,Kne++11,Kee11}; ii) as combinations of basis sets like surface brightness
 pixels, lens potential pixel values, or Gauss-Hermite (``shapelet'')
 functions
-\citep[e.g.][]{Col08, BirrerEtal2015, Nig++15}. The latter class of
+\citep[e.g.][]{Col08, BirrerEtal2015, Nig++15, TagoreAndJackson2016}. The latter class of
 very flexible models require regularization to avoid overfitting the
 noise in the data.\footnote{In the case of the shapelet basis set,
-regularization is effectively achieved through choosing the number of basis
-functions to use as well as the scale of the underlying Gaussian. An
-alternative scheme would be to assign a less uninformative prior for the
-shapelet coefficients, but this has not yet been tested.}
-Hybrid approaches have been proposed where some of
-the components are simply parametrized and others are pixellated
-\citep{W+D03,T+K04,Suy++06}, or where flexibly-parametrized
+regularization can effectively be achieved through choosing the number of basis
+functions to use as well as the scale of the underlying Gaussian. Most
+analyses using shapelets having taken this approach to date, with
+\citet{TagoreAndJackson2016} being a notable exception. A
+promising alternative scheme would be to assign a less physically-motivated prior for the
+shapelet coefficients.}
+Hybrid approaches have been proposed where the parametrization of some of
+the components is simple and others are complex
+\citep{W+D03,T+K04,BrewerAndLewis2006,Suy++06}, or where flexibly-parametrized
 ``corrections'' are added to simply
 parametrized models \citep{Koo05,V+K09,S+H10,Suy++10,BirrerEtal2015}.
 The variety of
@@ -114,7 +116,7 @@ assumption it will lead to underestimated errors, if it is more
 flexible than necessary it will lead to a loss of precision.
 
 Once the choice of modeling parametrization is set, exploring the
-likelihood is numerically non-trivial, often requiring weeks to months
+posterior PDF for the parameters is numerically non-trivial, often requiring weeks to months
 of computing time. Fortunately, there are techniques to speed up the
 calculations by limiting the number of non-linear parameters. For
 example, for a given lens model, the transformation between source and
