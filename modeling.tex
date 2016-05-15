@@ -5,8 +5,9 @@ rely on the relative positions of the multiple images as constraints
 (since in general the flux ratios are affected by micro and
 millilensing, variability, and differential dust extinction, and are
 therefore highly uncertain). Even for a quadruply imaged quasars, the
-five positional constraints are insufficient to determine Fermat
-potential differences to the desired level of precision and accuracy.
+five positional constraints and three independent delays are
+insufficient to determine Fermat potential differences to the desired
+level of precision and accuracy.
 
 There are two classes of solution to the problem of underconstrained
 lens models. One is to analyze large samples of lenses with physically
@@ -49,7 +50,7 @@ deflection angle between the images.  In principle, for data with
 infinite signal-to-noise ratio and resolution one could imagine
 integrating the gradient of the deflection angle along a path between a
 pair of images to obtain the difference in Fermat potential,
-up to a mass sheet transformation (Section\ref{sec:theory}).
+up to a mass sheet transformation (Section~\ref{sec:theory}).
 In practice, in the presence of noisy data and limited resolution,
 forward modeling approaches have been the most successful so far, as
 discussed below. From an observational point of view, it has been
@@ -103,17 +104,16 @@ promising alternative scheme would be to assign a less physically-motivated prio
 shapelet coefficients.}
 Hybrid approaches have been proposed where the parametrization of some of
 the components is simple and others are complex
-\citep{W+D03,T+K04,BrewerAndLewis2006,Suy++06}, or where flexibly-parametrized
-``corrections'' are added to simply
-parametrized models \citep{Koo05,V+K09,S+H10,Suy++10,BirrerEtal2015}.
-The variety of
-approaches in the literature reflect the inevitable tensions between
-the need to impose as many physically motivated assumptions as
-possible, while retaining sufficient flexibility to obtain a realistic
-estimate of the uncertainties and avoid introducing biases by
-asserting incorrect simplistic models. If the model is too constrained by the
-assumption it will lead to underestimated errors, if it is more
-flexible than necessary it will lead to a loss of precision.
+\citep{W+D03,T+K04,BrewerAndLewis2006,Suy++06,S+H10}, or where flexibly-parametrized
+``corrections'' are added to simply parametrized models
+\citep{Koo05,V+K09,Suy++09,BirrerEtal2015}.  The variety of approaches
+in the literature reflect the inevitable tensions between the need to
+impose as many physically motivated assumptions as possible, while
+retaining sufficient flexibility to obtain a realistic estimate of the
+uncertainties and avoid introducing biases by asserting incorrect
+simplistic models. If the model is too constrained by the assumption
+it will lead to underestimated errors, if it is more flexible than
+necessary it will lead to a loss of precision.
 
 Once the choice of modeling parametrization is set, exploring the
 posterior PDF for the parameters is numerically non-trivial, often requiring weeks to months
