@@ -112,70 +112,1804 @@ the potential of significantly larger lens samples in the near future.
 \section{Introduction}
 \label{sec:intro}
 
-\input{intro}
+The measurement of cosmic distances is central to our understanding of
+cosmography, i.e. the description of the geometry and kinematics of
+the universe. The discovery of the period luminosity relation for
+Cepheids led to the realization that the universe is much bigger than
+the Milky Way and that it is currently expanding. Relative distance
+measurements based on supernova Ia light curves were the turning point
+in the discovery of the acceleration of the universe
+\citep{Riess:1998p21184,Per++99}.
+
+In the two decades since the discovery of the acceleration of the
+universe, distance measurements have improved steadily. For example,
+the Hubble constant has now been measured to 2.4\% precision
+\citep{Rie++16} while the distance to the last scattering surface of
+the cosmic microwave backgrond is now known to approximately 0.5\%
+precision \citep[depending on the assumed cosmological
+model]{WMAP9,Pla15}. This precision is more than sufficient for all
+purposes related to our understanding of phenomena occurring within
+the universe, like galaxy evolution.
+
+In spite of all this progress, the most fundamental question still
+remains unanswered. What is causing the acceleration? Is this {\it
+dark energy} something akin to Einstein's cosmological constant or is
+it a dynamical component? Answering this question from an empirical
+standpoint will require further improvements in the precision of
+distance measurements \citep{Suy++12,Wei++13,Kim++15,Rie++16}.  In
+practice, measuring the dark energy equation of state requires an
+accurate model of the scale parameter of the universe as a function of
+time, particularly when dark energy is dynamically most relevant,
+i.e. below $z\sim1$.
+
+Cosmic microwave background anisotropies primarily provide a
+measurement of the angular distance to the last scattering surface,
+obtained by comparing the angular scale of the acoustic peaks with the
+sound horizon at recombination. Therefore, the constraints set by
+cosmic microwave background anisotropy data on dark energy parameters
+are highly degenerate in a generic cosmological model
+\citep[e.g.,][]{Pla15}. Breaking the degeneracy requires strong
+assumptions about the universe (e.g., flatness or dark energy being
+the cosmological constant), or lower redshift distance
+measurements. Many dedicated experiments are currently under way or
+being planned with this goal in mind.
+
+%A summary of distance
+%measurements with approximate precision and redshift range is given in
+%Figure~\ref{fig:comparedist}.
+%[Include distance ladder, CMB, BAO, cosmic clocks, fgas]
+
+%\begin{figure}[!t]
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{figures/grid_1paramext.pdf}
+%\caption{Summary of current distance measurements}
+%\label{fig:comparedist}
+%\end{center}
+%\end{figure}
+
+Precision, however, is not sufficient by itself. In addition to
+controlling the known statistical uncertainties ({\it precision}),
+modern day experiments need to control systematic errors ({\it
+accuracy}) in order to fullfill their potential, including the
+infamous unknown unknowns. The most direct way to demonstrate accuracy
+is to compare independent measurements that have comparable
+precision. An interesting, currently topical, and relevant case is
+that of the 3$-\sigma$ tension between the local distance ladder
+determination of the Hubble Constant H$_0$ by \citet{Rie++16} and that
+inferred by the Planck satellite assuming a flat $\Lambda$CDM model
+\citep{Pla15}. The tension could be due to an unknown source of
+systematic errors in either or both of the two measurements, or it
+could be indicative of new physics, for example an effective number of
+relativistic species greater than three. Independent measurements with
+comparable precision are the best way to make progress.
+% For example,
+% the WMAP9 measurement \citep{Cal++13} is significantly less in tension
+% with the cosmic distance ladder data than the Planck one.
+While independent measurements of the same phenomenon, or reanalysis of the
+same data \citep{Fre++12,Rig++15,Efs14,SFH15}, are certainly useful and necessary,
+completely independent datasets based on different physical phenomena
+provide qualitatively new information.
+
+Ideally, the comparison between independent measurements should be
+carried out blindly, so as to minimize experimenter bias. Two mutually
+blind measurements agreeing that the equation of state parameter $w$
+is not $-1$ would be a very convincing demonstration that the dark
+energy is not the cosmological constant. Conversely, the significant
+disagreement of two blind and independent measurements, could be the
+first sign of new physics.
+
+In this review we focus on strong lensing gravitational time delays as
+a tool for cosmography. As we shall see, this probe provides a direct
+and elegant way to measure absolute distances out to cosmological
+redshift. When the line of sight to a distant source of light is
+suitably well aligned with an intervening massive system, multiple
+images appear to the observer. The arrival time of the images depends
+on the interplay of the geometric and gravitational delays specific to
+the configuration. If the emission from the source is variable in
+time, the difference in arrival time is measurable, and can be
+interpreted via a so-called ``time delay distance'' $\Ddt$.  In the
+simplest case, this distance is just a multiplicative combination of
+the three angular diameter distances between the observer, deflector
+and source. $\Ddt$ is inversely proportional to $H_0$, and more weakly
+dependent on other cosmological parameters. As several authors have
+pointed out \citep{Hu05,Lin11,Suy++12,Wei++13}, achieving sub-percent
+precision and accuracy on the measurement of the Hubble constant will
+be a powerful addition to Stage III and IV dark energy
+experiments. The independence of time delays from other traditional
+probes of cosmology, makes them very valuable for precise and accurate
+cosmology. For example, time delays yield an {\it absolute}
+measurement of distance without relying on Cepheids or any other local
+rung of the distance ladder, and because the relevant quantities are
+angular diameter distances rather then luminosity distances, the
+approach is insensitive to dust or other photometric errors.
+
+This review is organized as follows. In Section~\ref{sec:history} we
+summarize the history of time delay cosmography up until the turn of
+the millennium, in order to give a sense of the early challenges and
+how they were overcome. In Section~\ref{sec:theory}, we review the
+theoretical foundations of the method, in terms of the gravitational
+optics version of Fermat's principle. In Section~\ref{sec:measurement}
+we describe in some detail the elements of a modern time delay
+distance measurement, emphasizing recent advances and remaining
+challenges. In Section~\ref{sec:cosmo} we elucidate the connection
+between time delay distance measurements and cosmological parameters,
+discussing complementarity with other cosmological
+probes. Section~\ref{sec:outlook} critically examines the future of
+the method, discussing prospects for increasing the precision, testing
+for accuracy, and synergy with other future probes of dark energy. A
+brief summary is given in Section~\ref{sec:summary}.
+
+Owing to space limitations, we could only present a selection of all
+the beautiful work that has been published on this topic in the past
+decades. We refer the readers to recent
+\citep{Bar10,Ell10,Tre10,TMC12,Jackson:2013p30763,Jac15,T+E15}
+and not-so-recent \citep{B+N92,CSS02,K+S04,Fal05,SKW06}
+excellent reviews and textbooks \citep{SEF92} for additional
+information and historical context.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{A brief history of time delay cosmography}
 \label{sec:history}
 
-\input{history}
+The measurement of cosmic distances is central to our understanding of
+cosmography, i.e. the description of the geometry and kinematics of
+the universe. The discovery of the period luminosity relation for
+Cepheids led to the realization that the universe is much bigger than
+the Milky Way and that it is currently expanding. Relative distance
+measurements based on supernova Ia light curves were the turning point
+in the discovery of the acceleration of the universe
+\citep{Riess:1998p21184,Per++99}.
+
+In the two decades since the discovery of the acceleration of the
+universe, distance measurements have improved steadily. For example,
+the Hubble constant has now been measured to 2.4\% precision
+\citep{Rie++16} while the distance to the last scattering surface of
+the cosmic microwave backgrond is now known to approximately 0.5\%
+precision \citep[depending on the assumed cosmological
+model]{WMAP9,Pla15}. This precision is more than sufficient for all
+purposes related to our understanding of phenomena occurring within
+the universe, like galaxy evolution.
+
+In spite of all this progress, the most fundamental question still
+remains unanswered. What is causing the acceleration? Is this {\it
+dark energy} something akin to Einstein's cosmological constant or is
+it a dynamical component? Answering this question from an empirical
+standpoint will require further improvements in the precision of
+distance measurements \citep{Suy++12,Wei++13,Kim++15,Rie++16}.  In
+practice, measuring the dark energy equation of state requires an
+accurate model of the scale parameter of the universe as a function of
+time, particularly when dark energy is dynamically most relevant,
+i.e. below $z\sim1$.
+
+Cosmic microwave background anisotropies primarily provide a
+measurement of the angular distance to the last scattering surface,
+obtained by comparing the angular scale of the acoustic peaks with the
+sound horizon at recombination. Therefore, the constraints set by
+cosmic microwave background anisotropy data on dark energy parameters
+are highly degenerate in a generic cosmological model
+\citep[e.g.,][]{Pla15}. Breaking the degeneracy requires strong
+assumptions about the universe (e.g., flatness or dark energy being
+the cosmological constant), or lower redshift distance
+measurements. Many dedicated experiments are currently under way or
+being planned with this goal in mind.
+
+%A summary of distance
+%measurements with approximate precision and redshift range is given in
+%Figure~\ref{fig:comparedist}.
+%[Include distance ladder, CMB, BAO, cosmic clocks, fgas]
+
+%\begin{figure}[!t]
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{figures/grid_1paramext.pdf}
+%\caption{Summary of current distance measurements}
+%\label{fig:comparedist}
+%\end{center}
+%\end{figure}
+
+Precision, however, is not sufficient by itself. In addition to
+controlling the known statistical uncertainties ({\it precision}),
+modern day experiments need to control systematic errors ({\it
+accuracy}) in order to fullfill their potential, including the
+infamous unknown unknowns. The most direct way to demonstrate accuracy
+is to compare independent measurements that have comparable
+precision. An interesting, currently topical, and relevant case is
+that of the 3$-\sigma$ tension between the local distance ladder
+determination of the Hubble Constant H$_0$ by \citet{Rie++16} and that
+inferred by the Planck satellite assuming a flat $\Lambda$CDM model
+\citep{Pla15}. The tension could be due to an unknown source of
+systematic errors in either or both of the two measurements, or it
+could be indicative of new physics, for example an effective number of
+relativistic species greater than three. Independent measurements with
+comparable precision are the best way to make progress.
+% For example,
+% the WMAP9 measurement \citep{Cal++13} is significantly less in tension
+% with the cosmic distance ladder data than the Planck one.
+While independent measurements of the same phenomenon, or reanalysis of the
+same data \citep{Fre++12,Rig++15,Efs14,SFH15}, are certainly useful and necessary,
+completely independent datasets based on different physical phenomena
+provide qualitatively new information.
+
+Ideally, the comparison between independent measurements should be
+carried out blindly, so as to minimize experimenter bias. Two mutually
+blind measurements agreeing that the equation of state parameter $w$
+is not $-1$ would be a very convincing demonstration that the dark
+energy is not the cosmological constant. Conversely, the significant
+disagreement of two blind and independent measurements, could be the
+first sign of new physics.
+
+In this review we focus on strong lensing gravitational time delays as
+a tool for cosmography. As we shall see, this probe provides a direct
+and elegant way to measure absolute distances out to cosmological
+redshift. When the line of sight to a distant source of light is
+suitably well aligned with an intervening massive system, multiple
+images appear to the observer. The arrival time of the images depends
+on the interplay of the geometric and gravitational delays specific to
+the configuration. If the emission from the source is variable in
+time, the difference in arrival time is measurable, and can be
+interpreted via a so-called ``time delay distance'' $\Ddt$.  In the
+simplest case, this distance is just a multiplicative combination of
+the three angular diameter distances between the observer, deflector
+and source. $\Ddt$ is inversely proportional to $H_0$, and more weakly
+dependent on other cosmological parameters. As several authors have
+pointed out \citep{Hu05,Lin11,Suy++12,Wei++13}, achieving sub-percent
+precision and accuracy on the measurement of the Hubble constant will
+be a powerful addition to Stage III and IV dark energy
+experiments. The independence of time delays from other traditional
+probes of cosmology, makes them very valuable for precise and accurate
+cosmology. For example, time delays yield an {\it absolute}
+measurement of distance without relying on Cepheids or any other local
+rung of the distance ladder, and because the relevant quantities are
+angular diameter distances rather then luminosity distances, the
+approach is insensitive to dust or other photometric errors.
+
+This review is organized as follows. In Section~\ref{sec:history} we
+summarize the history of time delay cosmography up until the turn of
+the millennium, in order to give a sense of the early challenges and
+how they were overcome. In Section~\ref{sec:theory}, we review the
+theoretical foundations of the method, in terms of the gravitational
+optics version of Fermat's principle. In Section~\ref{sec:measurement}
+we describe in some detail the elements of a modern time delay
+distance measurement, emphasizing recent advances and remaining
+challenges. In Section~\ref{sec:cosmo} we elucidate the connection
+between time delay distance measurements and cosmological parameters,
+discussing complementarity with other cosmological
+probes. Section~\ref{sec:outlook} critically examines the future of
+the method, discussing prospects for increasing the precision, testing
+for accuracy, and synergy with other future probes of dark energy. A
+brief summary is given in Section~\ref{sec:summary}.
+
+Owing to space limitations, we could only present a selection of all
+the beautiful work that has been published on this topic in the past
+decades. We refer the readers to recent
+\citep{Bar10,Ell10,Tre10,TMC12,Jackson:2013p30763,Jac15,T+E15}
+and not-so-recent \citep{B+N92,CSS02,K+S04,Fal05,SKW06}
+excellent reviews and textbooks \citep{SEF92} for additional
+information and historical context.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Theoretical background}
 \label{sec:theory}
 
-\input{theory}
+
+In this section we provide a brief summary of the theory of
+gravitational lens time delays. We have distilled much of the content
+of this section from the excellent exposition of Schneider and
+Kochanek \citep{SKW06}, as well as the various key papers we cite.
+
+% Lensing, Fermat's principle and potential. Time delay surface.
+
+Fermat's Principle of Least Time holds for the propagation of light rays
+through curved spacetime \citep{Per90a,Per90b}. The light travel time through a single, isolated, thin
+gravitational lens is given by
+%
+\begin{align}
+    \tau(\x) &= \frac{\Ddt}{c} \cdot \Phi(\x,\y), \\
+    \text{where\;\;} \Phi(\x) &= \frac{1}{2}\left(\x - \y\right)^2 - \psi(\x).
+\end{align}
+%
+Here, $\x$ denotes the light source's apparent position on the sky, and
+$\y$ is the position of the unlensed source. The difference between the
+observable position~$\x$ and the unobservable position~$\y$ is the
+scaled deflection angle~$\deflectionangle({\x})$, which is typically
+$\sim1$~arcsecond in a galaxy-scale strong gravitational lens system.
+$\psi(\x)$ is the scaled gravitational potential of the lensing object,
+projected onto the lens plane. Both $\deflectionangle(\x)$ and $\psi(\x)$ can be
+predicted given a model for the mass distribution of the lens.
+
+Images form at the stationary points of the light travel time, where $\grad
+\tau(\x) = \grad \Phi(\x) = 0$ \citep{Schneider1985}. For this reason,
+$\Phi(\x)$ is known as the ``Fermat potential.'' This quantity can also
+be thought of as the spatially-varying refractive index of the lens. The
+arrival time itself is not observable, but differences in arrival time
+between multiple images are. In the above approximation, the  ``time delay'' $\Delta \tau_{\rm AB}$
+between image A and
+image B can be predicted via
+%
+\begin{equation}
+    \Delta \tau_{\rm AB} = \frac{\Ddt}{c} \Delta \Phi_{\rm AB} \label{eq:timedelay}
+\end{equation}
+%
+where $\Delta \Phi_{\rm AB}$ is the Fermat potential difference
+between the two image positions.  Figures~\ref{fig:timedelaycartoon}
+and~\ref{fig:delays} illustrate the origin of the time delay between
+the images in a simple gravitational lens system. The small magnitude
+of the fractional time delay (typically $\Delta\tau \sim 10$~days out
+of $\Ddt/c \sim 10^{12}$ days light travel time) is commensurate with
+the square of the deflection angle (typically
+$|\deflectionangle|\sim1$~arcsecond, or $\sim 5\times10^{-6}$
+radians). Two characteristic scales are the critical surface mass
+density $\Sigma_c$, and the Einstein Radius R$_{\rm Ein}$. The former
+is given by a combination of angular diameter distances between the
+source ($s$), deflector ($d$) and observer, $\Sigma_c=4c^2\Ds/4\pi
+\Dd\Dds$, and it is used to define the dimensionless surface mass
+density or convergence $\kappa=\Sigma/\Sigma_c$. The latter can be
+defined, for axisymmetric mass distributions, as the radius of the
+circle within which the mean convergence $\langle \kappa \rangle=1$.
+
+\begin{figure*}[!t]
+\centering\includegraphics[width=0.96\textwidth]{figures/wavefront-schematic.png}
+\caption{Schematic diagram
+illustrating the origin of the gometric component of the time delay.}
+\label{fig:timedelaycartoon}
+\end{figure*}
+
+\begin{figure*}[!ht]
+\centering\includegraphics[width=0.96\textwidth]{figures/delays.pdf}
+\caption{Geometric and general relativistic (Shapiro) contributions
+to the lens time delay \citep{T+E15}. Images form
+at minima and saddle points of the delay surface, shown here in
+cross-section. Different source positions result in different
+geometrical delays as well as shifted image positions.
+Image reproduced with permission from \citet{T+E15}, copyright by
+Taylor \& Francis.}
+\label{fig:delays}
+\end{figure*}
+
+% Time delay distance.
+
+We see from Equation~\ref{eq:timedelay} that given a mass
+model that predicts $\Delta \Phi_{\rm AB}$, we can infer the ``time
+delay distance'' $\Ddt$ from a measured time delay $\Delta \tau_{\rm AB}^{\rm obs}$.
+This distance is actually a combination of angular diameter
+distances:
+%\footnote{As \citet{SKW06} point out, $\Ddt$ can be written more simply in terms
+%of comoving angular diameter distances, but most of the literature uses the
+%formula in Equation~\ref{eq:ddt}.}
+%
+\begin{equation}
+    \Ddt = (1+\zd) \frac{\Dd \Ds}{\Dds}  \label{eq:ddt}
+\end{equation}
+%
+These angular diameter distances can be predicted given the redshifts
+of the lens and source, $\zd$ and $\zs$, and an assumed world model with
+cosmological parameters~$\cospars$. The time delay distance is primarily
+sensitive to the Hubble constant, since $\Ddt \propto H_0^{-1}$.
+All the above formalism pertains to the simple model where
+all the deflecting mass is arranged on a single lens plane. The multiple
+lens plane case is more complex, but quantities like $\Ddt$ appear
+throughout the equations that predict the time delays, capturing the
+distances between the lens planes and preserving approximately the
+same dependence on cosmological parameters \citep{Petters2001,McCullyEtal2014}.\footnote{Additional
+distance dependences appear in the multi-plane formalism, but always as dimensionless
+ratios with weaker cosmological dependence. The inverse proportionality
+to the Hubble Constant is the same as in the single plane case.}
+
+% Importance of mass distribution in lens.
+
+Knowledge of the lens mass distribution is of vital importance to the
+success of this cosmological inference: Equation~\ref{eq:timedelay}
+shows that the time delay distance is likely to be comparably
+sensitive to uncertainty in
+the predicted Fermat potential as it is to the measured time delay itself.
+More concentrated mass distributions with steeper density
+profiles produce longer time delays leading to shorter inferred time
+delay distances, and thus larger inferred values of $H_0$ \citep{Wuc02,Koc02,Suyu12}.
+% Sensitivity analysis in \citep{SKW06}? Could extend to more general
+% consideration of Fermat potential difference.
+
+% Model (mass-sheet) degeneracy and its generalizations
+
+Moreover, there is significant risk of systematic error when modeling
+lens mass distributions. While image positions remain invariant under
+the ``mass sheet transformation'' \citep{FGS85,S+S13}
+\citep[and its generalization, the source-position transformation][]{SPT}, the time delays
+predicted by the model can change significantly. The mass sheet transformation
+and its effect on the time delay is as follows:
+%
+\begin{align}
+    \kappa(\x) \rightarrow \kappa(\x)' &= (1 - \lambda) + \lambda \kappa(\x)  \label{eq:mst} \\
+    \Delta \tau \rightarrow \Delta \tau' &= \lambda \Delta \tau.
+\end{align}
+%
+This means that if we allow our model the freedom to generate both the
+$\kappa(\x)$ and $\kappa(\x)'$ mass distributions, our image position
+data will not favor one over the other: they will be equally likely
+given the data. This model degeneracy can be broken by additional
+information.
+
+Perhaps the best sources of additional information are independent
+measurements of the mass distribution: stellar kinematics is the
+obvious choice \citep{Koo++03}.
+%Alternatively, lensed sources at
+%multiple redshifts help break the degeneracy, but they are rare
+%\citep{Gav++08,Son++12} and thus not applicable in general.
+Another way to break degeneracy is to obtain non-lensing information
+about the lensed source absolute size \citep{SBL11} or luminosity
+\citep{K+B98,Hol01}. This way requires special circumstances, and therefore
+we focus on deflector kinematics in the remainder of this review.
+
+Building on previous work \citep{GLB08,P+J9},
+\citet{JeeKomatsuSuyu2015} provide a derivation of the resulting
+cosmological dependence of kinematics-constrained power-law lens
+galaxy mass models with isotropic orbits, showing that were its
+density profile and velocity isotropy to be known exactly, a time
+delay lens would provide a measurement of the angular diameter
+distance to the lens, $\Dd$, in addition to the time delay distance of
+Equation~\ref{eq:ddt}. The reason given is that the velocity
+dispersion and the time delay are both proportional to the enclosed
+mass of the lens, but depend differently on galactocentric radius:
+combining the measured velocity dispersion and time delay gives a
+characteristic physical scale of the lens galaxy.  The image
+separation provides a corresponding angular scale, allowing the
+angular diameter distance to be probed.
+% \citep[see earlier work
+%by][]{GLB08}.
+
+In practice, the same mass model must be used to predict all of the
+measured velocity dispersion, Einstein ring appearance, and time
+delay data, self-consistently. In the limit of low precision in the
+velocity dispersion, the profile slope is weakly constrained by the
+ring image alone, and the combination of time delay and lens mass
+model provides information on $\Ddt$ but none on $\Dd$. As the
+velocity dispersion precision increases, we expect the profile slope
+to be pinned down, and the angular diameter distance to be constrained
+{\it as well}. In the context of a cosmological model, the two
+distances are not independent: the angular diameter distance
+information provided by the velocity dispersion measurement should
+translate into higher precision inference of the cosmological
+parameters \citep{JeeEtal2016}.  We return to this in
+Section~\ref{ssec:precision} below.
+
+Another way to break degeneracy in the lens model is to include prior
+knowledge of the lens mass distribution from measurements of other
+galaxies similar to the lens, or perhaps from numerical
+simulations. This type of information is typically encoded as a
+simply-parametrized model, such as an elliptically-symmetric mass
+distribution with power law density profile (as opposed to a free form
+density map; see discussion in Section~\ref{ssec:lensmodel}). Assuming
+a specific density profile partially breaks the mass sheet degeneracy:
+how much systematic error in the time delay that assumption introduces
+is an important topic for research.
+
+% Importance of mass along the line sight - the universe is not Friedmann Lemaitre Robertson Walker.
+
+The form of the mass sheet transformation given by
+Equation~\ref{eq:mst} is a rescaling plus an offset. One way to
+achieve such a transformation is therefore to change the overall mass
+of the lens (by a factor of $\lambda$), and at the same time add a
+``mass sheet,'' a constant convergence~$(1-\lambda)$.  Both these
+variations are possible in nature: lens galaxies come in a range of
+masses, and the combined gravitational lensing effect of all the other
+galaxies, groups and filaments along the line of sight to the source
+can, in the weak lensing limit, be approximated by a constant
+``external convergence'' (which is associated with an ``external shear'',
+capable of further distorting the lensed images). However, these
+physical effects only complicate the modeling problem, as one is not
+allowed to assume that the mass density profile of the deflector
+should vanish exactly at large radii.  The physical effect should not
+be confused with the mathematical degeneracy between lens model
+parameters that is associated with the mass sheet transformation, and
+which would be present regardless of any external weak lensing
+effects. Having said that, any additional external physical mass
+component must also be taken into account when modeling the lens.
+
+In summary, independent information about the physical mass of the deflector
+galaxy, such as the kinematics of its stars, can play an important role
+in breaking the degeneracy in the mass model, which must be able to
+predict self-consistently the strong lensing effects (image distortions and time
+delays) and the internal dynamics of the lens galaxy, and take into
+account the weak lensing effects of structures along the line of sight.
+\citet{S+S13} provide demonstrations of the scale of this problem: very
+good data (both imaging and spectroscopic), as well as physically
+meaningful assumptions and careful treatment of the models used, will
+be needed to obtain accurate results.  In Section~\ref{ssec:lensmodel}
+we review the recent choices and approximations that have been made
+when constructing such models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Modern time delay distance measurement}
 \label{sec:measurement}
 
-\input{measurement}
+Since 2010, it has been recognized that accurate cosmography with
+individual lens systems involves the following key analysis steps.
+
+\begin{description}
+    \item{\bf Time delay estimation} The light curve extracted from
+    monitoring observations is used as input to an inference of the
+    time delay between the multiple images.
+    \item{\bf Lens galaxy mass modeling} High resolution imaging
+    and spectroscopic data are used to
+    constrain a model for the lens galaxy mass distribution, which can be used
+    to predict Fermat potential differences. Both the Einstein ring
+    image and the stellar velocity dispersion are important.
+    \item{\bf Environment and line of sight modeling} Additional observational
+    information about the field of view around the lens system is used
+    to account for the weak lensing effects due to massive structures in
+    the lens plane and along the line of sight.
+\end{description}
+
+Cosmological parameter inference can then proceed -- although in
+practice the  separation between this final step and the ones above is
+not clean. Practitioners aspire to a joint inference of lens, source,
+environment and cosmological parameters from all the data
+simultaneously, but have to date broken the problem down  into the above
+steps. In the next three sections we describe the current state of the art,
+limitations, and principal sources of systematic error of these three
+key measurement parts of the problem.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \subsection{Measuring time delays}
 \label{ssec:timedelay}
 
-\input{timedelays}
+The measurement of gravitational time delays involves two steps:  taking
+observations to monitor the system over a period of several years,
+and then inferring the time delays between the multiple images from
+these data.
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+
+\subsubsection{Monitoring observations and results}
+
+Active Galactic Nuclei (AGN) show intrinsic time variability on many
+scales, with the variability amplitude increasing with timescale. Long
+and regular
+monitoring campaigns can build up high statistical significance as
+more and more light curve features can be brought into play.  However,
+such long campaigns are difficult to carry out in practice, because a
+large number of
+guaranteed, evenly spaced
+observing nights are required (even if the
+total exposure time is modest). Scheduling such a program has proven
+difficult in traditional time allocation schemes, due to the competing
+demands of the rest of the astronomy community and the long duration
+requirements of lens monitoring. The highest precision time delays
+have come from monitoring campaigns carried out with dedicated
+facilities so far, i.e. observatories that were either able to commit
+to the long term monitoring proposal submitted, or that were actually
+operated in part by the monitoring collaboration.
+
+
+Monitoring of the CLASS lens B1608$+$656 in the radio with the Very
+Large Array enabled the breakthrough  time delay measurements of
+\citet{Fas++02}. In its first season, this program  yielded measurements
+of all three time delays in this quadruple image system with precision
+of 6--10\% \citep{Fas++99}; with the variability of the source
+increasing over the subsequent two seasons, \citet{Fas++02} were able
+to reduce this uncertainty to 2--5\%. Such high precision was the
+result of a dedicated campaign which consisted of 8-month seasons,
+with a mean observation spacing of around 3 days. The light curves
+were calibrated to 0.6\% accuracy.
+
+While time delays had previously been measured in ten other lens
+systems, this was the first time that all the delays in a quad had
+been obtained; moreover, it brought the time delay uncertainty below
+the systematic uncertainty due to the lens model, prompting new
+efforts in this direction beyond what \citet{K+F99} needed to do.
+
+While B1608$+$656 is not the only radio lens with measured time
+delays, a combination of factors led the observational focus to shift
+towards monitoring in the optical. With the sample of known, bright
+lensed quasars increasing in size, networks of 1-2m class optical
+telescopes began to be investigated. The variability in these systems
+is somewhat more reliable, and while microlensing and image resolution
+present observational challenges, the access to data was found to be
+less restrictive. The COSMOGRAIL project \citep{Cou++05} took on the
+task of measuring lens time delays with few-percent precision in this
+way:
+\citet{Eig++05} showed that microlensing was likely not to be an
+insurmountable task, and \citet{Vui++07} provided the proof of concept
+with a 4\% precision time delay measurement in SDSS\ J1650$+$4251.
+
+One of the keys to the success of this program has been the simultaneous
+deconvolution of the individual frames in the imaging dataset, using  a
+mixture model to describe the point-like quasar images and extended lens
+and AGN host galaxies \citep{MCS98}.  Another is the dedicated nature of
+the network of telescopes employed, and the  careful calibration of the
+photometry across this distributed system. Seasons of 8--12 months
+duration over campaigns of up to 9 years have been achieved, with
+typical mean observation gaps of around 3--4 days.
+
+The COSMOGRAIL team and their collaborators have now published high
+precision time delays in WFI\,J2033$-$4723 \citep[][3.8\%]{Vui++08},
+HE\,0435$-$1223
+\citep[][5.6\%]{Cou++11}, SDSS\,J1206$+$4332 \citep[][2.7\%]{Eul++13}
+and  RX\,J1131$-$1231 \citep[][1.5\%]{Tew++13}, and SDSS\,J1001$+$5027
+\citep[][2.8\%]{RK++13}, with more due to follow.  Typically multiple
+years of monitoring are needed to obtain an accurate  time delay, as the
+variability fluctuates and the reliability of the  measurement converges
+\citep[see the discussion in e.g.\ ][]{Tew++13}. High precision optical time delays are also being obtained by other groups \citep{Poi++07a,Foh++07,Dah++15} using similar strategies on different telescopes.
+
+A consistent picture seems to emerge from modern monitoring projects:
+high precision gravitational time delay measurement requires campaigns
+consisting of multiple, long seasons, with around 3-day cadence. The
+baseline observing strategy for the Large Synoptic Survey Telescope
+(LSST) is somewhat different to this, with seasons expected to be
+around 4--5 months in length, and gaps between observation nights only
+reaching 4--5 days when images in all filters are taken into
+account. The ``Time Delay Challenge'' project was designed to test the
+measurability of lens time delays with such light curves
+\citep{DoblerEtal2015}, in a blind test offered to the astronomical
+community. From the ten algorithms entered by seven teams, it was
+concluded that time delay estimates of the precision and accuracy
+needed for time delay cosmography would indeed be possible, in
+$\sim$400 LSST lensed quasar systems \citep{LiaoEtal2015}. This result
+came with two caveats: 1) the single filter light curve data presented
+in the challenge is representative of the multi-filter data we
+actually expect, and 2) that ``outliers'' (catastrophic time delay
+mis-estimates) will be able to be caught during the measurement
+process.  A second challenge to test these assumptions is in
+preparation.
+
+
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+
+\subsubsection{Lightcurve analysis methods}
+
+How were the time delays surveyed in the previous section derived from
+the light curve data? Interest in this particular inference problem
+has been high since the controversies of the late
+1990's. \citet{Fas++99} used the ``dispersion method'' of
+\citet{Pelt++96}, a technique that involves shifting one observed
+light curve relative to another (both in time and in amplitude) and
+minimizing the dispersion between adjacent points in the resulting
+composite curve. Uncertainties were estimated by Monte Carlo
+resampling of the data, assuming the minimum dispersion time delay and
+magnification ratio to be true. In order to take into account the
+slowly varying incoherent microlensing signals present in their
+optical light curve data, the COSMOGRAIL team have investigated three
+analysis techniques that all involve interpolation of the light curves
+in some way \citep{TCM13}: free-knot splines, Gaussian processes and
+simple linear interpolation have all been tested, within a common
+``python curve-shifting'' (PyCS) framework.\footnote{The COSMOGRAIL
+curve shifting analysis code is available from
+\texttt{http://cosmograil.org}} These agree with each other given
+light curves of sufficient length, providing an argument for
+multiple-season monitoring campaigns.
+
+The time delay challenge prompted seven analysis teams to develop and
+test algorithms for time delay estimation. These are outlined in the
+TDC1 analysis paper of \citet{LiaoEtal2015}, but we give a very brief
+summary here as well, along with updated references.
+The PyCS team tried a two-step approach (visual inspection and
+interactive curve shifting, followed by automated analyses based on
+spline model regressions for the AGN variability and the microlensing),
+and submitted an entry after each step
+\citep{BonvinEtal2016}. Two other teams applied similar
+curve-shifting approaches: both \citet{A+S2015} and \citet{RK++2015}
+devised smoothing and cross-correlation schemes that they find to be
+both fast and reliable. Jackson applied the dispersion method of
+\citet{Pelt++96}, but carefully supervised via visual inspection to
+check for  catastrophic failures.  The three remaining teams used
+Gaussian Processes (GPs) to model the light curves. \citet{TakEtal2016}
+used a custom Gibbs sampler to infer the hyper-parameters describing the
+GP for the AGN variability and polynomials for the microlensing signals,
+although they ignored microlensing during the challenge itself.
+Romero-Wolf \& Moustakas implemented a very similar model, also ignored
+microlensing, and used a freely-available ensemble sampler for the
+inference. \citet{H+L2014} used GPs for both the AGN and microlensing
+variability, and marginalized over their hyper-parameters when focusing
+on the time delay.
+
+Two factors were important in the minimisation of catastrophic time
+delay mis-estimation: explicitly including microlensing in the model,
+and  visual inspection of the results. An additional promising avenue
+for future challenges ought to be ensemble analysis, to exploit 1) the
+intrinsic correlations between, for example, AGN variability, color and
+brightness, and 2) the fact that  the cosmological parameters are common
+to all lens systems.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \subsection{Modeling the lens mass distribution}
 \label{ssec:lensmodel}
 
-\input{modeling}
+In addition to time delays, the second main ingredient entering the
+determination of time delay distances is the mass model of the main
+deflector. In the early days of time delay cosmography one could only
+rely on the relative positions of the multiple images as constraints
+(since in general the flux ratios are affected by micro and
+millilensing, variability, and differential dust extinction, and are
+therefore highly uncertain). Even for a quadruply imaged quasars, the
+five positional constraints and three independent delays are
+insufficient to determine Fermat potential differences to the desired
+level of precision and accuracy.
+
+There are two classes of solution to the problem of underconstrained
+lens models. One is to analyze large samples of lenses with physically
+motivated priors and exploit the fact that cosmological parameters are
+the same for all lenses to remove model degeneracies. A number of
+attempts along these lines have been made \citep{Ogu07b,RK++2015}, and
+it is easy to imagine that this solution will be popular in the
+future, when large samples of lenses with measured time delays will be
+available.
+
+The alternative solution is to increase dramatically the number of
+empirical constraints per lens system by means of dedicated high
+resolution imaging and spectroscopic observations
+\citep{Suy++10,Suy++13,Suy++14}. We describe this approach in detail
+below.
+
+For simplicity, in this section we describe only the case of a single
+deflector in a single plane, leaving line of sight and environmental
+effects for a later section. For clarity, we describe each step
+corresponding to a different dataset individually. Ideally, all the
+data, including the time delays, should be modeled holistically at the
+same time---although in practice the problem has, to date, been broken up
+into parts to make it more tractable.
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+
+\subsubsection{High resolution imaging observations}
+
+Lensed quasars reside in a host galaxy. For typical redshifts of lens
+and source, the host galaxy apparent size is of order
+arcseconds. Images with sufficient depth and resolution to isolate the
+bright point source and detect the lower surface brightness host
+galaxy often reveal extended lensed features connecting the
+point-like images themselves (e.g. Figure~\ref{fig:oldvsmodernimage}).
+
+In the best conditions these images cover hundreds if not thousands of
+resolution elements. The distortion of the detailed features of the
+lensed images are a direct measurement of the variation of the
+deflection angle between the images.  In principle, for data with
+infinite signal-to-noise ratio and resolution one could imagine
+integrating the gradient of the deflection angle along a path between a
+pair of images to obtain the difference in Fermat potential,
+up to a mass sheet transformation (Section~\ref{sec:theory}).
+In practice, in the presence of noisy data and limited resolution,
+forward modeling approaches have been the most successful so far, as
+discussed below. From an observational point of view, it has been
+demonstrated that images with $0.1''-0.2''$ FWHM resolution provide
+good results, provided that the point spread function can be
+appropriately modeled or reconstructed as part of the lens model
+itself. The Hubble Space Telescope in the optical/near infrared
+\citep{Suy++10,Suy++13,Suy++14,BirrerEtal2015} and the Very Large Baseline
+Interferometer in the radio \citep{WBB04} have been the main sources
+of images for this application. Recent progress in adaptive optics
+imaging at the 10m W.M.~Keck telescope \citep{Che++16}, the beautiful data being
+obtained for lensed source by ALMA \citep{Hez++13a}, and the many
+facilities currently being constructed or planned \citep{Men++15},
+indicate that the prospects to scale up the number of systems with
+available high resolution images are bright.
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+
+\subsubsection{Lens modeling techniques}
+
+Conceptually, a detailed model of a lensed quasar and its host galaxy
+needs to describe three different physical components: i) the surface
+brightness of the source; ii) the surface brightness of the deflector;
+iii) the gravitational potential of the deflector. It is useful to
+conceptualize the problem in this way, in order to understand where
+the information needed to break the degeneracy in the interpretation
+of the data comes from. Lensing is achromatic and preserves surface
+brightness so any feature that belongs to the source \cite[including
+in line of sight velocity][]{Hez++13} should appear in all the
+multiple images (appropriately distorted). Likewise, the deflector is
+typically a massive early-type galaxy with smooth surface brightness
+distribution and approximately uniform colors \cite[except for dust,
+see, e.g.][]{Suy++10}.
+
+Each of the three components is typically described in terms of one or
+both of the following choices:
+i) simply parametrized functions such as a Sersic profile
+for the surface brightness of the lens or the source, and a singular
+isothermal ellipsoid for the gravitational potential of the deflector
+\citep[e.g.][]{Mar++07,Kne++11,Kee11}; ii) as combinations of basis sets like surface brightness
+pixels, lens potential pixel values, or Gauss-Hermite (``shapelet'')
+functions
+\citep[e.g.][]{Col08, BirrerEtal2015, Nig++15, TagoreAndJackson2016}.
+Very flexible models require regularization to avoid overfitting the
+noise in the data.\footnote{In the case of the shapelet basis set,
+regularization can effectively be achieved through choosing the number of basis
+functions to use as well as the scale of the underlying Gaussian. Most
+analyses using shapelets having taken this approach to date, with
+\citet{TagoreAndJackson2016} being a notable exception. A
+promising alternative scheme would be to assign a less physically-motivated prior for the
+shapelet coefficients.}
+Hybrid approaches have been proposed where the parametrization of some of
+the components is simple and others are complex
+\citep{W+D03,T+K04,BrewerAndLewis2006,Suy++06,S+H10}, or where flexibly-parametrized
+``corrections'' are added to simply parametrized models
+\citep{Koo05,V+K09a,Suy++09,BirrerEtal2015}.  The variety of approaches
+in the literature reflect the inevitable tensions between the need to
+impose as many physically motivated assumptions as possible, while
+retaining sufficient flexibility to obtain a realistic estimate of the
+uncertainties and avoid introducing biases by asserting incorrect
+simplistic models. If the model is too constrained by the assumption
+it will lead to underestimated errors, if it is more flexible than
+necessary it will lead to a loss of precision.
+
+Once the choice of modeling parametrization is set, exploring the
+posterior PDF for the parameters is numerically non-trivial, often requiring weeks to months
+of computing time. Fortunately, there are techniques to speed up the
+calculations by limiting the number of non-linear parameters. For
+example, for a given lens model, the transformation between source and
+image plane can be described as a linear operation, or the pixellated
+corrections to the potential can be found by linearizing the lens
+equation (see references above).
+
+Ideally, modeling choices should be explored systematically as well,
+since they can potentially introduce systematic errors. This is
+currently being done in the most advanced studies, at great expense in
+term of computing time and investigator time. As we discuss in
+Section~\ref{sec:outlook}, speeding up the modeling phase and reducing
+the investigator time per system will be key to analyzing the large
+statistical samples expected in the future.
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+
+\subsubsection{The role of stellar kinematics}
+
+As introduced in Section~\ref{sec:theory}, stellar kinematics provide
+a qualitatively different input and are therefore very valuable in
+breaking degeneracies in the interpretation of lensing data
+\citep[e.g., the mass-sheet degeneracy][]{Koo++03}, and in estimating systematic
+uncertainties. Of course, translating kinematic data into estimates of
+gravitational potential has its own uncertainties and degeneracies
+\citep[e.g. the mass anisotropy degeneracy for pressure supported systems, or projection effects][]{Gav05,New++11,Son++12,Cou++14}
+but the combination of the two datasets in the context of a single
+mass model has been proven to be very effective
+\citep{T+K02a,T+K04}. Even a single measurement of stellar velocity dispersion,
+interpreted via simple spherical Jeans modeling, has been shown to
+substantially reduce modeling uncertainties
+\citep{T+K02b,Koo++03,Suy++14}. It is clear that getting spatially
+resolved kinematic data will enable breaking the mass-anistropy
+degeneracy \citep[see, e.g.,][and references therein]{Cou++14} and
+thus better constraints on the lens model and consequent
+cosmological inference (Agnello et al. 2016, in prep).
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \subsection{Lens environments and line of sight effects}
 \label{ssec:los}
 
-\input{lineofsight}
+The analysis of B1608$+$656 by \citet{Suy++10} explicitly took into
+account the weak lensing effects of external structures.  Such a
+correction had been suggested by \citet{Fas++06b}, who identified 4
+galaxy groups along the line of sight in a spectroscopic survey of the
+B1608$+$656 field; the authors estimated that these groups could,
+if left unaccounted
+for, bias any inferred Hubble constant high by around 5\%, an amount
+consistent with more general theoretical predictions \citep{Bar96,K+Z04}.
+Further surveys have quantified the environments and line of sight
+density structures of many more systems \citep{Mom++06,Aug++07,Won++11,Mom++15}.
+Exactly how
+to model the weak lensing contamination of strong lens signals
+has been the topic of a number of papers since
+2010: the problem is how to incorporate our knowledge of where the
+galaxies are along the line of sight without introducing additional
+bias due to the necessary assumptions about how their (dark) mass is
+distributed, and how the rest of the mass budget in the field adds up.
+
+\citet{Suy++10} attempted to solve these problems by comparing the
+B1608$+$656 field with a large number of fields with similar  galaxy
+number overdensity drawn from the Millennium Simulation, modeling the
+line of sight effects with a single external convergence parameter and
+accepting a somewhat broad prior distribution for it, in return for not
+having to make  strong assumptions about the structure of the galaxy
+groups in the field. The external convergence in the simulated fields
+was calculated by ray-tracing by \citet{Hil++09}, and the
+comparison in galaxy overdensity was enabled by the analysis of galaxy
+number counts in archival HST images by \citet{FKW11}, who found that
+the B1608$+$656 field was overdense by a factor of two. The resulting
+prior PDF for the $\kappa_{\rm ext}$ parameter had median $0.10$ with
+the 68\% credible interval spanning 0.05 to 0.18.
+In the analysis of RXJ1131, \citet{Suy++13} also took into account the
+inferred external shear from the lens model when deriving the prior for
+$\kappa_{\rm ext}$, noting a significant improvement in precision (as
+well as a marked shift in the PDF centroid).
+
+Since these initial analyses, a number of improvements have been
+suggested and investigated. All have in common the desire to bring more
+information  to bear on the problem, in order to increase the precision
+(while  continuing to avoid introducing bias). \citet{Gre++13} showed
+that weighting the galaxy counts by distance, photometric redshift and
+stellar mass  can significantly reduce the uncertainty in $\kappa_{\rm
+ext}$, by up to 50\%. \citet{CollettEtal2013} claim an additional 30\%
+improvement  by including knowledge of the stellar mass to halo mass
+relation in galaxies,  and modeling each galaxy halo's contribution to
+$\kappa_{\rm ext}$ individually in a  3-D reconstruction of the mass in
+the field which is then calibrated to simulations in something like the
+high resolution limit of the number counts approach.
+\citet{McCullyEtal2014} showed how to compute the weak lensing
+contamination accurately, using a full multi-plane lensing formalism
+\cite[see also][]{Schneider2014}
+but with fast approximations for less important
+structures \citep{McCullyEtal2016}.
+
+While research into these methods continues, one problem in particular
+remains outstanding. The methods that involve calibration to numerical
+simulations are dependent on the cosmological parameters assumed in
+that simulation, while all methods involve modeling line of sight
+structures at various distances as part of an evolving universe, whose
+dynamics depend on cosmological parameters. We face two options:
+either treat these cosmological parameters self-consistently as
+hyperparameters in a joint analysis of the time delays and the lens
+environments, or demonstrate that they can be decoupled via various
+simplifying assumptions that introduce sub-dominant systematic
+error. At the moment, comparison between the results of independent
+systems \citep{Suy++13} seem to suggest that this source of
+uncertainty is smaller than the estimated random uncertainty. However,
+this issue will have to be addressed in detail as the sample sizes
+increase and the random uncertainty decreases.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{From time delay distances to cosmological parameters}
 \label{sec:cosmo}
 
-\input{cospars}
+Early approaches to inferring cosmological parameters from time delay
+lens observations focused on measuring the Hubble constant in a
+Friedman-Robertson-Walker model with asserted (fixed) density
+parameters.\footnote{The original investigation by \citet{Ref64}
+involved the ``assumption that the linear distance--red-shift relation
+is valid.''} With better data came the recognition that time delay
+lenses were really probes of cosmological distance
+\citep{Koo++03,Suy++10}, and the emphasis shifted to
+inferring the set of cosmological parameters that are needed to predict
+the kinematics of the expansion of the Universe out to the redshift of
+the source.
+The parameter most strongly constrained is still the Hubble constant,
+but as sample sizes increase we expect ensembles of lenses to support
+the inference of several cosmological parameters \citep[or combinations
+thereof][]{LewisAndIbata2002}.
+
+In Figure~\ref{fig:current-constraints} we reproduce the current
+constraints on cosmological parameters, from the two best-measured
+systems, B1608$+$656 and RXJ1131 \citep{Suy++14}. When this figure was
+made, the available precision from just these two lenses was about the
+same as that from SDSS DR7 Baryonic Acoustic Oscillations
+\citep{PercivalEtal2010} or the ``Constitution'' set of Type Ia
+supernovae \citep{HickenEtal2009}.  When all three of the curvature
+density $\Ok$, Dark Energy density $\ODE$ and equation of state $\wDE$
+parameters are allowed to vary, along with $H_0$, we see that the time
+delay lenses provide similar constraints to BAO and complementary
+constraints to the SNe: the time delays and the BAO signal depend on
+angular diameter distances and $H_0$, while the supernovae probe
+relative luminosity distances.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[!ht]
+\centering\includegraphics[width=0.9\linewidth]{figures/Suyu13_fig11.pdf}
+\caption{Cosmological parameter constraints from time delay
+lenses \citep{Suy++13}. The marginalized posterior PDFs, given the combined B1608$+$656
+and RXJ1131 datasets and the assumption of an open CDM cosmology with
+unknown dark energy equation of state, are shown in
+two sets of two parameter dimensions,
+and compared to those given contemporary BAO and Type Ia supernova data.
+Image reproduced with permission from \citet{Suy++13}, copyright by AAS.}
+\label{fig:current-constraints}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+One important feature of the cosmological parameter inference carried
+out in the RXJ1131 analysis of \citet{Suy++13} is that it was blinded.
+Following the simple methodology suggested in the blind Type Ia
+supernova analysis of \citet{Con++06}, all cosmological parameter PDFs
+were plotted with centroids offset to the origin until the team agreed
+(after notably lengthy discussions about systematic errors) to ``open
+the box,'' just before publication.\footnote{Importantly, the authors
+agreed to publish the unblinded results, no matter what.} Such
+attempts to avoid ``unconscious experimenter bias'' introduced by
+stopping systematics analysis when the ``right answer'' is obtained
+have long been advocated in particle physics
+\citep{klein2005blind}, and seem likely to become the standard in
+cosmology as well \citep[e.g.][]{STEP,DESWL}. It is also crucial to
+repeat the measurements using independent codes, assumptions, and
+techniques, in order to quantify associated systematic
+uncertainties. It is re-assuring that the independent analysis of
+RXJ1131 carried by out by \citet{BAR16}, the one based on
+more flexible models carried out by \citet{Suy++14}, and the one based
+on ground based adaptive optics data by \citet{Che++16} find results that are
+statistically consistent with the original blind analysis \citep{Suy++13}.
+
+While the sample of very well-measured lenses was being painstakingly
+expanded from zero to two, the exploration of statistical approaches
+to dealing with large samples of lenses began.  Compressing the image
+configuration and time delay in double image systems into a single
+summary statistic, \citet{Ogu07b} derived a scaleable method for
+measuring the Hubble constant (but not the other cosmological
+parameters) from samples of lenses, finding
+$H_0=68\pm6\,{\rm(stat.)}\,\pm8\,{\rm (syst.)}\,{\rm km s}^{-1}{\rm
+Mpc}^{-1}$ from a sample of 16 lenses with measured time delays. The
+systematic uncertainties associated with this result may be hard to
+reduce given the approximations made: while the summary statistic is
+model-independent, the interpretation is not.
+
+An alternative approach is to work with more flexible lens models, fit
+the data for each one, and combine the whole sample in a joint
+inference.  This is the approach taken by \citet{Sah++06}, who found
+$72^{+8}_{-11}\,{\rm km s}^{-1}{\rm Mpc}^{-1}$ from 10 lenses (again
+assuming fixed curvature and dark energy parameters).
+The amount of
+information system used in this analysis was minimal: only the quasar
+positions and time delays were taken as inputs. The high flexibility of the free
+form models employed led to a likelihood that was effectively identically 1 or 0, and thus the
+results are dominated by prior constraints set on the pixels and their
+regularization \cite[see][for a description of pixel-lens in Bayesian
+terms]{Col08}. Specifically, the known physical degeneracy between
+density profile slope and predicted time delay
+\citep{Wuc02,Suyu12} is broken by the choice of pixel value prior probability
+distribution function. This assumption was tested by
+\citet{Rea++07}, who used a hydrodynamic simulation of an elliptical
+galaxy to generate mock image position and time delay data, and
+confirm the accuracy of the previous study's Hubble constant
+uncertainties. With improved time delay estimates in larger samples of
+lenses, \cite{P+J10} and then \citet{RK++2015} reduced the random
+uncertainty further.
+
+While focused only on the Hubble constant and carried out unblind, and
+with the lens environment and line of sight mass structures remain
+unaccounted for and further tests on realistic simulated galaxies
+warranted, these ensemble studies point the way towards a future of
+considerably larger sample sizes. Our aspirations towards high accuracy
+demand that we adopt more flexible mass models and then
+cope with the degeneracies;
+it is clear that such large
+scale analysis will need careful consideration of the choice of the
+priors, and ideally the ability to use more information than just the
+image positions and time delays. We discuss these issues in detail in
+the next section.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Outlook}
 \label{sec:outlook}
 
-\input{outlook}
+In this section we discuss the future of time delay cosmography, and
+present
+% an ambitious yet realistic
+a
+roadmap of how this
+measurement might be improved in the next decade. In order to construct the roadmap
+(Section~\ref{ssec:roadmap}), we will discuss in detail how to
+decrease the random uncertainties (increasing the precision of
+the method,
+Section~\ref{ssec:precision}), and the systematic uncertainties
+that will
+need to be controlled as the random uncertainties decrease
+(thus maintaining high accuracy, Section~\ref{ssec:accuracy}).
+
+However, before we lay out this roadmap, we first pause and
+reflect on the broader context, and ask whether this is a worthy
+endeavour.
+% PJM: the following paragraph sounds similar to the introduction, I'm
+% not sure it adds much.
+%
+% Understanding the nature of dark energy is one of the most
+% profound questions in all of physics, and it is thus not surprising
+% that the efforts of many scientists and funding agencies have been
+% directed towards this goal. Dedicated instruments, telescopes, and
+% satellites are being built or planned with budgets that range from the
+% tens of millions of dollars into the billions (Euclid and
+% WFIRST). Given the steep challenges associated with each technique,
+% most scientist agree that is important to pursue several independent
+% ones at the same time \citep{DETF,DESC}. First, we do not know which
+% techniques will live up to their promise and which ones will be
+% stymied by hitherto unknown systematic effects, when we reduce the
+% random uncertainties by one or more orders of magnitudes. Second, as
+% discussed in the introduction, extraordinary claims require
+% extraordinay proof, so it will certainly require more than one
+% independent measurement to convince the community that, for example,
+% dark energy is not the cosmological constant ($w\neq-1$).
+%
+% Given this context, deciding whether time delay cosmography is worth
+% pursuing boils down to three simpler questions.
+%
+This
+boils down to three simpler questions. The first question is
+whether time delays contain valuable information {\it independent} of
+other cosmological probes. As detailed in Section~\ref{sec:cosmo}, the
+answer is a resounding yes: gravitational time delays are virtually
+independent of the uncertainties affecting the other established
+probes of dark energy, and provide valuable complementary information,
+chiefly on the Hubble constant, which is commonly regarded as one of
+the essential ingredients for interpreting other datasets such as the
+cosmic microwave background \citep{Hu05,Suy++12,Wei++13,Rie++16}.  We
+will expand on this topic in the remainder of this section by showing
+cosmological forecasts for gravitational time delays by themselves and
+in combination with other probes.
+
+The second question is whether it is feasible to achieve an {\it
+interesting} level of precision and accuracy in coming years. In this
+mindset, {\it interesting} is defined as having total uncertainties
+comparable to those of other contemporary probes. This will be
+discussed in detail in Sections~\ref{ssec:precision}
+and~\ref{ssec:accuracy} below.
+
+The third and final question is what is the {\it cost} of pursuing
+this roadmap, and how this cost compares to that of other probes. Our aim is not
+to compute a full cost accounting, which will be almost impossible
+considering that each probe involves facilities, observatories,
+computing and brainpower, well beyond the boundaries of any individual
+project, collaboration, or funding agency (not to mention that the
+marginal cost of adding a technique to an existing program or
+facility is very different from what the cost of building a facility
+just for that purpose; for example, the cost of monitoring strongly
+lensed quasars in LSST data is much less than building and operating
+the LSST). Instead, we will aim to give an approximate sense of the
+observational and human resources that will be needed to pursue the
+roadmap.
+
+% PJM: the following sounded a bit more like a proposal, or an argued case, than
+% a review, and maybe also a bit defensive?
+%
+% Having voted with our feet, we obviously think that the
+% relatively low {\it cost} and the relatively low risk of time delay
+% cosmology well justifies adding it to the investment portfolio of a
+% modern cosmologist. Hopefully the rest of this section will give the
+% reader enough information to make up their own mind on the matter.
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\subsection{Precision}
+\label{ssec:precision}
+
+With considerable observational and data analysis effort, the
+feasibility of reaching a {\it precision} of 6-7\% in time delay distance
+per lens has been demonstrated. The contributions to this statistical
+error budget
+from the time delay measurement, mass model, and environment
+correction are at present approximately equal, and somewhat larger than
+the estimated systematic errors. In this situation it makes sense to
+enlarge the sample of lenses, in order to beat down the statistical
+uncertainties. We return to the question of how to reduce the residual
+systematic errors in the next section.
+
+\citet{C+M09b} made initial Fisher matrix forecasts of the likely
+available precision on $H_0$ in large future surveys. They considered
+several possible samples, concluding that 100 well-measured systems
+(with 5\% distance precision each) should provide sub-percent precision
+on the Hubble constant, and provide  dark energy parameter constraints
+that are competitive with optimistic forecasts of other ``Stage IV''
+cosmological probes. They also note that comparable constraints could be
+available from a sample of 4000 time delay lens systems, each with only
+photometric redshifts and simple image configuration model constraints
+\citep[following][]{Ogu07b,P+J10}.  Continued investigation of both samples
+seems warranted, keeping in mind that the size of such a photometric
+sample would be set by the availability of time delays measured at the
+few percent level.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[!ht]
+\centering\includegraphics[width=0.9\linewidth]{figures/Coe+Moustakas09_fig14.pdf}
+\caption{Fisher matrix forecasts of cosmological parameters, based on
+Dark Energy Task Force assumptions and having 5\% distance precision
+for each of 100 time delay lenses. The Stage IV cosmological probes
+being compared in an  open CDM cosmological model with time-variable
+dark energy equation of state are weak lensing (WL), BAO, supernovae
+(SN), cluster mass function (CL) and time delay cosmography (TD).
+Image reproduced with permission from \citet{C+M09b}, copyright by AAS.}
+\label{fig:fisher}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+While Figure~\ref{fig:fisher} allows different cosmological probes to
+be compared (and assessed for competitiveness), it does not show the
+value of combining those probes. Indeed, \citet{Lin11} found that the
+particular combination of a type Ia supernova dataset with a time  delay
+lens dataset holds promise, with a sample of 150 time delay distances,
+each measured to 5\% precision, improving the dark energy figure of
+merit by a factor of about 5 over what could be  plausibly obtained with
+a sample of about 1000 Stage~III supernovae and a Planck CMB prior alone.
+
+More recently, \citet{JeeKomatsuSuyu2015} have pointed out that
+cosmological parameter forecasts for time delay lens samples are
+conservative, if each lens is assumed only to measure the time delay
+distance. Including the angular diameter distance dependence as well can
+have a marked effect on the projection, especially if the spectroscopic
+constraints on the lens mass distribution are assumed to be very strong.
+The reproduction of Figure 5 from
+\citet{JeeEtal2016} in the lefthand panel of Figure~\ref{fig:DdDdt}
+illustrates this. These authors find that a future sample of
+55 lenses
+with 5\% measurements of both time delay distance and angular diameter
+distance would increase the figure of merit by a factor of two over that
+provided by a Stage~III supernova, CMB, and BAO joint analysis. The righthand
+panel of Figure~\ref{fig:DdDdt} puts such improvements in the  current
+observational context. In the B1608$+$656 analysis, the  angular
+diameter distance dependence {\it was} accounted for during the
+calculation of the predicted time delay and velocity dispersion data,
+but the constraints on the angular diameter distance were not strong:
+assigning a uniform prior PDF for the cosmological parameters rather
+than the distances introduced degeneracy between $\Dd$ and $\Ddt$,
+which then seems to have been broken primarily by the time delay
+information to yield a $5.7\%$ precision prediction for $\Ddt$, and
+a corresponding $8.1\%$ precision prediction for $\Dd$.
+With spatially resolved spectroscopy we should anticipate the angular
+diameter distance becoming more important in future analyses, with
+some work on simulated data needed to quantify this.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[!t]
+\begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figures/w_wa_marg_PL_LSST.png}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figures/B1608_DdtDa.pdf}
+\end{minipage}
+\caption{Cosmological information from angular diameter distances
+as well as time delay distances. Left: Fisher matrix
+forecasts for a future time delay lens sample where 5\% precision on
+each distance is assumed: the combination of distances gives a
+significantly more powerful constraint than the time delay distances
+would alone. Image reproduced with permission of IOP from \citet{JeeEtal2016}, copyright by SISSA.  ``$D_{\rm A}(EL)$'' is
+the angular diameter distance to the lens from Earth. Right: marginalized
+prior (gray) and posterior (blue) PDFs for the two
+distances in the B1608$+$656 system, assuming uninformative priors for the
+cosmological parameters of a flat $\Lambda$CDM model and offset and
+rescaled to reveal the implied percentage precisions of 5.7\% and 8.1\%
+in $\Ddt$ and $\Dd$ respectively (as shown by the vertical dashed lines
+enclosing the 68\% credible region). }
+\label{fig:DdDdt}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% {\bf TT: there is some repetition between the following paragraph and
+% 6.3. Phil and Tommaso to decide how to resolve it. PJM: the simplest
+% thing is simply to comment this out, and leave it for the roadmap. I
+% think this makes sense: the whole roadmap section is about what it will
+% take to reach the prescribed levels of precision and accuracy.}
+%
+%
+% What will it take to reach the required level of distance precision in
+% each of 100 lenses?  According to the data challenge summarized by
+% \citet{LiaoEtal2015}, samples of over 100 lenses with
+% precise time delays should be able to be constructed from analysis of
+% the LSST light curves. The lens models for these systems should be
+% able to be constrained to sufficient precision using high resolution
+% imaging from next generation AO facilities, giant segmented mirror
+% telescopes, JWST and even WFIRST \citep{Men++15}. High overall mass
+% model precision, and the exploitation of the angular diameter distance
+% dependence, will require high signal to noise ratio,
+% spatially-resolved spectroscopy as well: integral field units on these
+% same telescopes should be able to provide this. The contribution to
+% the distance uncertainty from the line of sight was particularly high
+% in the cases of B1608$+$656 and RXJ1131: in most other systems in a
+% large sample the effects of the environment should be lesser, and they
+% should (effectively) average down \citep{ColletEtal2013}.
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\subsection{Accuracy}
+\label{ssec:accuracy}
+
+While the precision available from Stage~III and Stage~IV samples
+makes time delay lenses an interesting prospect for cosmology, they
+will, like the other probes, be limited by systematic errors. As the
+forecasts show, competitive contributions to joint dark energy
+parameter inferences correspond to sub-percent precision in
+characteristic distance, which implies that the residual systematic
+error in distance needs to be well below 1\%. This residual systematic
+may or may not be present at this level in every lens system -- what
+matters is the bias in the overall measurement from the combined
+sample. However, the term ``mean accuracy per lens'' is helpful, since
+it reminds us that systematic errors can affect all members of a
+sample in the same (or at least similar) way.  In this section we
+revisit the primary sources of systematic error and assess the
+prospects for this stringent requirement to be met.
+
+\subsubsection{Time delay measurement}
+
+\citet{LiaoEtal2015} showed that a
+mean accuracy of 0.1\% per lens would already be achievable in
+plausible samples of several hundred LSST lenses, were all images to
+be taken in the same band.  While these results are encouraging,
+questions about our ability to measure time delays from sparse,
+multi-filter light curves extracted from realistic images remain
+\citep{TCM13}.  Time delay measurement accuracy from LSST multi-filter
+light curve could be tested by a second challenge; the success of the
+analyses is likely to hinge on the treatment of quasar color
+variability \citep[see e.g.\ ][and references
+therein]{Sch++12,SunEtal2014} and chromatic microlensing
+\citep[see e.g.][and references therein]{HainlineEtal2013}.
+Joint inference from whole samples is likely to
+be important, in mitigating against both outliers and also imprecision
+arising from inappropriate uniform priors on  population parameters.
+Insights into AGN physics and the stellar composition  of lens galaxies
+would be welcome by-products of such an analysis. An alternative approach
+could be to continue to pursue single-filter monitoring, but at
+increased efficiency. Experiments with higher cadence campaigns,
+exploiting the short (sub-day) timescale variability of AGN are in
+progress \citep[][F.~Courbin, priv.\ comm.]{BorosonEtal2016}.
+
+It is worth noting that time delay {\it perturbations},  due to small
+scale structure in lens plane or along line of sight, will likely not be
+a significant  additional source of systematic error, since they
+primarily cause additional scatter on hour-long timescales
+\citep{K+M09}.
+
+
+\subsubsection{Lens mass modeling}
+
+\citet{S+S13} have pointed out the possibility of systematic errors at
+the twenty percent level due to modeling assumptions (and their
+interaction with the mass sheet degeneracy) when fitting lensing data
+alone. \citet{Suy++14} fitted the same two models used by
+\citet{S+S13}  to the current state of the art Einstein ring imaging and
+lens galaxy velocity dispersion data, and found that present
+measurements of stellar kinematics reduce the error by a factor of
+10, at least within their framework of pixelized source
+reconstruction.  It is not clear how much of the residual 2\%
+uncertainty is random, and how much residual bias there is: we do not
+yet know how our mass modeling methods respond to the variety of lens
+mass distributions we expect.
+
+An important first step has been taken by \citet{XuEtal2016}, who
+looked at the density profiles of a sample of mock galaxies from the
+Illustris simulation, finding significant departures from simple power
+law profiles. However, they note that at the mass scales typical of
+galaxy scale lenses, where the total mass density profiles happen to
+be well approximated by isothermal spheres
+\citep{Koo++09,Aug++10}, the residual systematic uncertainty
+in the Hubble constant could be restricted to a few percent.
+Again, it remains to be verified how much of this averages out
+given particular, large samples of systems.
+
+As a result of these investigations, we know that 1) the dynamical
+information is as important as the lensing data, 2) more complex
+models than simple power law density profiles will likely be needed to
+enable sub-percent accuracy to be reached, and 3) we now have
+simulated galaxies that are {\it sufficiently realistic and suitably
+complex} that we can carry out meaningful tests where the ground truth
+is very different from our assumed analysis models. The acid test will
+be whether we can recover the input cosmological parameters from
+realistic simulated high resolution imaging and stellar spectroscopic
+data made using numerical simulations that resolve massive
+galaxies well \citep[e.g.,][]{Fia++16}.
+
+As we look ahead to samples of dozens to hundreds of lenses in the
+next decade, we can also consider the observational capabilities we
+will have in that time period. Giant segmented mirror telescopes
+(including the James Webb Space Telescope as well as planned 30m class
+ground-based telescopes) will bring up to a factor of 10 increase in
+angular resolution beyond what HST and today's 10-m class adaptive
+optics-enabled telescopes can deliver, improving further the available
+Einstein ring constraints. These facilities will be instrumented with
+Integral Field Unit spectrographs that will provide
+spatially-resolved spectroscopy of the lens galaxy stellar populations.
+It is yet to be seen how accurately lens mass distributions can be
+modeled with such data: extending the realistic lens galaxy data
+simulation work to include them would seem to be very important. The
+``crash test'' of \citet{Bar++09a} was an excellent start in this
+direction, probing as it did the performance of a fully self-consistent
+lensing and dynamics modeling code on a numerically simulated lens
+galaxy mock dataset.
+
+The upcoming increase in available precision per lens will support
+significantly more flexible mass models, as reviewed in
+Section~\ref{ssec:lensmodel}.
+%While early efforts in this
+%direction employed regularized grids of pixels
+%\citep{Koo05,SuyuEtal2009,V+K09a}, the most recent attempts model
+%perturbations to simple density profiles with orthogonal basis sets
+%\citep{BirrerEtal2015}.
+The opportunity here is to find a flexible mass model whose parameters
+can be taken to have been drawn from a relatively simple prior PDF,
+which could be derived from either large samples of observed non-lens
+galaxies, plausible hydrodynamic simulated galaxies, or both.
+
+
+The mass sheet degeneracy, and indeed all model parameter degeneracies
+are broken by incorporating more information, but this needs to be
+done in such a way as to not introduce bias. Using flexible mass
+models with reasonably broad but not uninformative priors is the first
+step, but unless these priors are themselves movable, the introduced
+bias might remain. The clear-cut solution is to learn the
+hyper-parameters that govern the intrinsic distribution of mass model
+parameters from the data as well. It is really the prior on these
+``hyper-parameters'' that needs to come from simulations. An initial
+attempt at this kind of ``hierarchical inference'' can be found in
+the analysis of \citet{SonnenfeldEtal2015}, where the authors infer
+the values of some 28 hyper-parameters assumed to govern the scaling
+relations between massive galaxies, as well as the selection function
+of the lens sample. As surveys yield larger and larger samples of
+lenses, joint inferences from ensembles
+of all lenses (time delay and otherwise) will bring in more
+information about the density structure of somewhat self-similar
+massive galaxies.
+
+In addition to carrying out tests on simulated data, it is important
+to continue empirical investigations of systematic errors. In addition
+to the generally applicable strategy of comparing the cosmological
+parameter estimates between individual systems or subsets of systems
+to measure whether statistical uncertainties are under-estimated, we
+must continue to look for other independent tests. An interesting
+example is that of the multiply-imaged supernova ``Refsdal.'' Several
+teams carried out modeling analyses of this lens system, in order to
+predict in a truly blind fashion the magnification, timing, and
+position of the next appearance of the supernova
+\citep{Kel++15,Ogu15,S+J15,Jau++16,Tre++16,Kaw++16,Gri++16,Die++16}. Even
+though the deflector is a merging cluster, and thus significantly more
+challenging to model than the typical relaxed elliptical galaxies used
+in time-delay cosmography, several teams managed to predict the event
+\citep{Tre++16,Kel++16} within the estimated model prediction uncertainties.
+It is particularly re-assuring that the code {\sc GLEE} \citep{S+H10},
+which was designed and used extensively to model time delay lenses for
+cosmography \citep{Suy++10,Suy++13,Suy++14}, performed very well
+\citep{Gri++16,Kel++16}, along with other methods based on similar assumptions \citep{Kaw++16}. As the precision of time delay cosmography increases
+with sample size it will be important to seize any new opportunity to
+carry out additional blind tests, e.g. by predicting time delays of
+lens quasars before measuring them, and by actively searching for
+multiply imaged supernovae in galaxy-scale lenses
+\citep{O+M10,Qui++14}. Lensed supernovae, especially if they type Ia,
+would be particularly important a they provide a direct measurement of
+magnification \citep{Pat+14,Nor+14,Rod++15} as well as time delay and thus a way to break the mass
+sheet degeneracy.
+
+
+
+\subsubsection{Environment and line of sight characterization}
+
+The current methodology (Section~\ref{ssec:los}) includes dependencies
+on both cosmological simulations and reference imaging surveys. The
+Stage~III and~IV wide field surveys will help with the latter,
+providing much larger, more homogeneous sets of control fields.
+Systematic errors associated with calibrating against simulations is
+the bigger problem, and both the number counts and 3D reconstruction
+approaches that have been implemeted to date are affected.
+\citet{CollettEtal2013} give some indication of the magnitude of the
+issue, finding a bias of 3\% in the average inferred time delay distance
+when assuming a stellar mass to halo mass relation that is incorrect
+but still consistent with other observations. This reduces to 1-2\%
+if the bright galaxies in the lens fields have spectroscopic redshifts,
+suggesting that this kind of data will continue to be important.
+
+The 3D reconstruction approach can, in principle, be made to be
+independent from simulations \citep[indeed, this was a design feature
+of][]{McCullyEtal2014}.  However, more information about mass in the
+Universe will be required.  Both \citet{McCullyEtal2014} and
+\citet{CollettEtal2013} use halo models, with very simplistic treatments
+of the mass outside of halos, and the voids between them. Both weak
+shear data and clustering information could be used to improve the
+accuracy of these  models; statistical halo models are already well
+constrained by summary statistics from these probes
+\citep[e.g.][]{CouponEtal2015},  and these results are already
+potentially useful (although the scatter in the model's relations
+will likely need to be taken into account).  Covariance with cosmic
+shear, galaxy clustering, and the halo mass function may then have to
+be accounted for in any joint cosmological parameter inferences; this
+may turn out to be negligible, once quantified.  Some
+mitigation of the environment and line of sight systematics could be
+achieved by selecting low density lines of sight
+\citep{CollettEtal2013}, but this selection would have to be done with
+some care, propagating all the uncertainties.
+
+A key point made by
+\citeauthor{McCullyEtal2014}~(\citeyear{McCullyEtal2014},~\citeyear{McCullyEtal2016})
+is that the mass structures external to the primary lens should, in
+principle, be included in the lens model itself.  Doing this would
+allow the correct multiple lens plane formalism to be employed,
+thereby reducing the systematic error introduced by the single lens
+plane approximation. This approach is being actively pursued in the
+ongoing analyses (K.~Wong, priv.\ comm.). An interesting feature of
+multiple plane lensing is that the appearance of the lens galaxy is
+also affected by weak lensing due to foreground mass structures: this
+may well need to be taken into account when striving for high accuracy
+modeling of the primary lens (R.Blandford \& S.~Birrer, priv.\ comm.).
+
+Even when all the above systematics have been investigated and tested
+for, others that are unforeseen may remain. Strategies for detecting
+these ``unknown unknowns'' include jack-knife testing, which  will
+become possible with larger samples. Other kinds of ``null tests'' may
+also be possible when we are out of the small number stastistics regime:
+research is needed on developing such tests. The ultimate test is
+cosmological parameter consistency with other datasets, but for this
+comparison to be meaningful the analysis of each dataset must be done
+blindly, to avoid unconscious experimenter bias and the resulting
+groupthink towards (or away from) concordance
+\citep[see e.g.][]{Con++06,Suy++13}. In principle all
+systematics tests need to be done before unblinding; as a result, end
+to end tests on highly realistic mock data will become ever more
+important. The time delay challenge was carried out blind;
+similarly-designed lens modeling and environment characterization
+challenges are called for too. Success at blind cosmological parameter
+recovery from realistic mock samples is the surest way to generate
+confidence in a probe's accuracy.
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\subsection{Roadmap}
+\label{ssec:roadmap}
+
+We conclude the outlook section by proposing an ambitious, yet (in our
+opinion) feasible roadmap for time delay cosmography in the next
+decade. This roadmap aims to achieve $\sim0.5\%$ precision on time delay
+distance\footnote{For simplicity, we refer to equivalent uncertainty
+on an average time delay distance at the typical redshift of the
+deflector and source. In practice of course, there will be a
+distribution of redshifts and thus of individual distances. As the
+way in which the time delay distance depends on cosmological parameters
+varies slightly with redshift, the analysis of a real sample of
+lenses will have the added benefit of breaking some of the
+degeneracies between the cosmological parameters,
+and reducing the uncertainties more rapidly than if all
+the systems were at the same redshift.} by 2027 (by which time
+the 5-year LSST light curves should be in hand),
+building on the tools and techniques demonstrated in
+the past 15 years and exploiting the large scale surveys that are
+currently under way or planned. It is based on a specific strategy,
+consisting of constructing the most precise and accurate models of
+each lens based on rich datasets for each system (alternative
+strategies are discussed at the end of this section). Specifically,
+for each system one needs the following:
+
+\begin{enumerate}
+\item Time delays precise to better than $3\%$;
+\item High resolution imaging (resolution much better than the Einstein
+radius) with point spread function known well enough to reconstruct the
+differences in Fermat potential to better than $3\%$ precision;
+\item Spectroscopic redshifts of the deflector and the source;
+\item Stellar velocity dispersion of the deflector to better than 10\%
+precision, possibly spatially resolved;
+\item Imaging and spectroscopic data sufficient to characterize the
+weak lensing effects due to structure along the line of sight to better than
+$3\%$ precision.
+\end{enumerate}
+
+These targets can be met with present technology, as it has already
+been demonstrated for a few systems \citep{Tew++13,Suy++13}, and the
+observational requirements have been investigated for a variety of
+telescopes and configurations
+\citep{Gre++13,CollettEtal2013,Men++15,Lin15}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+\includegraphics[width=0.98\textwidth]{figures/roadmap.pdf}
+\caption{Roadmap for time delay cosmography. The shaded region
+represents the estimated range of uncertainty attainable on the
+effective (ensemble) time delay distance $\Ddt$ as a
+function of time, over the next ten years. Points on the roadmap are
+labeled by the types of survey and
+follow-up (FLP) observation required.}
+\label{fig:roadmap}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The proposed roadmap is summarized in Figure~\ref{fig:roadmap}. The
+shaded region represents an estimate of the ensemble precision attainable on
+$\Ddt$,\footnote{The time delay distance referred to here is the same as
+ensemble average quantity that \citet{C+M09b} call $\mathcal{\tau}_{\rm C}$.}
+ranging from the most conservative to the most favorable
+scenario. The most conservative case assumes only a central velocity
+dispersion measurement for each system, while the most favorable
+scenario involves spatially resolved stellar velocity dispersions,
+obtained either from space or from the ground assisted by adaptive optics
+(Agnello et al.\ in prep.). We neglect the additional independent
+information that in principle can be obtained via the angular
+diameter distance dependence \citep{JeeEtal2016}.  As
+discussed in Section~\ref{ssec:precision}, this additional piece of
+information would in principle improve the constraints on cosmological
+parameters from time delay lenses, so this envelope should be regarded
+as a conservative estimate.
+
+The roadmap is divided into steps, whose timing is dictated by
+available observational facilities.
+The first step in the roadmap is the analysis
+of two systems that was published in 2013, and was based on COSMOGRAIL time
+delays, HST imaging, Keck spectroscopy, and other ancillary data from
+a variety of sources.
+
+The second step consists of the full analysis of nine lens systems for
+which time delays have been measured by the COSMOGRAIL team, and for
+which HST imaging is being completed this year (HST-GO-14254; PI:
+Treu).  Completing the second step by the launch of the James Webb
+Space Telescope at the end of 2018, and in doing so delivering
+$\sim2\%$ distance precision, would be ideal, so as to provide a
+useful comparison for expected improvements in local distance ladder
+measurements.
+
+The third step will require the discovery of new lenses, in addition
+to the usual follow-up (FLP) effort. Systematic searches are currently
+under way based on large scale surveys such as the Dark Energy Survey
+or Hyper Suprime-Camera Survey \citep{Agn++15,Mor++16}, and should
+discover hundreds of new lensed quasar systems by the end of the
+decade \citep{O+M10}, while providing high quality photometric lens
+environment information from the survey itself.  Focused follow-up of
+a carefully selected sample of systems should be sufficient to reach
+the goal for step 3, that is, $\sim1\%$ distance precision from 40
+lenses in 5 years (i.e. by 2022). The selected sample should consist
+of as many quads as possible, since they contain more cosmological
+information and favor systems with time delays in the range 50-150
+days, such that they are measurable at the $<3\%$ level in one
+observing season with daily cadence. It is worth noting that in the
+high-quality follow-up approach each individual system provides a
+highly informative measurement of cosmology, and therefore this method
+is very robust with respect to the precise selection function imposed
+by the search and monitoring algorithms \citep{C+C16}, at the level of
+accuracy required in this step . The observational bottle necks are
+likely going to be the time delay measurements, which will require
+dedicated monitoring on 1--4m class telescopes, and high resolution
+imaging \citep{Tre++13}.
+
+Scaling up to the fourth step will require a change of strategy, in
+order to cope with the intrinsically fainter targets and larger sample
+size. One natural strategy will consist of using time delays measured
+from LSST light curves \citep{LiaoEtal2015}, perhaps supplemented in
+part from 1--4m telescopes in order to increase the cadence, or potentially
+from a dedicated lens monitoring satellite
+\citep{Mou++08}. Unfortunately, LSST imaging will be insufficient for
+detailed modeling, and higher resolution imaging will be required
+\citep{Men++15}.
+Planned surveys like Euclid and WFIRST will be excellent at
+discovering new lenses, but probably will have insufficient depth and
+resolution except for the brightest systems. Therefore targeted
+follow-up will be required, achievable either with JWST from space, or
+with improved adaptive optics systems on 8--10m class ground-based
+telescopes \citep{Mar++07,Che++16,Rus++16}. Integral field
+spectrographs on giant segmented mirror telescopes will be the ideal
+complement to LSST, by providing the necessary high resolution imaging
+and spectroscopy with relatively short exposure times
+\citep[e.g.][]{Ski++15}.
+Much of the information needed for lens environment characterization will again
+come from the surveys themselves, although synergy with spectroscopic
+surveys should be explored to increase the redshift accuracy.
+This fourth step
+aims to reach $\sim0.5\%$ precision, through follow-up of systems discovered
+and monitored in the first five years of the LSST survey.
+
+Converting the uncertainty
+in time delay distance $\Ddt$ to cosmological parameters requires
+specific assumptions about the cosmological model and priors from
+independent measurements. For step 1, the equivalent precision on $H_0$
+using WMAP7 prior in one parameter extensions of $\Lambda$CDM is 4-5\%.
+The forecast for step 2 with WMAP9 and Planck priors is shown in
+Figure~\ref{fig:roadmap-step2}. For steps 3 and 4, the equivalent
+precision on $H_0$ is in the range 1.1-1.3\% and 0.8\%-1.0\%
+respectively, assuming ``Planck + Stage II'' priors \citep{C+M09b}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+\begin{center}
+\includegraphics[height=5.5cm,clip]{figures/planck_olcdm_c22lenses_stats.jpg}
+\includegraphics[height=5.5cm,clip]{figures/wmap9_olcdm_c22lenses_stats.jpg}
+\includegraphics[height=5.5cm,clip]{figures/planck_wcdm_c22lenses_stats.jpg}
+\includegraphics[height=5.5cm,clip]{figures/wmap9_wcdm_c22lenses_stats.jpg}
+\end{center}
+\caption{Cosmological forecast (black solid lines, represent the 68\%,
+95\%, and 99\% posterior probability contours) for step 2 in the roadmap
+(see Figure~\ref{fig:roadmap} and Section~\ref{ssec:roadmap} for
+details), assuming one parameter extensions of flat $\Lambda$CDM, and
+Planck (left column) and WMAP9 (right column) priors (red dashed lines).
+Figure courtesy of S.H.~Suyu.}
+\label{fig:roadmap-step2}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In addition to the observational challenges, the main challenge in
+pursuing this roadmap is likely to be the analysis cost. Lens modeling
+is at present fairly labor intensive, requiring several months of work
+per system by an expert modeler. This high labor cost is chiefly due
+to code development. Up to now, the analysis of each single lens has
+required the development and testing of new features (e.g. multi-plane
+lensing, point spread function reconstruction; Suyu et al. 2016, in
+prep.). In order to analyze the future large samples, the analysis
+codes will have to transition from development to production, reducing
+substantially the investigator time per system. Distributing the work
+among a large team of modelers will likely be necessary to speed
+things up and keep modeling uncertainties in check.
+
+Naturally, this proposed roadmap is not the only possible way
+forward. As discussed earlier in this section, several authors have
+proposed the analysis of larger samples of lenses, each with fewer
+ancillary data and thus lower precision per system. Alternatively, one
+could imagine a hybrid strategy in which a subset of the lenses are
+analyzed in great detail with lots of ancillary data, and the lessons
+learned from that subset are propagated to a large sample through
+judicious use of priors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Summary}
 \label{sec:summary}
 
-\input{summary}
+We reviewed gravitational time delays as a tool for measuring
+cosmological parameters. In addition to giving a brief introduction to
+the theoretical underpinnings of the method, we discussed the past
+history of the field, before turning to present day accomplishments
+and the challenges ahead. The main points of this review can be
+summarized as follows:
+
+\begin{enumerate}
+\item From a theoretical point of view gravitational time delays are a
+clean and well understood probe of cosmic acceleration. Conceptually,
+each time delay measurement provides a one step measurement of
+absolute distance. The typical redshifts of deflectors and sources
+span the range between $z\sim2$ and today, covering the era of cosmic
+time during which dark energy rose to prominence.
+%
+\item Even though the potential cosmological application of strongly
+lensed, time-variable sources was recognized as early as 1964, it took
+decades for the method to come to practical fruition. Two sets of
+challenges have been overcome over the past 15 years. Observationally, the
+main challenge has been organizing long term monitoring campaigns and
+mustering the range of resources required to constrain accurate mass
+models. Theoretically, the main challenge consisted of learning how to
+exploit the available information to construct lens models with
+realistic estimates of the uncertainties.
+%
+\item It has been demonstrated through blind measurements that each
+individual system can deliver a measurement of absolute distance to
+about 6-7\% total uncertainty, given current data quality.   The power of
+the method is currently limited by the number of systems with
+well-measured time delays and sufficient ancillary data to carry out
+detailed modeling ($\lesssim10$ at the time of writing).
+%
+\item Systematic searches for strongly lensed quasars are under way and
+should be able to increase the cosmographic sample size by more than
+an order of magnitude in the next decade. With improvements in
+follow-up image resolution and spatially resolved spectroscopy as
+well, we can aspire to sub-percent precision in the Hubble constant by
+the middle of the next decade.
+%
+\item Before LSST, dedicated monitoring campaigns will be required to
+measure each time delay; LSST can potentially alter the landscape, if
+it can deliver hundreds of time delays from the survey data themselves.
+%
+\item Throughout the next decade in order to deliver the
+available precision it will be necessary to obtain a small amount of
+high quality follow-up data in order to minimize the uncertainty per
+system. These include: high resolution imaging from space or with
+adaptive optics; redshifts; stellar velocity dispersions, and
+spatially resolved kinematics of the deflectors. These data can be
+obtained from the James Webb Space Telescope or large and extremely
+large ground based telescopes with adaptive optics.
+%
+%\item  In the LSST era it will be possible to employ a mixed strategy
+%in which large numbers of systems with relatively scant follow-up data
+%can be analyzed with hierarchical models based on priors based on the
+%in depth analysis of smaller datasets.
+%
+\item
+%At the moment, the method is limited by the small number of lens
+%systems available.
+As samples increase, further work will be needed to
+understand, quantify and mitigate against potential systematic errors
+in the method. Extensive parameter recovery tests on realistic
+simulated monitoring, high resolution imaging, spatially resolved
+spectroscopy, and field weak lensing and photometry will be essential
+to ensure that systematic errors are kept subdominant, the precision
+of the method is realized, and an accurate cosmological measurement
+is achieved.
+\end{enumerate}
+
+
+In gravitational time delays we have a theoretically sound,
+experimentally competitive, and cost-effective cosmographic tool.
+Like for every other probe, a lot of hard work will be necessary to reach
+the sub-percent level of precision and accuracy that is needed to make
+progress. This effort seems well motivated, not only by the ultimate
+goal of improving our understanding of the fundamental constituents of
+the universe, but also by the opportunity to use lensed quasars to
+learn about the astrophysics of dark matter
+\citep{M+M01,D+K02,Metcalf:2005p1203,Xu++09,Veg++14,Nie++14}, active galactic
+nuclei \citep{PMK08,Eig++08a,Eig++08b,Blackburne:2010p6600,Mac++15},
+and stars
+\citep{Sch++14}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
